@@ -1,0 +1,763 @@
+.class public final Lj15;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+# interfaces
+.implements Li15;
+
+
+# static fields
+.field public static final W:Lap0;
+
+
+# instance fields
+.field public Q:J
+
+.field public R:Li15;
+
+.field public S:Z
+
+.field public T:J
+
+.field public U:J
+
+.field public V:Li15;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 2
+
+    .line 1
+    new-instance v0, Lap0;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x13
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lap0;-><init>(I)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lj15;->W:Lap0;
+
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .registers 15
+
+    .line 1
+    :cond_0
+    :goto_0
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    iget-wide v0, p0, Lj15;->T:J
+
+    .line 3
+    .line 4
+    iget-wide v2, p0, Lj15;->U:J
+
+    .line 5
+    .line 6
+    iget-object v4, p0, Lj15;->V:Li15;
+
+    .line 7
+    .line 8
+    const-wide/16 v5, 0x0
+
+    .line 9
+    .line 10
+    cmp-long v7, v0, v5
+
+    .line 11
+    .line 12
+    if-nez v7, :cond_1a
+
+    .line 13
+    .line 14
+    cmp-long v8, v2, v5
+
+    .line 15
+    .line 16
+    if-nez v8, :cond_1a
+
+    .line 17
+    .line 18
+    if-nez v4, :cond_1a
+
+    .line 19
+    .line 20
+    const/4 v0, 0x0
+
+    .line 21
+    iput-boolean v0, p0, Lj15;->S:Z
+
+    .line 22
+    .line 23
+    monitor-exit p0
+
+    .line 24
+    return-void
+
+    .line 25
+    :catchall_18
+    move-exception v0
+
+    .line 26
+    goto :goto_61
+
+    .line 27
+    :cond_1a
+    iput-wide v5, p0, Lj15;->T:J
+
+    .line 28
+    .line 29
+    iput-wide v5, p0, Lj15;->U:J
+
+    .line 30
+    .line 31
+    const/4 v8, 0x0
+
+    .line 32
+    iput-object v8, p0, Lj15;->V:Li15;
+
+    .line 33
+    .line 34
+    monitor-exit p0
+    :try_end_22
+    .catchall {:try_start_1 .. :try_end_22} :catchall_18
+
+    .line 35
+    iget-wide v9, p0, Lj15;->Q:J
+
+    .line 36
+    .line 37
+    const-wide v11, 0x7fffffffffffffffL
+
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    cmp-long v13, v9, v11
+
+    .line 43
+    .line 44
+    if-eqz v13, :cond_48
+
+    .line 45
+    .line 46
+    add-long/2addr v9, v0
+
+    .line 47
+    cmp-long v13, v9, v5
+
+    .line 48
+    .line 49
+    if-ltz v13, :cond_45
+
+    .line 50
+    .line 51
+    cmp-long v13, v9, v11
+
+    .line 52
+    .line 53
+    if-nez v13, :cond_37
+
+    .line 54
+    .line 55
+    goto :goto_45
+
+    .line 56
+    :cond_37
+    sub-long/2addr v9, v2
+
+    .line 57
+    cmp-long v2, v9, v5
+
+    .line 58
+    .line 59
+    if-ltz v2, :cond_3f
+
+    .line 60
+    .line 61
+    iput-wide v9, p0, Lj15;->Q:J
+
+    .line 62
+    .line 63
+    goto :goto_48
+
+    .line 64
+    :cond_3f
+    const-string v0, "more produced than requested"
+
+    .line 65
+    .line 66
+    invoke-static {v0}, Lfn;->s(Ljava/lang/String;)V
+
+    .line 67
+    .line 68
+    .line 69
+    return-void
+
+    .line 70
+    :cond_45
+    :goto_45
+    iput-wide v11, p0, Lj15;->Q:J
+
+    .line 71
+    .line 72
+    move-wide v9, v11
+
+    .line 73
+    :cond_48
+    :goto_48
+    if-eqz v4, :cond_57
+
+    .line 74
+    .line 75
+    sget-object v0, Lj15;->W:Lap0;
+
+    .line 76
+    .line 77
+    if-ne v4, v0, :cond_51
+
+    .line 78
+    .line 79
+    iput-object v8, p0, Lj15;->R:Li15;
+
+    .line 80
+    .line 81
+    goto :goto_0
+
+    .line 82
+    :cond_51
+    iput-object v4, p0, Lj15;->R:Li15;
+
+    .line 83
+    .line 84
+    invoke-interface {v4, v9, v10}, Li15;->request(J)V
+
+    .line 85
+    .line 86
+    .line 87
+    goto :goto_0
+
+    .line 88
+    :cond_57
+    iget-object v2, p0, Lj15;->R:Li15;
+
+    .line 89
+    .line 90
+    if-eqz v2, :cond_0
+
+    .line 91
+    .line 92
+    if-eqz v7, :cond_0
+
+    .line 93
+    .line 94
+    invoke-interface {v2, v0, v1}, Li15;->request(J)V
+
+    .line 95
+    .line 96
+    .line 97
+    goto :goto_0
+
+    .line 98
+    :goto_61
+    :try_start_61
+    monitor-exit p0
+    :try_end_62
+    .catchall {:try_start_61 .. :try_end_62} :catchall_18
+
+    .line 99
+    throw v0
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+.end method
+
+.method public final b(Li15;)V
+    .registers 4
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    iget-boolean v0, p0, Lj15;->S:Z
+
+    .line 3
+    .line 4
+    if-eqz v0, :cond_b
+
+    .line 5
+    .line 6
+    iput-object p1, p0, Lj15;->V:Li15;
+
+    .line 7
+    .line 8
+    monitor-exit p0
+
+    .line 9
+    return-void
+
+    .line 10
+    :catchall_9
+    move-exception p1
+
+    .line 11
+    goto :goto_24
+
+    .line 12
+    :cond_b
+    const/4 v0, 0x1
+
+    .line 13
+    iput-boolean v0, p0, Lj15;->S:Z
+
+    .line 14
+    .line 15
+    monitor-exit p0
+    :try_end_f
+    .catchall {:try_start_1 .. :try_end_f} :catchall_9
+
+    .line 16
+    :try_start_f
+    iput-object p1, p0, Lj15;->R:Li15;
+
+    .line 17
+    .line 18
+    iget-wide v0, p0, Lj15;->Q:J
+
+    .line 19
+    .line 20
+    invoke-interface {p1, v0, v1}, Li15;->request(J)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {p0}, Lj15;->a()V
+    :try_end_19
+    .catchall {:try_start_f .. :try_end_19} :catchall_1a
+
+    .line 24
+    .line 25
+    .line 26
+    return-void
+
+    .line 27
+    :catchall_1a
+    move-exception p1
+
+    .line 28
+    monitor-enter p0
+
+    .line 29
+    const/4 v0, 0x0
+
+    .line 30
+    :try_start_1d
+    iput-boolean v0, p0, Lj15;->S:Z
+
+    .line 31
+    .line 32
+    monitor-exit p0
+    :try_end_20
+    .catchall {:try_start_1d .. :try_end_20} :catchall_21
+
+    .line 33
+    throw p1
+
+    .line 34
+    :catchall_21
+    move-exception p1
+
+    .line 35
+    :try_start_22
+    monitor-exit p0
+    :try_end_23
+    .catchall {:try_start_22 .. :try_end_23} :catchall_21
+
+    .line 36
+    throw p1
+
+    .line 37
+    :goto_24
+    :try_start_24
+    monitor-exit p0
+    :try_end_25
+    .catchall {:try_start_24 .. :try_end_25} :catchall_9
+
+    .line 38
+    throw p1
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+.end method
+
+.method public final request(J)V
+    .registers 8
+
+    .line 1
+    const-wide/16 v0, 0x0
+
+    .line 2
+    .line 3
+    cmp-long v2, p1, v0
+
+    .line 4
+    .line 5
+    if-ltz v2, :cond_42
+
+    .line 6
+    .line 7
+    if-nez v2, :cond_9
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_9
+    monitor-enter p0
+
+    .line 11
+    :try_start_a
+    iget-boolean v2, p0, Lj15;->S:Z
+
+    .line 12
+    .line 13
+    if-eqz v2, :cond_17
+
+    .line 14
+    .line 15
+    iget-wide v0, p0, Lj15;->T:J
+
+    .line 16
+    .line 17
+    add-long/2addr v0, p1
+
+    .line 18
+    iput-wide v0, p0, Lj15;->T:J
+
+    .line 19
+    .line 20
+    monitor-exit p0
+
+    .line 21
+    return-void
+
+    .line 22
+    :catchall_15
+    move-exception p1
+
+    .line 23
+    goto :goto_40
+
+    .line 24
+    :cond_17
+    const/4 v2, 0x1
+
+    .line 25
+    iput-boolean v2, p0, Lj15;->S:Z
+
+    .line 26
+    .line 27
+    monitor-exit p0
+    :try_end_1b
+    .catchall {:try_start_a .. :try_end_1b} :catchall_15
+
+    .line 28
+    :try_start_1b
+    iget-wide v2, p0, Lj15;->Q:J
+
+    .line 29
+    .line 30
+    add-long/2addr v2, p1
+
+    .line 31
+    cmp-long v4, v2, v0
+
+    .line 32
+    .line 33
+    if-gez v4, :cond_27
+
+    .line 34
+    .line 35
+    const-wide v2, 0x7fffffffffffffffL
+
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    :cond_27
+    iput-wide v2, p0, Lj15;->Q:J
+
+    .line 41
+    .line 42
+    iget-object v0, p0, Lj15;->R:Li15;
+
+    .line 43
+    .line 44
+    if-eqz v0, :cond_33
+
+    .line 45
+    .line 46
+    invoke-interface {v0, p1, p2}, Li15;->request(J)V
+
+    .line 47
+    .line 48
+    .line 49
+    goto :goto_33
+
+    .line 50
+    :catchall_31
+    move-exception p1
+
+    .line 51
+    goto :goto_37
+
+    .line 52
+    :cond_33
+    :goto_33
+    invoke-virtual {p0}, Lj15;->a()V
+    :try_end_36
+    .catchall {:try_start_1b .. :try_end_36} :catchall_31
+
+    .line 53
+    .line 54
+    .line 55
+    return-void
+
+    .line 56
+    :goto_37
+    monitor-enter p0
+
+    .line 57
+    const/4 p2, 0x0
+
+    .line 58
+    :try_start_39
+    iput-boolean p2, p0, Lj15;->S:Z
+
+    .line 59
+    .line 60
+    monitor-exit p0
+    :try_end_3c
+    .catchall {:try_start_39 .. :try_end_3c} :catchall_3d
+
+    .line 61
+    throw p1
+
+    .line 62
+    :catchall_3d
+    move-exception p1
+
+    .line 63
+    :try_start_3e
+    monitor-exit p0
+    :try_end_3f
+    .catchall {:try_start_3e .. :try_end_3f} :catchall_3d
+
+    .line 64
+    throw p1
+
+    .line 65
+    :goto_40
+    :try_start_40
+    monitor-exit p0
+    :try_end_41
+    .catchall {:try_start_40 .. :try_end_41} :catchall_15
+
+    .line 66
+    throw p1
+
+    .line 67
+    :cond_42
+    const-string p1, "n >= 0 required"
+
+    .line 68
+    .line 69
+    invoke-static {p1}, Lfn;->r(Ljava/lang/String;)V
+
+    .line 70
+    .line 71
+    .line 72
+    return-void
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method

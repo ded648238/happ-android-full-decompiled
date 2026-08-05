@@ -1,0 +1,230 @@
+.class public final Lwb2;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+# interfaces
+.implements Lj72;
+
+
+# instance fields
+.field public final synthetic Q:I
+
+.field public final R:Lj72;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lj72;I)V
+    .registers 3
+
+    .line 1
+    iput p2, p0, Lwb2;->Q:I
+
+    .line 2
+    .line 3
+    iput-object p1, p0, Lwb2;->R:Lj72;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 7
+
+    .line 1
+    iget v0, p0, Lwb2;->Q:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_42
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, Ljava/lang/Number;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-wide v0
+
+    .line 12
+    iget-object p1, p0, Lwb2;->R:Lj72;
+
+    .line 13
+    .line 14
+    const-wide/32 v2, 0xf4240
+
+    .line 15
+    .line 16
+    .line 17
+    div-long/2addr v0, v2
+
+    .line 18
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    invoke-interface {p1, v0}, Lj72;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    return-object p1
+
+    .line 27
+    :pswitch_1a
+    iget-object v0, p0, Lwb2;->R:Lj72;
+
+    .line 28
+    .line 29
+    check-cast p1, Lod3;
+
+    .line 30
+    .line 31
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 32
+    .line 33
+    .line 34
+    invoke-interface {v0, p1}, Lj72;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p1
+
+    .line 42
+    return-object p1
+
+    .line 43
+    :pswitch_2a
+    check-cast p1, Lld6;
+
+    .line 44
+    .line 45
+    sget-object v0, Lnd6;->c:Ljava/lang/Object;
+
+    .line 46
+    .line 47
+    monitor-enter v0
+
+    .line 48
+    :try_start_2f
+    sget-wide v1, Lnd6;->e:J
+
+    .line 49
+    .line 50
+    const-wide/16 v3, 0x1
+
+    .line 51
+    .line 52
+    add-long/2addr v3, v1
+
+    .line 53
+    sput-wide v3, Lnd6;->e:J
+    :try_end_36
+    .catchall {:try_start_2f .. :try_end_36} :catchall_3f
+
+    .line 54
+    .line 55
+    monitor-exit v0
+
+    .line 56
+    iget-object v0, p0, Lwb2;->R:Lj72;
+
+    .line 57
+    .line 58
+    new-instance v3, Lec5;
+
+    .line 59
+    .line 60
+    invoke-direct {v3, v1, v2, p1, v0}, Lec5;-><init>(JLld6;Lj72;)V
+
+    .line 61
+    .line 62
+    .line 63
+    return-object v3
+
+    .line 64
+    :catchall_3f
+    move-exception p1
+
+    .line 65
+    monitor-exit v0
+
+    .line 66
+    throw p1
+
+    .line 67
+    :pswitch_data_42
+    .packed-switch 0x0
+        :pswitch_2a
+        :pswitch_1a
+    .end packed-switch
+.end method

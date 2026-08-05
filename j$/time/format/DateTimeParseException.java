@@ -1,0 +1,12 @@
+package j$.time.format;
+
+/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+/* JADX INFO: loaded from: classes2.dex */
+public class DateTimeParseException extends j$.time.DateTimeException {
+    private static final long serialVersionUID = 4304633501674722597L;
+
+    public DateTimeParseException(java.lang.String str, java.lang.CharSequence charSequence) {
+        super(str);
+        charSequence.toString();
+    }
+}

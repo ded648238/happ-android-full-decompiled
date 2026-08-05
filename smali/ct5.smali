@@ -1,0 +1,244 @@
+.class public abstract synthetic Lct5;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# static fields
+.field public static final synthetic a:[I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 4
+
+    .line 1
+    invoke-static {}, Llb2;->values()[Llb2;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    array-length v0, v0
+
+    .line 6
+    new-array v0, v0, [I
+
+    .line 7
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    const/4 v2, 0x1
+
+    .line 10
+    :try_start_9
+    aput v2, v0, v1
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_b} :catch_b
+
+    .line 11
+    .line 12
+    :catch_b
+    const/4 v1, 0x2
+
+    .line 13
+    :try_start_c
+    aput v1, v0, v2
+    :try_end_e
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_e} :catch_e
+
+    .line 14
+    .line 15
+    :catch_e
+    invoke-static {}, Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;->values()[Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    array-length v0, v0
+
+    .line 20
+    new-array v0, v0, [I
+
+    .line 21
+    .line 22
+    :try_start_15
+    sget-object v3, Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;->PROXY:Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;
+
+    .line 23
+    .line 24
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v3
+
+    .line 28
+    aput v2, v0, v3
+    :try_end_1d
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_15 .. :try_end_1d} :catch_1d
+
+    .line 29
+    .line 30
+    :catch_1d
+    :try_start_1d
+    sget-object v2, Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;->DIRECT:Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;
+
+    .line 31
+    .line 32
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v2
+
+    .line 36
+    aput v1, v0, v2
+    :try_end_25
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1d .. :try_end_25} :catch_25
+
+    .line 37
+    .line 38
+    :catch_25
+    :try_start_25
+    sget-object v1, Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;->BLOCK:Lsu/happ/proxyutility/dto/enums/ERoutingSettingsType;
+
+    .line 39
+    .line 40
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v1
+
+    .line 44
+    const/4 v2, 0x3
+
+    .line 45
+    aput v2, v0, v1
+    :try_end_2e
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_25 .. :try_end_2e} :catch_2e
+
+    .line 46
+    .line 47
+    :catch_2e
+    sput-object v0, Lct5;->a:[I
+
+    .line 48
+    .line 49
+    return-void
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+.end method

@@ -1,0 +1,1551 @@
+.class public final Lj86;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# instance fields
+.field public a:Le21;
+
+.field public b:Le21;
+
+.field public c:Le21;
+
+.field public d:Le21;
+
+.field public e:Low0;
+
+.field public f:Low0;
+
+.field public g:Low0;
+
+.field public h:Low0;
+
+.field public i:Lhm1;
+
+.field public j:Lhm1;
+
+.field public k:Lhm1;
+
+.field public l:Lhm1;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Ltp5;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Lj86;->a:Le21;
+
+    .line 10
+    .line 11
+    new-instance v0, Ltp5;
+
+    .line 12
+    .line 13
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    iput-object v0, p0, Lj86;->b:Le21;
+
+    .line 17
+    .line 18
+    new-instance v0, Ltp5;
+
+    .line 19
+    .line 20
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    iput-object v0, p0, Lj86;->c:Le21;
+
+    .line 24
+    .line 25
+    new-instance v0, Ltp5;
+
+    .line 26
+    .line 27
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 28
+    .line 29
+    .line 30
+    iput-object v0, p0, Lj86;->d:Le21;
+
+    .line 31
+    .line 32
+    new-instance v0, Lb0;
+
+    .line 33
+    .line 34
+    const/4 v1, 0x0
+
+    .line 35
+    invoke-direct {v0, v1}, Lb0;-><init>(F)V
+
+    .line 36
+    .line 37
+    .line 38
+    iput-object v0, p0, Lj86;->e:Low0;
+
+    .line 39
+    .line 40
+    new-instance v0, Lb0;
+
+    .line 41
+    .line 42
+    invoke-direct {v0, v1}, Lb0;-><init>(F)V
+
+    .line 43
+    .line 44
+    .line 45
+    iput-object v0, p0, Lj86;->f:Low0;
+
+    .line 46
+    .line 47
+    new-instance v0, Lb0;
+
+    .line 48
+    .line 49
+    invoke-direct {v0, v1}, Lb0;-><init>(F)V
+
+    .line 50
+    .line 51
+    .line 52
+    iput-object v0, p0, Lj86;->g:Low0;
+
+    .line 53
+    .line 54
+    new-instance v0, Lb0;
+
+    .line 55
+    .line 56
+    invoke-direct {v0, v1}, Lb0;-><init>(F)V
+
+    .line 57
+    .line 58
+    .line 59
+    iput-object v0, p0, Lj86;->h:Low0;
+
+    .line 60
+    .line 61
+    new-instance v0, Lhm1;
+
+    .line 62
+    .line 63
+    const/4 v1, 0x0
+
+    .line 64
+    invoke-direct {v0, v1}, Lhm1;-><init>(I)V
+
+    .line 65
+    .line 66
+    .line 67
+    iput-object v0, p0, Lj86;->i:Lhm1;
+
+    .line 68
+    .line 69
+    new-instance v0, Lhm1;
+
+    .line 70
+    .line 71
+    invoke-direct {v0, v1}, Lhm1;-><init>(I)V
+
+    .line 72
+    .line 73
+    .line 74
+    iput-object v0, p0, Lj86;->j:Lhm1;
+
+    .line 75
+    .line 76
+    new-instance v0, Lhm1;
+
+    .line 77
+    .line 78
+    invoke-direct {v0, v1}, Lhm1;-><init>(I)V
+
+    .line 79
+    .line 80
+    .line 81
+    iput-object v0, p0, Lj86;->k:Lhm1;
+
+    .line 82
+    .line 83
+    new-instance v0, Lhm1;
+
+    .line 84
+    .line 85
+    invoke-direct {v0, v1}, Lhm1;-><init>(I)V
+
+    .line 86
+    .line 87
+    .line 88
+    iput-object v0, p0, Lj86;->l:Lhm1;
+
+    .line 89
+    .line 90
+    return-void
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+.end method
+
+.method public static a(Landroid/content/Context;IILb0;)Lo5;
+    .registers 10
+
+    .line 1
+    new-instance v0, Landroid/view/ContextThemeWrapper;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
+
+    .line 4
+    .line 5
+    .line 6
+    if-eqz p2, :cond_f
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    const/4 p1, 0x1
+
+    .line 13
+    invoke-virtual {p0, p2, p1}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
+
+    .line 14
+    .line 15
+    .line 16
+    :cond_f
+    sget-object p0, Lva5;->ShapeAppearance:[I
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, p0}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    :try_start_15
+    sget p1, Lva5;->ShapeAppearance_cornerFamily:I
+
+    .line 23
+    .line 24
+    const/4 p2, 0x0
+
+    .line 25
+    invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 26
+    .line 27
+    .line 28
+    move-result p1
+
+    .line 29
+    sget p2, Lva5;->ShapeAppearance_cornerFamilyTopLeft:I
+
+    .line 30
+    .line 31
+    invoke-virtual {p0, p2, p1}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result p2
+
+    .line 35
+    sget v0, Lva5;->ShapeAppearance_cornerFamilyTopRight:I
+
+    .line 36
+    .line 37
+    invoke-virtual {p0, v0, p1}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v0
+
+    .line 41
+    sget v1, Lva5;->ShapeAppearance_cornerFamilyBottomRight:I
+
+    .line 42
+    .line 43
+    invoke-virtual {p0, v1, p1}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v1
+
+    .line 47
+    sget v2, Lva5;->ShapeAppearance_cornerFamilyBottomLeft:I
+
+    .line 48
+    .line 49
+    invoke-virtual {p0, v2, p1}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 50
+    .line 51
+    .line 52
+    move-result p1
+
+    .line 53
+    sget v2, Lva5;->ShapeAppearance_cornerSize:I
+
+    .line 54
+    .line 55
+    invoke-static {p0, v2, p3}, Lj86;->c(Landroid/content/res/TypedArray;ILow0;)Low0;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p3
+
+    .line 59
+    sget v2, Lva5;->ShapeAppearance_cornerSizeTopLeft:I
+
+    .line 60
+    .line 61
+    invoke-static {p0, v2, p3}, Lj86;->c(Landroid/content/res/TypedArray;ILow0;)Low0;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object v2
+
+    .line 65
+    sget v3, Lva5;->ShapeAppearance_cornerSizeTopRight:I
+
+    .line 66
+    .line 67
+    invoke-static {p0, v3, p3}, Lj86;->c(Landroid/content/res/TypedArray;ILow0;)Low0;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v3
+
+    .line 71
+    sget v4, Lva5;->ShapeAppearance_cornerSizeBottomRight:I
+
+    .line 72
+    .line 73
+    invoke-static {p0, v4, p3}, Lj86;->c(Landroid/content/res/TypedArray;ILow0;)Low0;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v4
+
+    .line 77
+    sget v5, Lva5;->ShapeAppearance_cornerSizeBottomLeft:I
+
+    .line 78
+    .line 79
+    invoke-static {p0, v5, p3}, Lj86;->c(Landroid/content/res/TypedArray;ILow0;)Low0;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object p3
+
+    .line 83
+    new-instance v5, Lo5;
+
+    .line 84
+    .line 85
+    invoke-direct {v5}, Lo5;-><init>()V
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-static {p2}, Lzd7;->u(I)Le21;
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-object p2
+
+    .line 92
+    iput-object p2, v5, Lo5;->Q:Ljava/lang/Object;
+
+    .line 93
+    .line 94
+    iput-object v2, v5, Lo5;->U:Ljava/lang/Object;
+
+    .line 95
+    .line 96
+    invoke-static {v0}, Lzd7;->u(I)Le21;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object p2
+
+    .line 100
+    iput-object p2, v5, Lo5;->R:Ljava/lang/Object;
+
+    .line 101
+    .line 102
+    iput-object v3, v5, Lo5;->V:Ljava/lang/Object;
+
+    .line 103
+    .line 104
+    invoke-static {v1}, Lzd7;->u(I)Le21;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object p2
+
+    .line 108
+    iput-object p2, v5, Lo5;->S:Ljava/lang/Object;
+
+    .line 109
+    .line 110
+    iput-object v4, v5, Lo5;->W:Ljava/lang/Object;
+
+    .line 111
+    .line 112
+    invoke-static {p1}, Lzd7;->u(I)Le21;
+
+    .line 113
+    .line 114
+    .line 115
+    move-result-object p1
+
+    .line 116
+    iput-object p1, v5, Lo5;->T:Ljava/lang/Object;
+
+    .line 117
+    .line 118
+    iput-object p3, v5, Lo5;->X:Ljava/lang/Object;
+    :try_end_77
+    .catchall {:try_start_15 .. :try_end_77} :catchall_7b
+
+    .line 119
+    .line 120
+    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 121
+    .line 122
+    .line 123
+    return-object v5
+
+    .line 124
+    :catchall_7b
+    move-exception p1
+
+    .line 125
+    invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 126
+    .line 127
+    .line 128
+    throw p1
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+.end method
+
+.method public static b(Landroid/content/Context;Landroid/util/AttributeSet;II)Lo5;
+    .registers 6
+
+    .line 1
+    new-instance v0, Lb0;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lb0;-><init>(F)V
+
+    .line 5
+    .line 6
+    .line 7
+    sget-object v1, Lva5;->MaterialShape:[I
+
+    .line 8
+    .line 9
+    invoke-virtual {p0, p1, v1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    sget p2, Lva5;->MaterialShape_shapeAppearance:I
+
+    .line 14
+    .line 15
+    const/4 p3, 0x0
+
+    .line 16
+    invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result p2
+
+    .line 20
+    sget v1, Lva5;->MaterialShape_shapeAppearanceOverlay:I
+
+    .line 21
+    .line 22
+    invoke-virtual {p1, v1, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result p3
+
+    .line 26
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-static {p0, p2, p3, v0}, Lj86;->a(Landroid/content/Context;IILb0;)Lo5;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p0
+
+    .line 33
+    return-object p0
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+.end method
+
+.method public static c(Landroid/content/res/TypedArray;ILow0;)Low0;
+    .registers 5
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    if-nez p1, :cond_7
+
+    .line 6
+    .line 7
+    goto :goto_30
+
+    .line 8
+    :cond_7
+    iget v0, p1, Landroid/util/TypedValue;->type:I
+
+    .line 9
+    .line 10
+    const/4 v1, 0x5
+
+    .line 11
+    if-ne v0, v1, :cond_21
+
+    .line 12
+    .line 13
+    new-instance p2, Lb0;
+
+    .line 14
+    .line 15
+    iget p1, p1, Landroid/util/TypedValue;->data:I
+
+    .line 16
+    .line 17
+    invoke-virtual {p0}, Landroid/content/res/TypedArray;->getResources()Landroid/content/res/Resources;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p0
+
+    .line 21
+    invoke-virtual {p0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p0
+
+    .line 25
+    invoke-static {p1, p0}, Landroid/util/TypedValue;->complexToDimensionPixelSize(ILandroid/util/DisplayMetrics;)I
+
+    .line 26
+    .line 27
+    .line 28
+    move-result p0
+
+    .line 29
+    int-to-float p0, p0
+
+    .line 30
+    invoke-direct {p2, p0}, Lb0;-><init>(F)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-object p2
+
+    .line 34
+    :cond_21
+    const/4 p0, 0x6
+
+    .line 35
+    if-ne v0, p0, :cond_30
+
+    .line 36
+    .line 37
+    new-instance p0, Lxg5;
+
+    .line 38
+    .line 39
+    const/high16 p2, 0x3f800000    # 1.0f
+
+    .line 40
+    .line 41
+    invoke-virtual {p1, p2, p2}, Landroid/util/TypedValue;->getFraction(FF)F
+
+    .line 42
+    .line 43
+    .line 44
+    move-result p1
+
+    .line 45
+    invoke-direct {p0, p1}, Lxg5;-><init>(F)V
+
+    .line 46
+    .line 47
+    .line 48
+    return-object p0
+
+    .line 49
+    :cond_30
+    :goto_30
+    return-object p2
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+.end method
+
+
+# virtual methods
+.method public final d()Z
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lj86;->b:Le21;
+
+    .line 2
+    .line 3
+    instance-of v0, v0, Ltp5;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_1a
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lj86;->a:Le21;
+
+    .line 8
+    .line 9
+    instance-of v0, v0, Ltp5;
+
+    .line 10
+    .line 11
+    if-eqz v0, :cond_1a
+
+    .line 12
+    .line 13
+    iget-object v0, p0, Lj86;->c:Le21;
+
+    .line 14
+    .line 15
+    instance-of v0, v0, Ltp5;
+
+    .line 16
+    .line 17
+    if-eqz v0, :cond_1a
+
+    .line 18
+    .line 19
+    iget-object v0, p0, Lj86;->d:Le21;
+
+    .line 20
+    .line 21
+    instance-of v0, v0, Ltp5;
+
+    .line 22
+    .line 23
+    if-eqz v0, :cond_1a
+
+    .line 24
+    .line 25
+    const/4 v0, 0x1
+
+    .line 26
+    return v0
+
+    .line 27
+    :cond_1a
+    const/4 v0, 0x0
+
+    .line 28
+    return v0
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public final e(Landroid/graphics/RectF;)Z
+    .registers 7
+
+    .line 1
+    iget-object v0, p0, Lj86;->l:Lhm1;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const-class v1, Lhm1;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    const/4 v2, 0x0
+
+    .line 14
+    const/4 v3, 0x1
+
+    .line 15
+    if-eqz v0, :cond_36
+
+    .line 16
+    .line 17
+    iget-object v0, p0, Lj86;->j:Lhm1;
+
+    .line 18
+    .line 19
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+
+    .line 27
+    if-eqz v0, :cond_36
+
+    .line 28
+    .line 29
+    iget-object v0, p0, Lj86;->i:Lhm1;
+
+    .line 30
+    .line 31
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    if-eqz v0, :cond_36
+
+    .line 40
+    .line 41
+    iget-object v0, p0, Lj86;->k:Lhm1;
+
+    .line 42
+    .line 43
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v0
+
+    .line 47
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v0
+
+    .line 51
+    if-eqz v0, :cond_36
+
+    .line 52
+    .line 53
+    const/4 v0, 0x1
+
+    .line 54
+    goto :goto_37
+
+    .line 55
+    :cond_36
+    const/4 v0, 0x0
+
+    .line 56
+    :goto_37
+    iget-object v1, p0, Lj86;->e:Low0;
+
+    .line 57
+    .line 58
+    invoke-interface {v1, p1}, Low0;->a(Landroid/graphics/RectF;)F
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v1
+
+    .line 62
+    iget-object v4, p0, Lj86;->f:Low0;
+
+    .line 63
+    .line 64
+    invoke-interface {v4, p1}, Low0;->a(Landroid/graphics/RectF;)F
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v4
+
+    .line 68
+    cmpl-float v4, v4, v1
+
+    .line 69
+    .line 70
+    if-nez v4, :cond_5d
+
+    .line 71
+    .line 72
+    iget-object v4, p0, Lj86;->h:Low0;
+
+    .line 73
+    .line 74
+    invoke-interface {v4, p1}, Low0;->a(Landroid/graphics/RectF;)F
+
+    .line 75
+    .line 76
+    .line 77
+    move-result v4
+
+    .line 78
+    cmpl-float v4, v4, v1
+
+    .line 79
+    .line 80
+    if-nez v4, :cond_5d
+
+    .line 81
+    .line 82
+    iget-object v4, p0, Lj86;->g:Low0;
+
+    .line 83
+    .line 84
+    invoke-interface {v4, p1}, Low0;->a(Landroid/graphics/RectF;)F
+
+    .line 85
+    .line 86
+    .line 87
+    move-result p1
+
+    .line 88
+    cmpl-float p1, p1, v1
+
+    .line 89
+    .line 90
+    if-nez p1, :cond_5d
+
+    .line 91
+    .line 92
+    const/4 p1, 0x1
+
+    .line 93
+    goto :goto_5e
+
+    .line 94
+    :cond_5d
+    const/4 p1, 0x0
+
+    .line 95
+    :goto_5e
+    if-eqz v0, :cond_69
+
+    .line 96
+    .line 97
+    if-eqz p1, :cond_69
+
+    .line 98
+    .line 99
+    invoke-virtual {p0}, Lj86;->d()Z
+
+    .line 100
+    .line 101
+    .line 102
+    move-result p1
+
+    .line 103
+    if-eqz p1, :cond_69
+
+    .line 104
+    .line 105
+    return v3
+
+    .line 106
+    :cond_69
+    return v2
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method
+
+.method public final f()Lo5;
+    .registers 3
+
+    .line 1
+    new-instance v0, Lo5;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Lj86;->a:Le21;
+
+    .line 7
+    .line 8
+    iput-object v1, v0, Lo5;->Q:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    iget-object v1, p0, Lj86;->b:Le21;
+
+    .line 11
+    .line 12
+    iput-object v1, v0, Lo5;->R:Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    iget-object v1, p0, Lj86;->c:Le21;
+
+    .line 15
+    .line 16
+    iput-object v1, v0, Lo5;->S:Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    iget-object v1, p0, Lj86;->d:Le21;
+
+    .line 19
+    .line 20
+    iput-object v1, v0, Lo5;->T:Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    iget-object v1, p0, Lj86;->e:Low0;
+
+    .line 23
+    .line 24
+    iput-object v1, v0, Lo5;->U:Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    iget-object v1, p0, Lj86;->f:Low0;
+
+    .line 27
+    .line 28
+    iput-object v1, v0, Lo5;->V:Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    iget-object v1, p0, Lj86;->g:Low0;
+
+    .line 31
+    .line 32
+    iput-object v1, v0, Lo5;->W:Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    iget-object v1, p0, Lj86;->h:Low0;
+
+    .line 35
+    .line 36
+    iput-object v1, v0, Lo5;->X:Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    iget-object v1, p0, Lj86;->i:Lhm1;
+
+    .line 39
+    .line 40
+    iput-object v1, v0, Lo5;->Y:Ljava/lang/Object;
+
+    .line 41
+    .line 42
+    iget-object v1, p0, Lj86;->j:Lhm1;
+
+    .line 43
+    .line 44
+    iput-object v1, v0, Lo5;->Z:Ljava/lang/Object;
+
+    .line 45
+    .line 46
+    iget-object v1, p0, Lj86;->k:Lhm1;
+
+    .line 47
+    .line 48
+    iput-object v1, v0, Lo5;->a0:Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    iget-object v1, p0, Lj86;->l:Lhm1;
+
+    .line 51
+    .line 52
+    iput-object v1, v0, Lo5;->b0:Ljava/lang/Object;
+
+    .line 53
+    .line 54
+    return-object v0
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .registers 4
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "["
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lj86;->e:Low0;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", "
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v2, p0, Lj86;->f:Low0;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    iget-object v2, p0, Lj86;->g:Low0;
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 32
+    .line 33
+    .line 34
+    iget-object v1, p0, Lj86;->h:Low0;
+
+    .line 35
+    .line 36
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    .line 39
+    const-string v1, "]"
+
+    .line 40
+    .line 41
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v0
+
+    .line 48
+    return-object v0
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method

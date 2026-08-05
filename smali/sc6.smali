@@ -1,0 +1,274 @@
+.class public final Lsc6;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+# interfaces
+.implements Ljava/util/Iterator;
+
+
+# instance fields
+.field public Q:Z
+
+.field public final R:I
+
+.field public final synthetic S:Ltc6;
+
+
+# direct methods
+.method public constructor <init>(Ltc6;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lsc6;->S:Ltc6;
+
+    .line 5
+    .line 6
+    invoke-static {p1}, Ltc6;->b(Ltc6;)I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p1
+
+    .line 10
+    iput p1, p0, Lsc6;->R:I
+
+    .line 11
+    .line 12
+    return-void
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .registers 6
+
+    .line 1
+    iget-object v0, p0, Lsc6;->S:Ltc6;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ltc6;->c(Ltc6;)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    iget v2, p0, Lsc6;->R:I
+
+    .line 8
+    .line 9
+    if-ne v1, v2, :cond_b
+
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_b
+    new-instance v1, Ljava/util/ConcurrentModificationException;
+
+    .line 13
+    .line 14
+    invoke-static {v0}, Ltc6;->d(Ltc6;)I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    const-string v4, "ModCount: "
+
+    .line 21
+    .line 22
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    const-string v0, "; expected: "
+
+    .line 29
+    .line 30
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v0
+
+    .line 40
+    invoke-direct {v1, v0}, Ljava/util/ConcurrentModificationException;-><init>(Ljava/lang/String;)V
+
+    .line 41
+    .line 42
+    .line 43
+    throw v1
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public final hasNext()Z
+    .registers 2
+
+    .line 1
+    iget-boolean v0, p0, Lsc6;->Q:Z
+
+    .line 2
+    .line 3
+    xor-int/lit8 v0, v0, 0x1
+
+    .line 4
+    .line 5
+    return v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+.method public final next()Ljava/lang/Object;
+    .registers 2
+
+    .line 1
+    iget-boolean v0, p0, Lsc6;->Q:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_f
+
+    .line 4
+    .line 5
+    const/4 v0, 0x1
+
+    .line 6
+    iput-boolean v0, p0, Lsc6;->Q:Z
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Lsc6;->a()V
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object v0, p0, Lsc6;->S:Ltc6;
+
+    .line 12
+    .line 13
+    iget-object v0, v0, Ltc6;->R:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    return-object v0
+
+    .line 16
+    :cond_f
+    invoke-static {}, Lfn;->p()V
+
+    .line 17
+    .line 18
+    .line 19
+    const/4 v0, 0x0
+
+    .line 20
+    return-object v0
+.end method
+
+.method public final remove()V
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Lsc6;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lsc6;->S:Ltc6;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Ltc6;->clear()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

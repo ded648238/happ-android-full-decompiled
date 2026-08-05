@@ -1,0 +1,634 @@
+.class public Lqp3;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# static fields
+.field public static final synthetic a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+.field public static final synthetic b:J
+
+
+# instance fields
+.field private volatile synthetic _cur$volatile:Ljava/lang/Object;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 3
+
+    .line 1
+    const-class v0, Lqp3;
+
+    .line 2
+    .line 3
+    const-class v1, Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    const-string v2, "_cur$volatile"
+
+    .line 6
+    .line 7
+    invoke-static {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    sput-object v1, Lqp3;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    .line 12
+    .line 13
+    sget-object v1, Ltx5;->a:Lsun/misc/Unsafe;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    invoke-virtual {v1, v0}, Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-wide v0
+
+    .line 23
+    sput-wide v0, Lqp3;->b:J
+
+    .line 24
+    .line 25
+    return-void
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public constructor <init>()V
+    .registers 4
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Lsp3;
+
+    .line 5
+    .line 6
+    const/16 v1, 0x8
+
+    .line 7
+    .line 8
+    const/4 v2, 0x0
+
+    .line 9
+    invoke-direct {v0, v1, v2}, Lsp3;-><init>(IZ)V
+
+    .line 10
+    .line 11
+    .line 12
+    iput-object v0, p0, Lqp3;->_cur$volatile:Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    return-void
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/Runnable;)Z
+    .registers 11
+
+    .line 1
+    :goto_0
+    sget-object v0, Lqp3;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, Ltx5;->a:Lsun/misc/Unsafe;
+
+    .line 7
+    .line 8
+    sget-wide v1, Lqp3;->b:J
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0, v1, v2}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    move-object v7, v0
+
+    .line 15
+    check-cast v7, Lsp3;
+
+    .line 16
+    .line 17
+    invoke-virtual {v7, p1}, Lsp3;->a(Ljava/lang/Object;)I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    const/4 v3, 0x1
+
+    .line 22
+    if-eqz v0, :cond_36
+
+    .line 23
+    .line 24
+    if-eq v0, v3, :cond_1f
+
+    .line 25
+    .line 26
+    const/4 v1, 0x2
+
+    .line 27
+    if-eq v0, v1, :cond_1d
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_1d
+    const/4 p1, 0x0
+
+    .line 31
+    return p1
+
+    .line 32
+    :cond_1f
+    invoke-virtual {v7}, Lsp3;->d()Lsp3;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v8
+
+    .line 36
+    :cond_23
+    sget-object v3, Ltx5;->a:Lsun/misc/Unsafe;
+
+    .line 37
+    .line 38
+    sget-wide v5, Lqp3;->b:J
+
+    .line 39
+    .line 40
+    move-object v4, p0
+
+    .line 41
+    invoke-virtual/range {v3 .. v8}, Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v0
+
+    .line 45
+    if-eqz v0, :cond_2f
+
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_2f
+    invoke-virtual {v3, p0, v1, v2}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v0
+
+    .line 52
+    if-eq v0, v7, :cond_23
+
+    .line 53
+    .line 54
+    goto :goto_0
+
+    .line 55
+    :cond_36
+    return v3
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+.end method
+
+.method public final b()V
+    .registers 10
+
+    .line 1
+    :goto_0
+    sget-object v0, Lqp3;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, Ltx5;->a:Lsun/misc/Unsafe;
+
+    .line 7
+    .line 8
+    sget-wide v1, Lqp3;->b:J
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0, v1, v2}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    move-object v7, v0
+
+    .line 15
+    check-cast v7, Lsp3;
+
+    .line 16
+    .line 17
+    invoke-virtual {v7}, Lsp3;->c()Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    if-eqz v0, :cond_17
+
+    .line 22
+    .line 23
+    return-void
+
+    .line 24
+    :cond_17
+    invoke-virtual {v7}, Lsp3;->d()Lsp3;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v8
+
+    .line 28
+    :cond_1b
+    sget-object v3, Ltx5;->a:Lsun/misc/Unsafe;
+
+    .line 29
+    .line 30
+    sget-wide v5, Lqp3;->b:J
+
+    .line 31
+    .line 32
+    move-object v4, p0
+
+    .line 33
+    invoke-virtual/range {v3 .. v8}, Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v0
+
+    .line 37
+    if-eqz v0, :cond_27
+
+    .line 38
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_27
+    invoke-virtual {v3, p0, v1, v2}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    if-eq v0, v7, :cond_1b
+
+    .line 45
+    .line 46
+    goto :goto_0
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public final c()I
+    .registers 7
+
+    .line 1
+    sget-object v0, Lqp3;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, Ltx5;->a:Lsun/misc/Unsafe;
+
+    .line 7
+    .line 8
+    sget-wide v1, Lqp3;->b:J
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0, v1, v2}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    check-cast v0, Lsp3;
+
+    .line 15
+    .line 16
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 17
+    .line 18
+    .line 19
+    sget-object v1, Lsp3;->f:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
+
+    .line 20
+    .line 21
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->get(Ljava/lang/Object;)J
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-wide v0
+
+    .line 25
+    const-wide/32 v2, 0x3fffffff
+
+    .line 26
+    .line 27
+    .line 28
+    and-long/2addr v2, v0
+
+    .line 29
+    long-to-int v3, v2
+
+    .line 30
+    const-wide v4, 0xfffffffc0000000L
+
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    and-long/2addr v0, v4
+
+    .line 36
+    const/16 v2, 0x1e
+
+    .line 37
+    .line 38
+    shr-long/2addr v0, v2
+
+    .line 39
+    long-to-int v1, v0
+
+    .line 40
+    sub-int/2addr v1, v3
+
+    .line 41
+    const v0, 0x3fffffff    # 1.9999999f
+
+    .line 42
+    .line 43
+    .line 44
+    and-int/2addr v0, v1
+
+    .line 45
+    return v0
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public final d()Ljava/lang/Object;
+    .registers 10
+
+    .line 1
+    :goto_0
+    sget-object v0, Lqp3;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, Ltx5;->a:Lsun/misc/Unsafe;
+
+    .line 7
+    .line 8
+    sget-wide v1, Lqp3;->b:J
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p0, v1, v2}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    move-object v7, v0
+
+    .line 15
+    check-cast v7, Lsp3;
+
+    .line 16
+    .line 17
+    invoke-virtual {v7}, Lsp3;->e()Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    sget-object v3, Lsp3;->g:Lku0;
+
+    .line 22
+    .line 23
+    if-eq v0, v3, :cond_19
+
+    .line 24
+    .line 25
+    return-object v0
+
+    .line 26
+    :cond_19
+    invoke-virtual {v7}, Lsp3;->d()Lsp3;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v8
+
+    .line 30
+    :cond_1d
+    sget-object v3, Ltx5;->a:Lsun/misc/Unsafe;
+
+    .line 31
+    .line 32
+    sget-wide v5, Lqp3;->b:J
+
+    .line 33
+    .line 34
+    move-object v4, p0
+
+    .line 35
+    invoke-virtual/range {v3 .. v8}, Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    if-eqz v0, :cond_29
+
+    .line 40
+    .line 41
+    goto :goto_0
+
+    .line 42
+    :cond_29
+    invoke-virtual {v3, p0, v1, v2}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    if-eq v0, v7, :cond_1d
+
+    .line 47
+    .line 48
+    goto :goto_0
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method

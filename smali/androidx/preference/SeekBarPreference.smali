@@ -1,0 +1,264 @@
+.class public Landroidx/preference/SeekBarPreference;
+.super Landroidx/preference/Preference;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# instance fields
+.field public final X:I
+
+.field public final Y:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .registers 4
+
+    .line 77
+    sget v0, Lt75;->seekBarPreferenceStyle:I
+
+    invoke-direct {p0, p1, p2, v0}, Landroidx/preference/SeekBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .registers 6
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+
+    .line 3
+    .line 4
+    .line 5
+    sget-object v1, Lra5;->SeekBarPreference:[I
+
+    .line 6
+    .line 7
+    invoke-virtual {p1, p2, v1, p3, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    sget p2, Lra5;->SeekBarPreference_min:I
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p2
+
+    .line 17
+    sget p3, Lra5;->SeekBarPreference_android_max:I
+
+    .line 18
+    .line 19
+    const/16 v1, 0x64
+
+    .line 20
+    .line 21
+    invoke-virtual {p1, p3, v1}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p3
+
+    .line 25
+    if-ge p3, p2, :cond_1b
+
+    .line 26
+    .line 27
+    move p3, p2
+
+    .line 28
+    :cond_1b
+    iget v1, p0, Landroidx/preference/SeekBarPreference;->X:I
+
+    .line 29
+    .line 30
+    if-eq p3, v1, :cond_21
+
+    .line 31
+    .line 32
+    iput p3, p0, Landroidx/preference/SeekBarPreference;->X:I
+
+    .line 33
+    .line 34
+    :cond_21
+    sget p3, Lra5;->SeekBarPreference_seekBarIncrement:I
+
+    .line 35
+    .line 36
+    invoke-virtual {p1, p3, v0}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 37
+    .line 38
+    .line 39
+    move-result p3
+
+    .line 40
+    iget v1, p0, Landroidx/preference/SeekBarPreference;->Y:I
+
+    .line 41
+    .line 42
+    if-eq p3, v1, :cond_38
+
+    .line 43
+    .line 44
+    iget v1, p0, Landroidx/preference/SeekBarPreference;->X:I
+
+    .line 45
+    .line 46
+    sub-int/2addr v1, p2
+
+    .line 47
+    invoke-static {p3}, Ljava/lang/Math;->abs(I)I
+
+    .line 48
+    .line 49
+    .line 50
+    move-result p2
+
+    .line 51
+    invoke-static {v1, p2}, Ljava/lang/Math;->min(II)I
+
+    .line 52
+    .line 53
+    .line 54
+    move-result p2
+
+    .line 55
+    iput p2, p0, Landroidx/preference/SeekBarPreference;->Y:I
+
+    .line 56
+    .line 57
+    :cond_38
+    sget p2, Lra5;->SeekBarPreference_adjustable:I
+
+    .line 58
+    .line 59
+    const/4 p3, 0x1
+
+    .line 60
+    invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    .line 61
+    .line 62
+    .line 63
+    sget p2, Lra5;->SeekBarPreference_showSeekBarValue:I
+
+    .line 64
+    .line 65
+    invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    .line 66
+    .line 67
+    .line 68
+    sget p2, Lra5;->SeekBarPreference_updatesContinuously:I
+
+    .line 69
+    .line 70
+    invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 74
+    .line 75
+    .line 76
+    return-void
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+.end method
+
+
+# virtual methods
+.method public final c(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
+    .registers 4
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    .line 3
+    .line 4
+    .line 5
+    move-result p1
+
+    .line 6
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    return-object p1
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+.end method

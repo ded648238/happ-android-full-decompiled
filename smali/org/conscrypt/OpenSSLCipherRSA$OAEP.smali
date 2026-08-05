@@ -1,0 +1,1485 @@
+.class public Lorg/conscrypt/OpenSSLCipherRSA$OAEP;
+.super Lorg/conscrypt/OpenSSLCipherRSA;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/conscrypt/OpenSSLCipherRSA;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "OAEP"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/conscrypt/OpenSSLCipherRSA$OAEP$SHA512;,
+        Lorg/conscrypt/OpenSSLCipherRSA$OAEP$SHA384;,
+        Lorg/conscrypt/OpenSSLCipherRSA$OAEP$SHA256;,
+        Lorg/conscrypt/OpenSSLCipherRSA$OAEP$SHA224;,
+        Lorg/conscrypt/OpenSSLCipherRSA$OAEP$SHA1;
+    }
+.end annotation
+
+
+# instance fields
+.field private label:[B
+
+.field private mgf1Md:J
+
+.field private oaepMd:J
+
+.field private oaepMdSizeBytes:I
+
+.field private pkeyCtx:Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;
+
+
+# direct methods
+.method public constructor <init>(JI)V
+    .registers 5
+
+    .line 1
+    const/4 v0, 0x4
+
+    .line 2
+    invoke-direct {p0, v0}, Lorg/conscrypt/OpenSSLCipherRSA;-><init>(I)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput-wide p1, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->mgf1Md:J
+
+    .line 6
+    .line 7
+    iput-wide p1, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->oaepMd:J
+
+    .line 8
+    .line 9
+    iput p3, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->oaepMdSizeBytes:I
+
+    .line 10
+    .line 11
+    return-void
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+.end method
+
+.method private readOAEPParameters(Ljavax/crypto/spec/OAEPParameterSpec;)V
+    .registers 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/InvalidAlgorithmParameterException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljavax/crypto/spec/OAEPParameterSpec;->getMGFAlgorithm()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-virtual {p1}, Ljavax/crypto/spec/OAEPParameterSpec;->getMGFParameters()Ljava/security/spec/AlgorithmParameterSpec;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v2
+
+    .line 15
+    const-string v3, "MGF1"
+
+    .line 16
+    .line 17
+    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v3
+
+    .line 21
+    if-nez v3, :cond_1e
+
+    .line 22
+    .line 23
+    const-string v3, "1.2.840.113549.1.1.8"
+
+    .line 24
+    .line 25
+    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v0
+
+    .line 29
+    if-eqz v0, :cond_6e
+
+    .line 30
+    .line 31
+    :cond_1e
+    instance-of v0, v2, Ljava/security/spec/MGF1ParameterSpec;
+
+    .line 32
+    .line 33
+    if-eqz v0, :cond_6e
+
+    .line 34
+    .line 35
+    check-cast v2, Ljava/security/spec/MGF1ParameterSpec;
+
+    .line 36
+    .line 37
+    invoke-virtual {p1}, Ljavax/crypto/spec/OAEPParameterSpec;->getDigestAlgorithm()Ljava/lang/String;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    invoke-virtual {v0, v1}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    :try_start_2c
+    invoke-static {v0}, Lorg/conscrypt/EvpMdRef;->getEVP_MDByJcaDigestAlgorithmStandardName(Ljava/lang/String;)J
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-wide v3
+
+    .line 49
+    iput-wide v3, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->oaepMd:J
+
+    .line 50
+    .line 51
+    invoke-static {v0}, Lorg/conscrypt/EvpMdRef;->getDigestSizeBytesByJcaDigestAlgorithmStandardName(Ljava/lang/String;)I
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v0
+
+    .line 55
+    iput v0, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->oaepMdSizeBytes:I
+
+    .line 56
+    .line 57
+    invoke-virtual {v2}, Ljava/security/spec/MGF1ParameterSpec;->getDigestAlgorithm()Ljava/lang/String;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v0
+
+    .line 61
+    invoke-static {v0}, Lorg/conscrypt/EvpMdRef;->getEVP_MDByJcaDigestAlgorithmStandardName(Ljava/lang/String;)J
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-wide v0
+
+    .line 65
+    iput-wide v0, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->mgf1Md:J
+    :try_end_42
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_2c .. :try_end_42} :catch_67
+
+    .line 66
+    .line 67
+    invoke-virtual {p1}, Ljavax/crypto/spec/OAEPParameterSpec;->getPSource()Ljavax/crypto/spec/PSource;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p1
+
+    .line 71
+    const-string v0, "PSpecified"
+
+    .line 72
+    .line 73
+    invoke-virtual {p1}, Ljavax/crypto/spec/PSource;->getAlgorithm()Ljava/lang/String;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v1
+
+    .line 77
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 78
+    .line 79
+    .line 80
+    move-result v0
+
+    .line 81
+    if-eqz v0, :cond_5f
+
+    .line 82
+    .line 83
+    instance-of v0, p1, Ljavax/crypto/spec/PSource$PSpecified;
+
+    .line 84
+    .line 85
+    if-eqz v0, :cond_5f
+
+    .line 86
+    .line 87
+    check-cast p1, Ljavax/crypto/spec/PSource$PSpecified;
+
+    .line 88
+    .line 89
+    invoke-virtual {p1}, Ljavax/crypto/spec/PSource$PSpecified;->getValue()[B
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object p1
+
+    .line 93
+    iput-object p1, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->label:[B
+
+    .line 94
+    .line 95
+    return-void
+
+    .line 96
+    :cond_5f
+    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+
+    .line 97
+    .line 98
+    const-string v0, "Only PSpecified accepted for PSource"
+
+    .line 99
+    .line 100
+    invoke-direct {p1, v0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    .line 101
+    .line 102
+    .line 103
+    throw p1
+
+    .line 104
+    :catch_67
+    move-exception p1
+
+    .line 105
+    new-instance v0, Ljava/security/InvalidAlgorithmParameterException;
+
+    .line 106
+    .line 107
+    invoke-direct {v0, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 108
+    .line 109
+    .line 110
+    throw v0
+
+    .line 111
+    :cond_6e
+    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+
+    .line 112
+    .line 113
+    const-string v0, "Only MGF1 supported as mask generation function"
+
+    .line 114
+    .line 115
+    invoke-direct {p1, v0}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    .line 116
+    .line 117
+    .line 118
+    throw p1
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method
+
+
+# virtual methods
+.method public doCryptoInit(Ljava/security/spec/AlgorithmParameterSpec;)V
+    .registers 6
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/InvalidAlgorithmParameterException;,
+            Ljava/security/InvalidKeyException;
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;
+
+    .line 2
+    .line 3
+    iget-boolean v1, p0, Lorg/conscrypt/OpenSSLCipherRSA;->encrypting:Z
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lorg/conscrypt/OpenSSLCipherRSA;->key:Lorg/conscrypt/OpenSSLKey;
+
+    .line 6
+    .line 7
+    if-eqz v1, :cond_11
+
+    .line 8
+    .line 9
+    invoke-virtual {v2}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-static {v1}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_encrypt_init(Lorg/conscrypt/NativeRef$EVP_PKEY;)J
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-wide v1
+
+    .line 17
+    goto :goto_19
+
+    .line 18
+    :cond_11
+    invoke-virtual {v2}, Lorg/conscrypt/OpenSSLKey;->getNativeRef()Lorg/conscrypt/NativeRef$EVP_PKEY;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    invoke-static {v1}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_decrypt_init(Lorg/conscrypt/NativeRef$EVP_PKEY;)J
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-wide v1
+
+    .line 26
+    :goto_19
+    invoke-direct {v0, v1, v2}, Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;-><init>(J)V
+
+    .line 27
+    .line 28
+    .line 29
+    iput-object v0, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->pkeyCtx:Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;
+
+    .line 30
+    .line 31
+    instance-of v0, p1, Ljavax/crypto/spec/OAEPParameterSpec;
+
+    .line 32
+    .line 33
+    if-eqz v0, :cond_27
+
+    .line 34
+    .line 35
+    check-cast p1, Ljavax/crypto/spec/OAEPParameterSpec;
+
+    .line 36
+    .line 37
+    invoke-direct {p0, p1}, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->readOAEPParameters(Ljavax/crypto/spec/OAEPParameterSpec;)V
+
+    .line 38
+    .line 39
+    .line 40
+    :cond_27
+    iget-object p1, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->pkeyCtx:Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;
+
+    .line 41
+    .line 42
+    iget-wide v0, p1, Lorg/conscrypt/NativeRef;->address:J
+
+    .line 43
+    .line 44
+    const/4 p1, 0x4
+
+    .line 45
+    invoke-static {v0, v1, p1}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_CTX_set_rsa_padding(JI)V
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object p1, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->pkeyCtx:Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;
+
+    .line 49
+    .line 50
+    iget-wide v0, p1, Lorg/conscrypt/NativeRef;->address:J
+
+    .line 51
+    .line 52
+    iget-wide v2, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->oaepMd:J
+
+    .line 53
+    .line 54
+    invoke-static {v0, v1, v2, v3}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_CTX_set_rsa_oaep_md(JJ)V
+
+    .line 55
+    .line 56
+    .line 57
+    iget-object p1, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->pkeyCtx:Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;
+
+    .line 58
+    .line 59
+    iget-wide v0, p1, Lorg/conscrypt/NativeRef;->address:J
+
+    .line 60
+    .line 61
+    iget-wide v2, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->mgf1Md:J
+
+    .line 62
+    .line 63
+    invoke-static {v0, v1, v2, v3}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_CTX_set_rsa_mgf1_md(JJ)V
+
+    .line 64
+    .line 65
+    .line 66
+    iget-object p1, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->label:[B
+
+    .line 67
+    .line 68
+    if-eqz p1, :cond_4f
+
+    .line 69
+    .line 70
+    array-length v0, p1
+
+    .line 71
+    if-lez v0, :cond_4f
+
+    .line 72
+    .line 73
+    iget-object v0, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->pkeyCtx:Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;
+
+    .line 74
+    .line 75
+    iget-wide v0, v0, Lorg/conscrypt/NativeRef;->address:J
+
+    .line 76
+    .line 77
+    invoke-static {v0, v1, p1}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_CTX_set_rsa_oaep_label(J[B)V
+
+    .line 78
+    .line 79
+    .line 80
+    :cond_4f
+    return-void
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method
+
+.method public doCryptoOperation([B[B)I
+    .registers 10
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljavax/crypto/BadPaddingException;,
+            Ljavax/crypto/IllegalBlockSizeException;
+        }
+    .end annotation
+
+    .line 1
+    iget-boolean v0, p0, Lorg/conscrypt/OpenSSLCipherRSA;->encrypting:Z
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->pkeyCtx:Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_10
+
+    .line 6
+    .line 7
+    const/4 v5, 0x0
+
+    .line 8
+    array-length v6, p1
+
+    .line 9
+    const/4 v3, 0x0
+
+    .line 10
+    move-object v4, p1
+
+    .line 11
+    move-object v2, p2
+
+    .line 12
+    invoke-static/range {v1 .. v6}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_encrypt(Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;[BI[BII)I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p1
+
+    .line 16
+    return p1
+
+    .line 17
+    :cond_10
+    move-object v4, p1
+
+    .line 18
+    move-object v2, p2
+
+    .line 19
+    const/4 v5, 0x0
+
+    .line 20
+    array-length v6, v4
+
+    .line 21
+    const/4 v3, 0x0
+
+    .line 22
+    invoke-static/range {v1 .. v6}, Lorg/conscrypt/NativeCrypto;->EVP_PKEY_decrypt(Lorg/conscrypt/NativeRef$EVP_PKEY_CTX;[BI[BII)I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result p1
+
+    .line 26
+    return p1
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+.end method
+
+.method public engineGetParameters()Ljava/security/AlgorithmParameters;
+    .registers 10
+
+    .line 1
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLCipherRSA;->isInitialized()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-nez v0, :cond_8
+
+    .line 7
+    .line 8
+    return-object v1
+
+    .line 9
+    :cond_8
+    :try_start_8
+    const-string v0, "OAEP"
+
+    .line 10
+    .line 11
+    invoke-static {v0}, Ljava/security/AlgorithmParameters;->getInstance(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iget-object v2, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->label:[B
+
+    .line 16
+    .line 17
+    if-nez v2, :cond_17
+
+    .line 18
+    .line 19
+    sget-object v2, Ljavax/crypto/spec/PSource$PSpecified;->DEFAULT:Ljavax/crypto/spec/PSource$PSpecified;
+
+    .line 20
+    .line 21
+    goto :goto_1e
+
+    .line 22
+    :catch_15
+    move-exception v0
+
+    .line 23
+    goto :goto_40
+
+    .line 24
+    :cond_17
+    new-instance v2, Ljavax/crypto/spec/PSource$PSpecified;
+
+    .line 25
+    .line 26
+    iget-object v3, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->label:[B
+
+    .line 27
+    .line 28
+    invoke-direct {v2, v3}, Ljavax/crypto/spec/PSource$PSpecified;-><init>([B)V
+
+    .line 29
+    .line 30
+    .line 31
+    :goto_1e
+    new-instance v3, Ljavax/crypto/spec/OAEPParameterSpec;
+
+    .line 32
+    .line 33
+    iget-wide v4, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->oaepMd:J
+
+    .line 34
+    .line 35
+    invoke-static {v4, v5}, Lorg/conscrypt/EvpMdRef;->getJcaDigestAlgorithmStandardNameFromEVP_MD(J)Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v4
+
+    .line 39
+    const-string v5, "MGF1"
+
+    .line 40
+    .line 41
+    new-instance v6, Ljava/security/spec/MGF1ParameterSpec;
+
+    .line 42
+    .line 43
+    iget-wide v7, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->mgf1Md:J
+
+    .line 44
+    .line 45
+    invoke-static {v7, v8}, Lorg/conscrypt/EvpMdRef;->getJcaDigestAlgorithmStandardNameFromEVP_MD(J)Ljava/lang/String;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v7
+
+    .line 49
+    invoke-direct {v6, v7}, Ljava/security/spec/MGF1ParameterSpec;-><init>(Ljava/lang/String;)V
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-direct {v3, v4, v5, v6, v2}, Ljavax/crypto/spec/OAEPParameterSpec;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;Ljavax/crypto/spec/PSource;)V
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v0, v3}, Ljava/security/AlgorithmParameters;->init(Ljava/security/spec/AlgorithmParameterSpec;)V
+    :try_end_39
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_8 .. :try_end_39} :catch_15
+    .catch Ljava/security/spec/InvalidParameterSpecException; {:try_start_8 .. :try_end_39} :catch_3a
+
+    .line 56
+    .line 57
+    .line 58
+    return-object v0
+
+    .line 59
+    :catch_3a
+    const-string v0, "No providers of AlgorithmParameters.OAEP available"
+
+    .line 60
+    .line 61
+    invoke-static {v0}, Lj26;->j(Ljava/lang/String;)V
+
+    .line 62
+    .line 63
+    .line 64
+    return-object v1
+
+    .line 65
+    :goto_40
+    new-instance v1, Ljava/lang/AssertionError;
+
+    .line 66
+    .line 67
+    const-string v2, "OAEP not supported"
+
+    .line 68
+    .line 69
+    invoke-direct {v1, v2}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-virtual {v1, v0}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v0
+
+    .line 76
+    check-cast v0, Ljava/lang/Error;
+
+    .line 77
+    .line 78
+    throw v0
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+.end method
+
+.method public engineInit(ILjava/security/Key;Ljava/security/AlgorithmParameters;Ljava/security/SecureRandom;)V
+    .registers 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/InvalidKeyException;,
+            Ljava/security/InvalidAlgorithmParameterException;
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p3, :cond_14
+
+    .line 2
+    .line 3
+    :try_start_2
+    const-class p4, Ljavax/crypto/spec/OAEPParameterSpec;
+
+    .line 4
+    .line 5
+    invoke-virtual {p3, p4}, Ljava/security/AlgorithmParameters;->getParameterSpec(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p3
+
+    .line 9
+    check-cast p3, Ljavax/crypto/spec/OAEPParameterSpec;
+    :try_end_a
+    .catch Ljava/security/spec/InvalidParameterSpecException; {:try_start_2 .. :try_end_a} :catch_b
+
+    .line 10
+    .line 11
+    goto :goto_15
+
+    .line 12
+    :catch_b
+    move-exception p1
+
+    .line 13
+    new-instance p2, Ljava/security/InvalidAlgorithmParameterException;
+
+    .line 14
+    .line 15
+    const-string p3, "Only OAEP parameters are supported"
+
+    .line 16
+    .line 17
+    invoke-direct {p2, p3, p1}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 18
+    .line 19
+    .line 20
+    throw p2
+
+    .line 21
+    :cond_14
+    const/4 p3, 0x0
+
+    .line 22
+    :goto_15
+    invoke-virtual {p0, p1, p2, p3}, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->engineInitInternal(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+.end method
+
+.method public engineInit(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V
+    .registers 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/InvalidKeyException;,
+            Ljava/security/InvalidAlgorithmParameterException;
+        }
+    .end annotation
+
+    if-eqz p3, :cond_f
+
+    .line 26
+    instance-of p4, p3, Ljavax/crypto/spec/OAEPParameterSpec;
+
+    if-eqz p4, :cond_7
+
+    goto :goto_f
+
+    .line 27
+    :cond_7
+    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+
+    const-string p2, "Only OAEPParameterSpec accepted in OAEP mode"
+
+    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 28
+    :cond_f
+    :goto_f
+    invoke-virtual {p0, p1, p2, p3}, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->engineInitInternal(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+
+    return-void
+.end method
+
+.method public engineInitInternal(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+    .registers 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/InvalidKeyException;,
+            Ljava/security/InvalidAlgorithmParameterException;
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-eq p1, v0, :cond_18
+
+    .line 3
+    .line 4
+    const/4 v0, 0x3
+
+    .line 5
+    if-ne p1, v0, :cond_7
+
+    .line 6
+    .line 7
+    goto :goto_18
+
+    .line 8
+    :cond_7
+    const/4 v0, 0x2
+
+    .line 9
+    if-eq p1, v0, :cond_d
+
+    .line 10
+    .line 11
+    const/4 v0, 0x4
+
+    .line 12
+    if-ne p1, v0, :cond_1c
+
+    .line 13
+    .line 14
+    :cond_d
+    instance-of v0, p2, Ljava/security/PrivateKey;
+
+    .line 15
+    .line 16
+    if-eqz v0, :cond_12
+
+    .line 17
+    .line 18
+    goto :goto_1c
+
+    .line 19
+    :cond_12
+    const-string p1, "Only private keys may be used to decrypt"
+
+    .line 20
+    .line 21
+    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-void
+
+    .line 25
+    :cond_18
+    :goto_18
+    instance-of v0, p2, Ljava/security/PublicKey;
+
+    .line 26
+    .line 27
+    if-eqz v0, :cond_20
+
+    .line 28
+    .line 29
+    :cond_1c
+    :goto_1c
+    invoke-super {p0, p1, p2, p3}, Lorg/conscrypt/OpenSSLCipherRSA;->engineInitInternal(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+
+    .line 30
+    .line 31
+    .line 32
+    return-void
+
+    .line 33
+    :cond_20
+    const-string p1, "Only public keys may be used to encrypt"
+
+    .line 34
+    .line 35
+    invoke-static {p1}, Li62;->q(Ljava/lang/String;)V
+
+    .line 36
+    .line 37
+    .line 38
+    return-void
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+.end method
+
+.method public engineSetPadding(Ljava/lang/String;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljavax/crypto/NoSuchPaddingException;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, v0}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    const-string v0, "OAEPPADDING"
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
+
+    .line 13
+    if-eqz p1, :cond_12
+
+    .line 14
+    .line 15
+    const/4 p1, 0x4
+
+    .line 16
+    iput p1, p0, Lorg/conscrypt/OpenSSLCipherRSA;->padding:I
+
+    .line 17
+    .line 18
+    return-void
+
+    .line 19
+    :cond_12
+    new-instance p1, Ljavax/crypto/NoSuchPaddingException;
+
+    .line 20
+    .line 21
+    const-string v0, "Only OAEP padding is supported"
+
+    .line 22
+    .line 23
+    invoke-direct {p1, v0}, Ljavax/crypto/NoSuchPaddingException;-><init>(Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    throw p1
+.end method
+
+.method public paddedBlockSizeBytes()I
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0}, Lorg/conscrypt/OpenSSLCipherRSA;->keySizeBytes()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    iget v1, p0, Lorg/conscrypt/OpenSSLCipherRSA$OAEP;->oaepMdSizeBytes:I
+
+    .line 6
+    .line 7
+    mul-int/lit8 v1, v1, 0x2
+
+    .line 8
+    .line 9
+    add-int/lit8 v1, v1, 0x2
+
+    .line 10
+    .line 11
+    sub-int/2addr v0, v1
+
+    .line 12
+    return v0
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

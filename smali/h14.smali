@@ -1,0 +1,51 @@
+.class public abstract Lh14;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# static fields
+.field public static final synthetic a:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 2
+
+    .line 1
+    :try_start_0
+    const-class v0, Landroid/service/media/MediaBrowserService$Result;
+
+    .line 2
+    .line 3
+    const-string v1, "mFlags"
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    :try_end_c
+    .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_c} :catch_c
+
+    .line 11
+    .line 12
+    .line 13
+    :catch_c
+    return-void
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

@@ -1,0 +1,2527 @@
+.class public final Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;
+.super Lsu/happ/proxyutility/ui/SnackbarHostActivity;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0004"
+    }
+    d2 = {
+        "Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;",
+        "Lsu/happ/proxyutility/ui/SnackbarHostActivity;",
+        "<init>",
+        "()V",
+        "app"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x4,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final synthetic K0:I
+
+
+# instance fields
+.field public C0:Lp5;
+
+.field public final D0:Lzu6;
+
+.field public final E0:Lzu6;
+
+.field public F0:Ljava/lang/Process;
+
+.field public G0:Ljava/lang/String;
+
+.field public final H0:Ljava/util/ArrayList;
+
+.field public I0:I
+
+.field public J0:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Lsu/happ/proxyutility/ui/BaseActivity;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Ld7;
+
+    .line 5
+    .line 6
+    const/16 v1, 0x1d
+
+    .line 7
+    .line 8
+    invoke-direct {v0, v1, p0}, Ld7;-><init>(ILjava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v1, Lzu6;
+
+    .line 12
+    .line 13
+    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+
+    .line 14
+    .line 15
+    .line 16
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->D0:Lzu6;
+
+    .line 17
+    .line 18
+    new-instance v0, Lan2;
+
+    .line 19
+    .line 20
+    const/16 v1, 0x1d
+
+    .line 21
+    .line 22
+    invoke-direct {v0, v1}, Lan2;-><init>(I)V
+
+    .line 23
+    .line 24
+    .line 25
+    new-instance v1, Lzu6;
+
+    .line 26
+    .line 27
+    invoke-direct {v1, v0}, Lzu6;-><init>(Lg72;)V
+
+    .line 28
+    .line 29
+    .line 30
+    iput-object v1, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->E0:Lzu6;
+
+    .line 31
+    .line 32
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 33
+    .line 34
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 35
+    .line 36
+    .line 37
+    iput-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->H0:Ljava/util/ArrayList;
+
+    .line 38
+    .line 39
+    const/4 v0, 0x1
+
+    .line 40
+    iput v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->J0:I
+
+    .line 41
+    .line 42
+    return-void
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public static final A(Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;I)Ljava/lang/String;
+    .registers 3
+
+    .line 1
+    add-int/lit8 p1, p1, 0x1
+
+    .line 2
+    .line 3
+    iget p0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->J0:I
+
+    .line 4
+    .line 5
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 6
+    .line 7
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string p1, " / "
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p0
+
+    .line 25
+    return-object p0
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+.end method
+
+
+# virtual methods
+.method public final B(Z)V
+    .registers 13
+
+    .line 1
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->E0:Lzu6;
+
+    .line 2
+    .line 3
+    :try_start_2
+    sget-object v1, Lcq3;->R:Ldr0;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v2
+
+    .line 9
+    check-cast v2, Lcom/tencent/mmkv/MMKV;
+
+    .line 10
+    .line 11
+    const-string v3, "pref_logs_output_type"
+
+    .line 12
+    .line 13
+    const/4 v4, -0x1
+
+    .line 14
+    invoke-virtual {v2, v4, v3}, Lcom/tencent/mmkv/MMKV;->e(ILjava/lang/String;)I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-static {v2}, Ldr0;->t(I)Lcq3;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v7
+
+    .line 25
+    sget-object v1, Lfx7;->S:Lb77;
+
+    .line 26
+    .line 27
+    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    check-cast v0, Lcom/tencent/mmkv/MMKV;
+
+    .line 32
+    .line 33
+    const-string v2, "pref_logs_type"
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v4, v2}, Lcom/tencent/mmkv/MMKV;->e(ILjava/lang/String;)I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 40
+    .line 41
+    .line 42
+    sget-object v1, Lfx7;->W:Lrp1;
+
+    .line 43
+    .line 44
+    invoke-static {v0, v1}, Lnm0;->z0(ILjava/util/List;)Ljava/lang/Object;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v0
+
+    .line 48
+    check-cast v0, Lfx7;
+
+    .line 49
+    .line 50
+    if-nez v0, :cond_35
+
+    .line 51
+    .line 52
+    sget-object v0, Lfx7;->T:Lfx7;
+
+    .line 53
+    .line 54
+    :cond_35
+    iget-object v8, v0, Lfx7;->R:Ljava/lang/String;
+
+    .line 55
+    .line 56
+    if-nez v8, :cond_42
+
+    .line 57
+    .line 58
+    const-string p1, ""
+
+    .line 59
+    .line 60
+    invoke-virtual {p0, p1}, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->E(Ljava/lang/String;)V
+
+    .line 61
+    .line 62
+    .line 63
+    return-void
+
+    .line 64
+    :catchall_3f
+    move-exception v0
+
+    .line 65
+    move-object p1, v0
+
+    .line 66
+    goto :goto_59
+
+    .line 67
+    :cond_42
+    iget-object v0, p0, Landroidx/core/app/ComponentActivity;->Q:Lkk3;
+
+    .line 68
+    .line 69
+    invoke-static {v0}, Lyr;->C(Lkk3;)Lbk3;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v0
+
+    .line 73
+    sget-object v1, Lpe1;->a:Lq41;
+
+    .line 74
+    .line 75
+    sget-object v1, Lc41;->S:Lc41;
+
+    .line 76
+    .line 77
+    new-instance v5, Lsq3;
+
+    .line 78
+    .line 79
+    const/4 v10, 0x0
+
+    .line 80
+    move-object v9, p0
+
+    .line 81
+    move v6, p1
+
+    .line 82
+    invoke-direct/range {v5 .. v10}, Lsq3;-><init>(ZLcq3;Ljava/lang/String;Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;Lyv0;)V
+
+    .line 83
+    .line 84
+    .line 85
+    const/4 p1, 0x2
+
+    .line 86
+    invoke-static {v0, v1, v5, p1}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+    :try_end_58
+    .catchall {:try_start_2 .. :try_end_58} :catchall_3f
+
+    .line 87
+    .line 88
+    .line 89
+    return-void
+
+    .line 90
+    :goto_59
+    instance-of v0, p1, Ljava/lang/InterruptedException;
+
+    .line 91
+    .line 92
+    if-nez v0, :cond_62
+
+    .line 93
+    .line 94
+    instance-of v0, p1, Ljava/util/concurrent/CancellationException;
+
+    .line 95
+    .line 96
+    if-nez v0, :cond_62
+
+    .line 97
+    .line 98
+    return-void
+
+    .line 99
+    :cond_62
+    throw p1
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method
+
+.method public final C()V
+    .registers 2
+
+    .line 1
+    sget-object v0, Lpk7;->a:Lpk7;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_1b
+
+    .line 6
+    .line 7
+    iget-object v0, v0, Lp5;->c0:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    invoke-static {p0, v0}, Lpk7;->H(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    sget v0, Lx95;->toast_copied_to_clipboard:I
+
+    .line 23
+    .line 24
+    invoke-static {p0, v0}, Lvy7;->h(Landroid/content/Context;I)V
+
+    .line 25
+    .line 26
+    .line 27
+    return-void
+
+    .line 28
+    :cond_1b
+    const-string v0, "binding"
+
+    .line 29
+    .line 30
+    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 31
+    .line 32
+    .line 33
+    const/4 v0, 0x0
+
+    .line 34
+    throw v0
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public final D(Ljava/lang/String;)V
+    .registers 6
+
+    .line 1
+    :try_start_0
+    new-instance v0, Landroid/content/Intent;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    const-string v1, ".provider"
+
+    .line 19
+    .line 20
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v1
+
+    .line 27
+    new-instance v2, Ljava/io/File;
+
+    .line 28
+    .line 29
+    invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-static {p0, v1, v2}, Landroidx/core/content/FileProvider;->d(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Landroid/net/Uri;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    const-string v1, "android.intent.action.SEND"
+
+    .line 37
+    .line 38
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 39
+    .line 40
+    .line 41
+    const-string v1, "android.intent.extra.STREAM"
+
+    .line 42
+    .line 43
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 44
+    .line 45
+    .line 46
+    const-string v1, "text/plain"
+
+    .line 47
+    .line 48
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 49
+    .line 50
+    .line 51
+    const/4 v1, 0x1
+
+    .line 52
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v1
+
+    .line 59
+    const/high16 v2, 0x10000
+
+    .line 60
+    .line 61
+    invoke-virtual {v1, v0, v2}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object v1
+
+    .line 65
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v1
+
+    .line 72
+    :goto_47
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v2
+
+    .line 76
+    if-eqz v2, :cond_5e
+
+    .line 77
+    .line 78
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v2
+
+    .line 82
+    check-cast v2, Landroid/content/pm/ResolveInfo;
+
+    .line 83
+    .line 84
+    iget-object v2, v2, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    .line 85
+    .line 86
+    iget-object v2, v2, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+
+    .line 87
+    .line 88
+    const/4 v3, 0x3
+
+    .line 89
+    invoke-virtual {p0, v2, p1, v3}, Landroid/content/Context;->grantUriPermission(Ljava/lang/String;Landroid/net/Uri;I)V
+
+    .line 90
+    .line 91
+    .line 92
+    goto :goto_47
+
+    .line 93
+    :catchall_5c
+    move-exception p1
+
+    .line 94
+    goto :goto_6e
+
+    .line 95
+    :cond_5e
+    const-string p1, "Send logs"
+
+    .line 96
+    .line 97
+    invoke-static {v0, p1}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object p1
+
+    .line 101
+    const v0, 0x10000001
+
+    .line 102
+    .line 103
+    .line 104
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {p0, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_6d
+    .catchall {:try_start_0 .. :try_end_6d} :catchall_5c
+
+    .line 108
+    .line 109
+    .line 110
+    return-void
+
+    .line 111
+    :goto_6e
+    instance-of v0, p1, Ljava/lang/InterruptedException;
+
+    .line 112
+    .line 113
+    if-nez v0, :cond_77
+
+    .line 114
+    .line 115
+    instance-of v0, p1, Ljava/util/concurrent/CancellationException;
+
+    .line 116
+    .line 117
+    if-nez v0, :cond_77
+
+    .line 118
+    .line 119
+    return-void
+
+    .line 120
+    :cond_77
+    throw p1
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method
+
+.method public final E(Ljava/lang/String;)V
+    .registers 7
+
+    .line 1
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_23
+
+    .line 5
+    .line 6
+    iget-object v0, v0, Lp5;->X:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast v0, Landroid/widget/ProgressBar;
+
+    .line 9
+    .line 10
+    const/4 v2, 0x0
+
+    .line 11
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object v0, p0, Landroidx/core/app/ComponentActivity;->Q:Lkk3;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lyr;->C(Lkk3;)Lbk3;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    sget-object v2, Lpe1;->a:Lq41;
+
+    .line 21
+    .line 22
+    sget-object v2, Lc41;->S:Lc41;
+
+    .line 23
+    .line 24
+    new-instance v3, Lh;
+
+    .line 25
+    .line 26
+    const/16 v4, 0x11
+
+    .line 27
+    .line 28
+    invoke-direct {v3, p0, p1, v1, v4}, Lh;-><init>(Ljava/lang/Object;Ljava/lang/Object;Lyv0;I)V
+
+    .line 29
+    .line 30
+    .line 31
+    const/4 p1, 0x2
+
+    .line 32
+    invoke-static {v0, v2, v3, p1}, Lf93;->O(Lbx0;Luw0;Lu72;I)Lng6;
+
+    .line 33
+    .line 34
+    .line 35
+    return-void
+
+    .line 36
+    :cond_23
+    const-string p1, "binding"
+
+    .line 37
+    .line 38
+    invoke-static {p1}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 39
+    .line 40
+    .line 41
+    throw v1
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+.end method
+
+.method public final onCreate(Landroid/os/Bundle;)V
+    .registers 23
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    invoke-super/range {p0 .. p1}, Lsu/happ/proxyutility/ui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    sget v2, Lt95;->activity_logs_view_settings:I
+
+    .line 11
+    .line 12
+    const/4 v3, 0x0
+
+    .line 13
+    const/4 v4, 0x0
+
+    .line 14
+    invoke-virtual {v1, v2, v3, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    sget v2, Ld95;->ll_logs_core:I
+
+    .line 19
+    .line 20
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v5
+
+    .line 24
+    check-cast v5, Landroid/widget/LinearLayout;
+
+    .line 25
+    .line 26
+    if-eqz v5, :cond_156
+
+    .line 27
+    .line 28
+    sget v2, Ld95;->ll_logs_page:I
+
+    .line 29
+    .line 30
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v5
+
+    .line 34
+    move-object v8, v5
+
+    .line 35
+    check-cast v8, Landroid/widget/LinearLayout;
+
+    .line 36
+    .line 37
+    if-eqz v8, :cond_156
+
+    .line 38
+    .line 39
+    sget v2, Ld95;->ll_main:I
+
+    .line 40
+    .line 41
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v5
+
+    .line 45
+    check-cast v5, Landroid/widget/LinearLayout;
+
+    .line 46
+    .line 47
+    if-eqz v5, :cond_156
+
+    .line 48
+    .line 49
+    sget v2, Ld95;->ll_root:I
+
+    .line 50
+    .line 51
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v5
+
+    .line 55
+    move-object v9, v5
+
+    .line 56
+    check-cast v9, Landroid/widget/LinearLayout;
+
+    .line 57
+    .line 58
+    if-eqz v9, :cond_156
+
+    .line 59
+    .line 60
+    sget v2, Ld95;->log_arrow_left:I
+
+    .line 61
+    .line 62
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v5
+
+    .line 66
+    move-object v10, v5
+
+    .line 67
+    check-cast v10, Landroidx/appcompat/widget/AppCompatImageButton;
+
+    .line 68
+    .line 69
+    if-eqz v10, :cond_156
+
+    .line 70
+    .line 71
+    sget v2, Ld95;->log_arrow_left_end:I
+
+    .line 72
+    .line 73
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v5
+
+    .line 77
+    move-object v11, v5
+
+    .line 78
+    check-cast v11, Landroidx/appcompat/widget/AppCompatImageButton;
+
+    .line 79
+    .line 80
+    if-eqz v11, :cond_156
+
+    .line 81
+    .line 82
+    sget v2, Ld95;->log_arrow_right:I
+
+    .line 83
+    .line 84
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 85
+    .line 86
+    .line 87
+    move-result-object v5
+
+    .line 88
+    move-object v12, v5
+
+    .line 89
+    check-cast v12, Landroidx/appcompat/widget/AppCompatImageButton;
+
+    .line 90
+    .line 91
+    if-eqz v12, :cond_156
+
+    .line 92
+    .line 93
+    sget v2, Ld95;->log_arrow_right_end:I
+
+    .line 94
+    .line 95
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 96
+    .line 97
+    .line 98
+    move-result-object v5
+
+    .line 99
+    move-object v13, v5
+
+    .line 100
+    check-cast v13, Landroidx/appcompat/widget/AppCompatImageButton;
+
+    .line 101
+    .line 102
+    if-eqz v13, :cond_156
+
+    .line 103
+    .line 104
+    sget v2, Ld95;->pb_waiting:I
+
+    .line 105
+    .line 106
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 107
+    .line 108
+    .line 109
+    move-result-object v5
+
+    .line 110
+    move-object v14, v5
+
+    .line 111
+    check-cast v14, Landroid/widget/ProgressBar;
+
+    .line 112
+    .line 113
+    if-eqz v14, :cond_156
+
+    .line 114
+    .line 115
+    sget v2, Ld95;->snackbar_host_root:I
+
+    .line 116
+    .line 117
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object v5
+
+    .line 121
+    move-object v15, v5
+
+    .line 122
+    check-cast v15, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
+
+    .line 123
+    .line 124
+    if-eqz v15, :cond_156
+
+    .line 125
+    .line 126
+    sget v2, Ld95;->sv_logcat:I
+
+    .line 127
+    .line 128
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 129
+    .line 130
+    .line 131
+    move-result-object v5
+
+    .line 132
+    move-object/from16 v16, v5
+
+    .line 133
+    .line 134
+    check-cast v16, Landroid/widget/ScrollView;
+
+    .line 135
+    .line 136
+    if-eqz v16, :cond_156
+
+    .line 137
+    .line 138
+    sget v2, Ld95;->title_logs:I
+
+    .line 139
+    .line 140
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 141
+    .line 142
+    .line 143
+    move-result-object v5
+
+    .line 144
+    move-object/from16 v17, v5
+
+    .line 145
+    .line 146
+    check-cast v17, Lsu/happ/proxyutility/ui/foundation/component/HappSettingsTitle;
+
+    .line 147
+    .line 148
+    if-eqz v17, :cond_156
+
+    .line 149
+    .line 150
+    sget v2, Ld95;->toolbar:I
+
+    .line 151
+    .line 152
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 153
+    .line 154
+    .line 155
+    move-result-object v5
+
+    .line 156
+    move-object/from16 v18, v5
+
+    .line 157
+    .line 158
+    check-cast v18, Landroidx/appcompat/widget/Toolbar;
+
+    .line 159
+    .line 160
+    if-eqz v18, :cond_156
+
+    .line 161
+    .line 162
+    sget v2, Ld95;->tv_logcat:I
+
+    .line 163
+    .line 164
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object v5
+
+    .line 168
+    move-object/from16 v19, v5
+
+    .line 169
+    .line 170
+    check-cast v19, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+
+    .line 171
+    .line 172
+    if-eqz v19, :cond_156
+
+    .line 173
+    .line 174
+    sget v2, Ld95;->tv_page_info:I
+
+    .line 175
+    .line 176
+    invoke-static {v1, v2}, Lf77;->c(Landroid/view/View;I)Landroid/view/View;
+
+    .line 177
+    .line 178
+    .line 179
+    move-result-object v5
+
+    .line 180
+    move-object/from16 v20, v5
+
+    .line 181
+    .line 182
+    check-cast v20, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+
+    .line 183
+    .line 184
+    if-eqz v20, :cond_156
+
+    .line 185
+    .line 186
+    new-instance v6, Lp5;
+
+    .line 187
+    .line 188
+    move-object v7, v1
+
+    .line 189
+    check-cast v7, Landroid/widget/RelativeLayout;
+
+    .line 190
+    .line 191
+    invoke-direct/range {v6 .. v20}, Lp5;-><init>(Landroid/widget/RelativeLayout;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroidx/appcompat/widget/AppCompatImageButton;Landroidx/appcompat/widget/AppCompatImageButton;Landroidx/appcompat/widget/AppCompatImageButton;Landroidx/appcompat/widget/AppCompatImageButton;Landroid/widget/ProgressBar;Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;Landroid/widget/ScrollView;Lsu/happ/proxyutility/ui/foundation/component/HappSettingsTitle;Landroidx/appcompat/widget/Toolbar;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;Lsu/happ/proxyutility/ui/foundation/component/HappTextView;)V
+
+    .line 192
+    .line 193
+    .line 194
+    iput-object v6, v0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 195
+    .line 196
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->D0:Lzu6;
+
+    .line 197
+    .line 198
+    invoke-virtual {v1}, Lzu6;->getValue()Ljava/lang/Object;
+
+    .line 199
+    .line 200
+    .line 201
+    move-result-object v1
+
+    .line 202
+    check-cast v1, Lwq3;
+
+    .line 203
+    .line 204
+    invoke-static {v1}, Lhc7;->o(Lxy0;)V
+
+    .line 205
+    .line 206
+    .line 207
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 208
+    .line 209
+    const-string v2, "binding"
+
+    .line 210
+    .line 211
+    if-eqz v1, :cond_152
+
+    .line 212
+    .line 213
+    iget-object v1, v1, Lp5;->Q:Ljava/lang/Object;
+
+    .line 214
+    .line 215
+    check-cast v1, Landroid/widget/RelativeLayout;
+
+    .line 216
+    .line 217
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(Landroid/view/View;)V
+
+    .line 218
+    .line 219
+    .line 220
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 221
+    .line 222
+    if-eqz v1, :cond_14e
+
+    .line 223
+    .line 224
+    iget-object v1, v1, Lp5;->S:Ljava/lang/Object;
+
+    .line 225
+    .line 226
+    check-cast v1, Landroid/widget/LinearLayout;
+
+    .line 227
+    .line 228
+    invoke-virtual {v0, v1}, Lsu/happ/proxyutility/ui/BaseActivity;->setBarsParams(Landroid/view/View;)V
+
+    .line 229
+    .line 230
+    .line 231
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 232
+    .line 233
+    if-eqz v1, :cond_14a
+
+    .line 234
+    .line 235
+    iget-object v1, v1, Lp5;->b0:Ljava/lang/Object;
+
+    .line 236
+    .line 237
+    check-cast v1, Landroidx/appcompat/widget/Toolbar;
+
+    .line 238
+    .line 239
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AppCompatActivity;->p(Landroidx/appcompat/widget/Toolbar;)V
+
+    .line 240
+    .line 241
+    .line 242
+    iget-object v1, v0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 243
+    .line 244
+    if-eqz v1, :cond_146
+
+    .line 245
+    .line 246
+    iget-object v1, v1, Lp5;->c0:Ljava/lang/Object;
+
+    .line 247
+    .line 248
+    check-cast v1, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+
+    .line 249
+    .line 250
+    new-instance v5, Landroid/text/method/ScrollingMovementMethod;
+
+    .line 251
+    .line 252
+    invoke-direct {v5}, Landroid/text/method/ScrollingMovementMethod;-><init>()V
+
+    .line 253
+    .line 254
+    .line 255
+    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
+
+    .line 256
+    .line 257
+    .line 258
+    invoke-virtual {v0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    .line 259
+    .line 260
+    .line 261
+    move-result-object v1
+
+    .line 262
+    const-string v5, "pathLogFileParam"
+
+    .line 263
+    .line 264
+    invoke-virtual {v1, v5}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 265
+    .line 266
+    .line 267
+    move-result-object v1
+
+    .line 268
+    if-eqz v1, :cond_10f
+
+    .line 269
+    .line 270
+    iput-object v1, v0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->G0:Ljava/lang/String;
+
+    .line 271
+    .line 272
+    :cond_10f
+    invoke-virtual {v0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    .line 273
+    .line 274
+    .line 275
+    move-result-object v1
+
+    .line 276
+    const-string v5, "nameLogFileParam"
+
+    .line 277
+    .line 278
+    invoke-virtual {v1, v5}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 279
+    .line 280
+    .line 281
+    move-result-object v1
+
+    .line 282
+    if-eqz v1, :cond_12b
+
+    .line 283
+    .line 284
+    iget-object v5, v0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 285
+    .line 286
+    if-eqz v5, :cond_127
+
+    .line 287
+    .line 288
+    iget-object v2, v5, Lp5;->a0:Ljava/lang/Object;
+
+    .line 289
+    .line 290
+    check-cast v2, Lsu/happ/proxyutility/ui/foundation/component/HappSettingsTitle;
+
+    .line 291
+    .line 292
+    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 293
+    .line 294
+    .line 295
+    goto :goto_12b
+
+    .line 296
+    :cond_127
+    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 297
+    .line 298
+    .line 299
+    throw v3
+
+    .line 300
+    :cond_12b
+    :goto_12b
+    invoke-virtual {v0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    .line 301
+    .line 302
+    .line 303
+    move-result-object v1
+
+    .line 304
+    const-string v2, "encrypted"
+
+    .line 305
+    .line 306
+    invoke-virtual {v1, v2, v4}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    .line 307
+    .line 308
+    .line 309
+    move-result v1
+
+    .line 310
+    if-eqz v1, :cond_13c
+
+    .line 311
+    .line 312
+    sget v1, Lx95;->logs_view_warning_encrypted:I
+
+    .line 313
+    .line 314
+    invoke-static {v0, v1}, Luy7;->P(Lsu/happ/proxyutility/ui/SnackbarHostActivity;I)V
+
+    .line 315
+    .line 316
+    .line 317
+    :cond_13c
+    sget v1, Lx95;->logs_view:I
+
+    .line 318
+    .line 319
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 320
+    .line 321
+    .line 322
+    move-result-object v1
+
+    .line 323
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V
+
+    .line 324
+    .line 325
+    .line 326
+    return-void
+
+    .line 327
+    :cond_146
+    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 328
+    .line 329
+    .line 330
+    throw v3
+
+    .line 331
+    :cond_14a
+    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 332
+    .line 333
+    .line 334
+    throw v3
+
+    .line 335
+    :cond_14e
+    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 336
+    .line 337
+    .line 338
+    throw v3
+
+    .line 339
+    :cond_152
+    invoke-static {v2}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 340
+    .line 341
+    .line 342
+    throw v3
+
+    .line 343
+    :cond_156
+    invoke-virtual {v1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 344
+    .line 345
+    .line 346
+    move-result-object v1
+
+    .line 347
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    .line 348
+    .line 349
+    .line 350
+    move-result-object v1
+
+    .line 351
+    const-string v2, "Missing required view with ID: "
+
+    .line 352
+    .line 353
+    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 354
+    .line 355
+    .line 356
+    move-result-object v1
+
+    .line 357
+    invoke-static {v1}, Len0;->g(Ljava/lang/String;)V
+
+    .line 358
+    .line 359
+    .line 360
+    return-void
+    .line 361
+    .line 362
+    .line 363
+    .line 364
+    .line 365
+    .line 366
+    .line 367
+    .line 368
+    .line 369
+    .line 370
+    .line 371
+    .line 372
+    .line 373
+    .line 374
+    .line 375
+    .line 376
+    .line 377
+.end method
+
+.method public final onCreateOptionsMenu(Landroid/view/Menu;)Z
+    .registers 4
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->G0:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_11
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getMenuInflater()Landroid/view/MenuInflater;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    sget v1, Lv95;->menu_logcat_file:I
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, v1, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
+
+    .line 15
+    .line 16
+    .line 17
+    goto :goto_1a
+
+    .line 18
+    :cond_11
+    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getMenuInflater()Landroid/view/MenuInflater;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    sget v1, Lv95;->menu_logcat:I
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
+
+    .line 25
+    .line 26
+    .line 27
+    :goto_1a
+    invoke-super {p0, p1}, Lsu/happ/proxyutility/ui/BaseActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result p1
+
+    .line 31
+    return p1
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+.end method
+
+.method public final onDestroy()V
+    .registers 2
+
+    .line 1
+    invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onDestroy()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->F0:Ljava/lang/Process;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_a
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/Process;->destroy()V
+
+    .line 9
+    .line 10
+    .line 11
+    :cond_a
+    return-void
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+.method public final onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    .registers 5
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    sget v1, Ld95;->copy_all:I
+
+    .line 9
+    .line 10
+    const/4 v2, 0x1
+
+    .line 11
+    if-ne v0, v1, :cond_10
+
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C()V
+
+    .line 14
+    .line 15
+    .line 16
+    return v2
+
+    .line 17
+    :cond_10
+    sget v1, Ld95;->clear_all:I
+
+    .line 18
+    .line 19
+    if-ne v0, v1, :cond_39
+
+    .line 20
+    .line 21
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->G0:Ljava/lang/String;
+
+    .line 22
+    .line 23
+    const-string v0, ""
+
+    .line 24
+    .line 25
+    if-eqz p1, :cond_23
+
+    .line 26
+    .line 27
+    new-instance v1, Ljava/io/File;
+
+    .line 28
+    .line 29
+    invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-static {v1, v0}, Lew0;->e0(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    goto :goto_26
+
+    .line 36
+    :cond_23
+    invoke-virtual {p0, v2}, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->B(Z)V
+
+    .line 37
+    .line 38
+    .line 39
+    :goto_26
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 40
+    .line 41
+    if-eqz p1, :cond_32
+
+    .line 42
+    .line 43
+    iget-object p1, p1, Lp5;->c0:Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    check-cast p1, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+
+    .line 46
+    .line 47
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 48
+    .line 49
+    .line 50
+    return v2
+
+    .line 51
+    :cond_32
+    const-string p1, "binding"
+
+    .line 52
+    .line 53
+    invoke-static {p1}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 54
+    .line 55
+    .line 56
+    const/4 p1, 0x0
+
+    .line 57
+    throw p1
+
+    .line 58
+    :cond_39
+    sget v1, Ld95;->share_all:I
+
+    .line 59
+    .line 60
+    if-ne v0, v1, :cond_45
+
+    .line 61
+    .line 62
+    iget-object p1, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->G0:Ljava/lang/String;
+
+    .line 63
+    .line 64
+    if-eqz p1, :cond_44
+
+    .line 65
+    .line 66
+    invoke-virtual {p0, p1}, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->D(Ljava/lang/String;)V
+
+    .line 67
+    .line 68
+    .line 69
+    :cond_44
+    return v2
+
+    .line 70
+    :cond_45
+    invoke-super {p0, p1}, Lsu/happ/proxyutility/ui/BaseActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+
+    .line 71
+    .line 72
+    .line 73
+    move-result p1
+
+    .line 74
+    return p1
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method
+
+.method public final onResume()V
+    .registers 5
+
+    .line 1
+    invoke-super {p0}, Lsu/happ/proxyutility/ui/BaseActivity;->onResume()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_41
+
+    .line 7
+    .line 8
+    iget-object v0, v0, Lp5;->X:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    check-cast v0, Landroid/widget/ProgressBar;
+
+    .line 11
+    .line 12
+    const/4 v1, 0x0
+
+    .line 13
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 14
+    .line 15
+    .line 16
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->G0:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    if-eqz v0, :cond_3d
+
+    .line 19
+    .line 20
+    new-instance v1, Ljava/io/File;
+
+    .line 21
+    .line 22
+    invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    sget-object v0, Lnh0;->a:Ljava/nio/charset/Charset;
+
+    .line 26
+    .line 27
+    new-instance v2, Ljava/io/InputStreamReader;
+
+    .line 28
+    .line 29
+    new-instance v3, Ljava/io/FileInputStream;
+
+    .line 30
+    .line 31
+    invoke-direct {v3, v1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    .line 32
+    .line 33
+    .line 34
+    invoke-direct {v2, v3, v0}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
+
+    .line 35
+    .line 36
+    .line 37
+    new-instance v0, Ljava/io/BufferedReader;
+
+    .line 38
+    .line 39
+    const/16 v1, 0x2000
+
+    .line 40
+    .line 41
+    invoke-direct {v0, v2, v1}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;I)V
+
+    .line 42
+    .line 43
+    .line 44
+    :try_start_2b
+    invoke-static {v0}, Le27;->g(Ljava/io/Reader;)Ljava/lang/String;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v1
+    :try_end_2f
+    .catchall {:try_start_2b .. :try_end_2f} :catchall_36
+
+    .line 48
+    invoke-interface {v0}, Ljava/io/Closeable;->close()V
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {p0, v1}, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->E(Ljava/lang/String;)V
+
+    .line 52
+    .line 53
+    .line 54
+    return-void
+
+    .line 55
+    :catchall_36
+    move-exception v1
+
+    .line 56
+    :try_start_37
+    throw v1
+    :try_end_38
+    .catchall {:try_start_37 .. :try_end_38} :catchall_38
+
+    .line 57
+    :catchall_38
+    move-exception v2
+
+    .line 58
+    invoke-static {v0, v1}, Lzd7;->n(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    .line 59
+    .line 60
+    .line 61
+    throw v2
+
+    .line 62
+    :cond_3d
+    invoke-virtual {p0, v1}, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->B(Z)V
+
+    .line 63
+    .line 64
+    .line 65
+    return-void
+
+    .line 66
+    :cond_41
+    const-string v0, "binding"
+
+    .line 67
+    .line 68
+    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 69
+    .line 70
+    .line 71
+    const/4 v0, 0x0
+
+    .line 72
+    throw v0
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+.end method
+
+.method public final t()Landroidx/appcompat/widget/Toolbar;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_9
+
+    .line 4
+    .line 5
+    iget-object v0, v0, Lp5;->b0:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    check-cast v0, Landroidx/appcompat/widget/Toolbar;
+
+    .line 8
+    .line 9
+    return-object v0
+
+    .line 10
+    :cond_9
+    const-string v0, "binding"
+
+    .line 11
+    .line 12
+    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    const/4 v0, 0x0
+
+    .line 16
+    throw v0
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+.method public final v()Z
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->D0:Lzu6;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lzu6;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lwq3;
+
+    .line 8
+    .line 9
+    iget-object v0, v0, Lwq3;->Q:Lp5;
+
+    .line 10
+    .line 11
+    iget-object v1, v0, Lp5;->R:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    check-cast v1, Landroid/widget/LinearLayout;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    if-nez v1, :cond_1d
+
+    .line 20
+    .line 21
+    iget-object v0, v0, Lp5;->U:Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    check-cast v0, Landroidx/appcompat/widget/AppCompatImageButton;
+
+    .line 24
+    .line 25
+    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v0
+
+    .line 29
+    return v0
+
+    .line 30
+    :cond_1d
+    iget-object v0, v0, Lp5;->c0:Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappTextView;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v0
+
+    .line 38
+    return v0
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public final z()Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lsu/happ/proxyutility/feature/logs/LogsViewSettingsActivity;->C0:Lp5;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_9
+
+    .line 4
+    .line 5
+    iget-object v0, v0, Lp5;->Y:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    check-cast v0, Lsu/happ/proxyutility/ui/foundation/component/HappSnackbarHost;
+
+    .line 8
+    .line 9
+    return-object v0
+
+    .line 10
+    :cond_9
+    const-string v0, "binding"
+
+    .line 11
+    .line 12
+    invoke-static {v0}, Lrt2;->U(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    const/4 v0, 0x0
+
+    .line 16
+    throw v0
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

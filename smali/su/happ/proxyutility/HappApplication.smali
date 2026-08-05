@@ -110,7 +110,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .registers 2
 
     .line 1
     invoke-static {}, Lew0;->f()Lhs6;
@@ -181,10 +181,36 @@
     .line 33
     .line 34
     return-void
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
 .end method
 
 .method public constructor <init>()V
-    .locals 2
+    .registers 3
 
     .line 1
     invoke-direct {p0}, Landroid/app/Application;-><init>()V
@@ -976,10 +1002,76 @@
     .line 418
     .line 419
     return-void
+    .line 420
+    .line 421
+    .line 422
+    .line 423
+    .line 424
+    .line 425
+    .line 426
+    .line 427
+    .line 428
+    .line 429
+    .line 430
+    .line 431
+    .line 432
+    .line 433
+    .line 434
+    .line 435
+    .line 436
+    .line 437
+    .line 438
+    .line 439
+    .line 440
+    .line 441
+    .line 442
+    .line 443
+    .line 444
+    .line 445
+    .line 446
+    .line 447
+    .line 448
+    .line 449
+    .line 450
+    .line 451
+    .line 452
+    .line 453
+    .line 454
+    .line 455
+    .line 456
+    .line 457
+    .line 458
+    .line 459
+    .line 460
+    .line 461
+    .line 462
+    .line 463
+    .line 464
+    .line 465
+    .line 466
+    .line 467
+    .line 468
+    .line 469
+    .line 470
+    .line 471
+    .line 472
+    .line 473
+    .line 474
+    .line 475
+    .line 476
+    .line 477
+    .line 478
+    .line 479
+    .line 480
+    .line 481
+    .line 482
+    .line 483
+    .line 484
+    .line 485
 .end method
 
 .method public static i()Ljs0;
-    .locals 3
+    .registers 3
 
     .line 1
     new-instance v0, Ldv7;
@@ -1036,12 +1128,44 @@
     .line 27
     .line 28
     return-object v1
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
 .end method
 
 
 # virtual methods
 .method public final a()Ldm;
-    .locals 1
+    .registers 2
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/HappApplication;->V:Lzu6;
@@ -1061,10 +1185,21 @@
     .line 8
     .line 9
     return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
 .end method
 
 .method public final attachBaseContext(Landroid/content/Context;)V
-    .locals 0
+    .registers 2
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Application;->attachBaseContext(Landroid/content/Context;)V
@@ -1077,10 +1212,30 @@
     .line 5
     .line 6
     return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
 .end method
 
 .method public final b()Lmw0;
-    .locals 1
+    .registers 2
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/HappApplication;->U:Lzu6;
@@ -1100,10 +1255,21 @@
     .line 8
     .line 9
     return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
 .end method
 
 .method public final c()Ldy1;
-    .locals 1
+    .registers 2
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/HappApplication;->d0:Lzu6;
@@ -1123,10 +1289,21 @@
     .line 8
     .line 9
     return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
 .end method
 
 .method public final d()Lxp3;
-    .locals 1
+    .registers 2
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/HappApplication;->b0:Lzu6;
@@ -1146,10 +1323,21 @@
     .line 8
     .line 9
     return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
 .end method
 
 .method public final e()Lv65;
-    .locals 1
+    .registers 2
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/HappApplication;->i0:Lzu6;
@@ -1169,10 +1357,21 @@
     .line 8
     .line 9
     return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
 .end method
 
 .method public final f()Llq5;
-    .locals 1
+    .registers 2
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/HappApplication;->S:Lzu6;
@@ -1192,10 +1391,21 @@
     .line 8
     .line 9
     return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
 .end method
 
 .method public final g()Lfk6;
-    .locals 1
+    .registers 2
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/HappApplication;->W:Lzu6;
@@ -1215,10 +1425,21 @@
     .line 8
     .line 9
     return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
 .end method
 
 .method public final h()Lia7;
-    .locals 1
+    .registers 2
 
     .line 1
     iget-object v0, p0, Lsu/happ/proxyutility/HappApplication;->h0:Lzu6;
@@ -1238,10 +1459,21 @@
     .line 8
     .line 9
     return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
 .end method
 
 .method public final onCreate()V
-    .locals 13
+    .registers 14
 
     .line 1
     const/4 v0, 0x2
@@ -1276,7 +1508,7 @@
     const/4 v4, 0x1
 
     .line 17
-    if-gt v2, v3, :cond_0
+    if-gt v2, v3, :cond_19
 
     .line 18
     .line 19
@@ -1293,7 +1525,7 @@
     .line 24
     .line 25
     .line 26
-    :cond_0
+    :cond_19
     sget-object v2, Lpk7;->a:Lpk7;
 
     .line 27
@@ -1427,22 +1659,20 @@
     const/4 v3, 0x0
 
     .line 91
-    if-nez v2, :cond_1
+    if-nez v2, :cond_61
 
     .line 92
     .line 93
-    # patch: anti-tamper no1.g() disabled
-    nop
+    invoke-static {}, Lno1;->g()V
 
     .line 94
     .line 95
     .line 96
-    # patch: anti-tamper x0 reset disabled
-    nop
+    sput-object v3, Lsu/happ/proxyutility/HappApplication;->x0:Ljava/lang/String;
 
     .line 97
     .line 98
-    :cond_1
+    :cond_61
     sget v2, Lr85;->ic_unfold_24dp:I
 
     .line 99
@@ -1644,7 +1874,7 @@
 
     .line 202
     .line 203
-    if-nez v9, :cond_3
+    if-nez v9, :cond_102
 
     .line 204
     .line 205
@@ -1674,7 +1904,7 @@
 
     .line 218
     .line 219
-    :try_start_0
+    :try_start_da
     new-instance v12, Landroid/content/Intent;
 
     .line 220
@@ -1717,16 +1947,16 @@
     .line 241
     .line 242
     invoke-virtual {v5, v12}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_f4
+    .catchall {:try_start_da .. :try_end_f4} :catchall_f5
 
     .line 243
     .line 244
     .line 245
-    goto :goto_0
+    goto :goto_fe
 
     .line 246
-    :catchall_0
+    :catchall_f5
     move-exception v5
 
     .line 247
@@ -1734,7 +1964,7 @@
 
     .line 248
     .line 249
-    if-nez v9, :cond_2
+    if-nez v9, :cond_101
 
     .line 250
     .line 251
@@ -1742,36 +1972,36 @@
 
     .line 252
     .line 253
-    if-nez v9, :cond_2
+    if-nez v9, :cond_101
 
     .line 254
     .line 255
-    :goto_0
+    :goto_fe
     iput-boolean v4, v2, Lmw0;->a:Z
 
     .line 256
     .line 257
-    goto :goto_1
+    goto :goto_102
 
     .line 258
-    :cond_2
+    :cond_101
     throw v5
 
     .line 259
-    :cond_3
-    :goto_1
-    :try_start_1
+    :cond_102
+    :goto_102
+    :try_start_102
     invoke-static {p0}, Low1;->f(Landroid/content/Context;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    :try_end_105
+    .catchall {:try_start_102 .. :try_end_105} :catchall_106
 
     .line 260
     .line 261
     .line 262
-    goto :goto_2
+    goto :goto_10f
 
     .line 263
-    :catchall_1
+    :catchall_106
     move-exception v2
 
     .line 264
@@ -1779,7 +2009,7 @@
 
     .line 265
     .line 266
-    if-nez v5, :cond_8
+    if-nez v5, :cond_1e4
 
     .line 267
     .line 268
@@ -1787,11 +2017,11 @@
 
     .line 269
     .line 270
-    if-nez v5, :cond_8
+    if-nez v5, :cond_1e4
 
     .line 271
     .line 272
-    :goto_2
+    :goto_10f
     new-instance v2, Lj26;
 
     .line 273
@@ -1975,7 +2205,7 @@
     move-result-object v7
 
     .line 369
-    if-eqz v7, :cond_6
+    if-eqz v7, :cond_190
 
     .line 370
     .line 371
@@ -1987,7 +2217,7 @@
     move-result-object v7
 
     .line 375
-    :cond_4
+    :cond_176
     invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
 
     .line 376
@@ -1996,7 +2226,7 @@
     move-result v9
 
     .line 379
-    if-eqz v9, :cond_5
+    if-eqz v9, :cond_188
 
     .line 380
     .line 381
@@ -2019,23 +2249,23 @@
 
     .line 389
     .line 390
-    if-ne v11, v5, :cond_4
+    if-ne v11, v5, :cond_176
 
     .line 391
     .line 392
-    goto :goto_3
+    goto :goto_189
 
     .line 393
-    :cond_5
+    :cond_188
     move-object v9, v3
 
     .line 394
-    :goto_3
+    :goto_189
     check-cast v9, Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 395
     .line 396
-    if-eqz v9, :cond_6
+    if-eqz v9, :cond_190
 
     .line 397
     .line 398
@@ -2043,14 +2273,14 @@
 
     .line 399
     .line 400
-    goto :goto_4
+    goto :goto_191
 
     .line 401
-    :cond_6
+    :cond_190
     move-object v5, v3
 
     .line 402
-    :goto_4
+    :goto_191
     invoke-static {v2, v5}, Lrt2;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 403
@@ -2059,7 +2289,7 @@
     move-result v2
 
     .line 406
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_1a5
 
     .line 407
     .line 408
@@ -2089,7 +2319,7 @@
     .line 420
     .line 421
     .line 422
-    :cond_7
+    :cond_1a5
     sget-object v2, Lsu/happ/proxyutility/HappApplication;->w0:Lvv0;
 
     .line 423
@@ -2209,6 +2439,6 @@
     return-void
 
     .line 485
-    :cond_8
+    :cond_1e4
     throw v2
 .end method

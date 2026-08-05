@@ -1,0 +1,861 @@
+.class public abstract Lbd2;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# instance fields
+.field public final a:[Ljava/lang/Object;
+
+.field public b:Lr91;
+
+.field public c:Z
+
+.field public d:I
+
+.field public e:I
+
+.field public f:I
+
+.field public g:I
+
+.field public h:[Lp60;
+
+.field public i:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x1
+
+    .line 5
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    iput-object v0, p0, Lbd2;->a:[Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    const/4 v0, -0x1
+
+    .line 10
+    iput v0, p0, Lbd2;->f:I
+
+    .line 11
+    .line 12
+    iput v0, p0, Lbd2;->g:I
+
+    .line 13
+    .line 14
+    iput v0, p0, Lbd2;->i:I
+
+    .line 15
+    .line 16
+    return-void
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+
+# virtual methods
+.method public final a()Z
+    .registers 3
+
+    .line 1
+    iget-boolean v0, p0, Lbd2;->c:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_8
+
+    .line 4
+    .line 5
+    const v0, 0x7fffffff
+
+    .line 6
+    .line 7
+    .line 8
+    goto :goto_a
+
+    .line 9
+    :cond_8
+    const/high16 v0, -0x80000000
+
+    .line 10
+    .line 11
+    :goto_a
+    const/4 v1, 0x1
+
+    .line 12
+    invoke-virtual {p0, v0, v1}, Lbd2;->b(IZ)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    return v0
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+.method public abstract b(IZ)Z
+.end method
+
+.method public final c(I)Z
+    .registers 6
+
+    .line 1
+    iget v0, p0, Lbd2;->g:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-gez v0, :cond_6
+
+    .line 5
+    .line 6
+    goto :goto_20
+
+    .line 7
+    :cond_6
+    iget-boolean v0, p0, Lbd2;->c:Z
+
+    .line 8
+    .line 9
+    const/4 v2, 0x0
+
+    .line 10
+    const/4 v3, 0x1
+
+    .line 11
+    if-eqz v0, :cond_16
+
+    .line 12
+    .line 13
+    invoke-virtual {p0, v3, v2}, Lbd2;->i(Z[I)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    iget v2, p0, Lbd2;->d:I
+
+    .line 18
+    .line 19
+    add-int/2addr p1, v2
+
+    .line 20
+    if-gt v0, p1, :cond_20
+
+    .line 21
+    .line 22
+    goto :goto_1f
+
+    .line 23
+    :cond_16
+    invoke-virtual {p0, v1, v2}, Lbd2;->g(Z[I)I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+
+    .line 27
+    iget v2, p0, Lbd2;->d:I
+
+    .line 28
+    .line 29
+    sub-int/2addr p1, v2
+
+    .line 30
+    if-lt v0, p1, :cond_20
+
+    .line 31
+    .line 32
+    :goto_1f
+    return v3
+
+    .line 33
+    :cond_20
+    :goto_20
+    return v1
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+.end method
+
+.method public final d(I)Z
+    .registers 6
+
+    .line 1
+    iget v0, p0, Lbd2;->g:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-gez v0, :cond_6
+
+    .line 5
+    .line 6
+    goto :goto_20
+
+    .line 7
+    :cond_6
+    iget-boolean v0, p0, Lbd2;->c:Z
+
+    .line 8
+    .line 9
+    const/4 v2, 0x0
+
+    .line 10
+    const/4 v3, 0x1
+
+    .line 11
+    if-eqz v0, :cond_16
+
+    .line 12
+    .line 13
+    invoke-virtual {p0, v1, v2}, Lbd2;->g(Z[I)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    iget v2, p0, Lbd2;->d:I
+
+    .line 18
+    .line 19
+    sub-int/2addr p1, v2
+
+    .line 20
+    if-lt v0, p1, :cond_20
+
+    .line 21
+    .line 22
+    goto :goto_1f
+
+    .line 23
+    :cond_16
+    invoke-virtual {p0, v3, v2}, Lbd2;->i(Z[I)I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+
+    .line 27
+    iget v2, p0, Lbd2;->d:I
+
+    .line 28
+    .line 29
+    add-int/2addr p1, v2
+
+    .line 30
+    if-gt v0, p1, :cond_20
+
+    .line 31
+    .line 32
+    :goto_1f
+    return v3
+
+    .line 33
+    :cond_20
+    :goto_20
+    return v1
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+.end method
+
+.method public e(IILvi0;)V
+    .registers 4
+
+    .line 1
+    return-void
+    .line 2
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+.end method
+
+.method public abstract f(ZI[I)I
+.end method
+
+.method public final g(Z[I)I
+    .registers 4
+
+    .line 1
+    iget-boolean v0, p0, Lbd2;->c:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_7
+
+    .line 4
+    .line 5
+    iget v0, p0, Lbd2;->f:I
+
+    .line 6
+    .line 7
+    goto :goto_9
+
+    .line 8
+    :cond_7
+    iget v0, p0, Lbd2;->g:I
+
+    .line 9
+    .line 10
+    :goto_9
+    invoke-virtual {p0, p1, v0, p2}, Lbd2;->f(ZI[I)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+.end method
+
+.method public abstract h(ZI[I)I
+.end method
+
+.method public final i(Z[I)I
+    .registers 4
+
+    .line 1
+    iget-boolean v0, p0, Lbd2;->c:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_7
+
+    .line 4
+    .line 5
+    iget v0, p0, Lbd2;->g:I
+
+    .line 6
+    .line 7
+    goto :goto_9
+
+    .line 8
+    :cond_7
+    iget v0, p0, Lbd2;->f:I
+
+    .line 9
+    .line 10
+    :goto_9
+    invoke-virtual {p0, p1, v0, p2}, Lbd2;->h(ZI[I)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+.end method
+
+.method public abstract j(II)[Lp60;
+.end method
+
+.method public abstract k(I)Lrf4;
+.end method
+
+.method public l(I)V
+    .registers 4
+
+    .line 1
+    if-gez p1, :cond_3
+
+    .line 2
+    .line 3
+    goto :goto_1f
+
+    .line 4
+    :cond_3
+    iget v0, p0, Lbd2;->g:I
+
+    .line 5
+    .line 6
+    if-gez v0, :cond_8
+
+    .line 7
+    .line 8
+    goto :goto_1f
+
+    .line 9
+    :cond_8
+    if-lt v0, p1, :cond_e
+
+    .line 10
+    .line 11
+    add-int/lit8 v0, p1, -0x1
+
+    .line 12
+    .line 13
+    iput v0, p0, Lbd2;->g:I
+
+    .line 14
+    .line 15
+    :cond_e
+    iget v0, p0, Lbd2;->g:I
+
+    .line 16
+    .line 17
+    iget v1, p0, Lbd2;->f:I
+
+    .line 18
+    .line 19
+    if-ge v0, v1, :cond_19
+
+    .line 20
+    .line 21
+    const/4 v0, -0x1
+
+    .line 22
+    iput v0, p0, Lbd2;->g:I
+
+    .line 23
+    .line 24
+    iput v0, p0, Lbd2;->f:I
+
+    .line 25
+    .line 26
+    :cond_19
+    iget v0, p0, Lbd2;->f:I
+
+    .line 27
+    .line 28
+    if-gez v0, :cond_1f
+
+    .line 29
+    .line 30
+    iput p1, p0, Lbd2;->i:I
+
+    .line 31
+    .line 32
+    :cond_1f
+    :goto_1f
+    return-void
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+.end method
+
+.method public abstract m(IZ)Z
+.end method
+
+.method public final n(I)V
+    .registers 7
+
+    .line 1
+    if-lez p1, :cond_37
+
+    .line 2
+    .line 3
+    iget v0, p0, Lbd2;->e:I
+
+    .line 4
+    .line 5
+    if-ne v0, p1, :cond_7
+
+    .line 6
+    .line 7
+    goto :goto_36
+
+    .line 8
+    :cond_7
+    iput p1, p0, Lbd2;->e:I
+
+    .line 9
+    .line 10
+    new-array p1, p1, [Lp60;
+
+    .line 11
+    .line 12
+    iput-object p1, p0, Lbd2;->h:[Lp60;
+
+    .line 13
+    .line 14
+    const/4 p1, 0x0
+
+    .line 15
+    :goto_e
+    iget v0, p0, Lbd2;->e:I
+
+    .line 16
+    .line 17
+    if-ge p1, v0, :cond_36
+
+    .line 18
+    .line 19
+    iget-object v0, p0, Lbd2;->h:[Lp60;
+
+    .line 20
+    .line 21
+    new-instance v1, Lp60;
+
+    .line 22
+    .line 23
+    const/4 v2, 0x1
+
+    .line 24
+    invoke-direct {v1, v2}, Lp60;-><init>(I)V
+
+    .line 25
+    .line 26
+    .line 27
+    const/16 v2, 0x8
+
+    .line 28
+    .line 29
+    invoke-static {v2}, Ljava/lang/Integer;->bitCount(I)I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v3
+
+    .line 33
+    const/4 v4, 0x1
+
+    .line 34
+    if-eq v3, v4, :cond_29
+
+    .line 35
+    .line 36
+    const/4 v2, 0x7
+
+    .line 37
+    invoke-static {v2}, Ljava/lang/Integer;->highestOneBit(I)I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v2
+
+    .line 41
+    shl-int/2addr v2, v4
+
+    .line 42
+    :cond_29
+    add-int/lit8 v3, v2, -0x1
+
+    .line 43
+    .line 44
+    iput v3, v1, Lp60;->S:I
+
+    .line 45
+    .line 46
+    new-array v2, v2, [I
+
+    .line 47
+    .line 48
+    iput-object v2, v1, Lp60;->T:Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    aput-object v1, v0, p1
+
+    .line 51
+    .line 52
+    add-int/lit8 p1, p1, 0x1
+
+    .line 53
+    .line 54
+    goto :goto_e
+
+    .line 55
+    :cond_36
+    :goto_36
+    return-void
+
+    .line 56
+    :cond_37
+    invoke-static {}, Lxi4;->d()V
+
+    .line 57
+    .line 58
+    .line 59
+    return-void
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+.end method

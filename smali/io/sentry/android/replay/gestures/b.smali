@@ -1,0 +1,1030 @@
+.class public final Lio/sentry/android/replay/gestures/b;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+# interfaces
+.implements Lio/sentry/android/replay/g;
+
+
+# instance fields
+.field public final Q:Lio/sentry/android/core/SentryAndroidOptions;
+
+.field public final R:Lio/sentry/android/replay/ReplayIntegration;
+
+.field public final S:Ljava/util/ArrayList;
+
+.field public final T:Lio/sentry/util/a;
+
+.field public final U:Ljava/util/WeakHashMap;
+
+.field public final V:Lio/sentry/util/a;
+
+
+# direct methods
+.method public constructor <init>(Lio/sentry/android/core/SentryAndroidOptions;Lio/sentry/android/replay/ReplayIntegration;)V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lio/sentry/android/replay/gestures/b;->Q:Lio/sentry/android/core/SentryAndroidOptions;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lio/sentry/android/replay/gestures/b;->R:Lio/sentry/android/replay/ReplayIntegration;
+
+    .line 7
+    .line 8
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 9
+    .line 10
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    iput-object p1, p0, Lio/sentry/android/replay/gestures/b;->S:Ljava/util/ArrayList;
+
+    .line 14
+    .line 15
+    new-instance p1, Lio/sentry/util/a;
+
+    .line 16
+    .line 17
+    invoke-direct {p1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+
+    .line 18
+    .line 19
+    .line 20
+    iput-object p1, p0, Lio/sentry/android/replay/gestures/b;->T:Lio/sentry/util/a;
+
+    .line 21
+    .line 22
+    new-instance p1, Ljava/util/WeakHashMap;
+
+    .line 23
+    .line 24
+    invoke-direct {p1}, Ljava/util/WeakHashMap;-><init>()V
+
+    .line 25
+    .line 26
+    .line 27
+    iput-object p1, p0, Lio/sentry/android/replay/gestures/b;->U:Ljava/util/WeakHashMap;
+
+    .line 28
+    .line 29
+    new-instance p1, Lio/sentry/util/a;
+
+    .line 30
+    .line 31
+    invoke-direct {p1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+
+    .line 32
+    .line 33
+    .line 34
+    iput-object p1, p0, Lio/sentry/android/replay/gestures/b;->V:Lio/sentry/util/a;
+
+    .line 35
+    .line 36
+    return-void
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/view/View;)V
+    .registers 9
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/android/replay/gestures/b;->U:Ljava/util/WeakHashMap;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Lio/sentry/config/a;->k(Landroid/view/View;)Landroid/view/Window;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    iget-object v1, p0, Lio/sentry/android/replay/gestures/b;->Q:Lio/sentry/android/core/SentryAndroidOptions;
+
+    .line 8
+    .line 9
+    if-nez p1, :cond_19
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    sget-object v0, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+
+    .line 16
+    .line 17
+    const/4 v1, 0x0
+
+    .line 18
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    const-string v2, "Window is invalid, not tracking gestures"
+
+    .line 21
+    .line 22
+    invoke-interface {p1, v0, v2, v1}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    :cond_19
+    iget-object v2, p0, Lio/sentry/android/replay/gestures/b;->V:Lio/sentry/util/a;
+
+    .line 27
+    .line 28
+    invoke-virtual {v2}, Lio/sentry/util/a;->a()Lio/sentry/u;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v3
+
+    .line 32
+    :try_start_1f
+    invoke-virtual {v0, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v4
+
+    .line 36
+    check-cast v4, Ljava/lang/ref/WeakReference;
+
+    .line 37
+    .line 38
+    const/4 v5, 0x0
+
+    .line 39
+    if-eqz v4, :cond_31
+
+    .line 40
+    .line 41
+    invoke-virtual {v4}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v4
+
+    .line 45
+    check-cast v4, Lio/sentry/android/replay/gestures/a;
+    :try_end_2e
+    .catchall {:try_start_1f .. :try_end_2e} :catchall_2f
+
+    .line 46
+    .line 47
+    goto :goto_32
+
+    .line 48
+    :catchall_2f
+    move-exception p1
+
+    .line 49
+    goto :goto_60
+
+    .line 50
+    :cond_31
+    move-object v4, v5
+
+    .line 51
+    :goto_32
+    if-eqz v4, :cond_38
+
+    .line 52
+    .line 53
+    invoke-static {v3, v5}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 54
+    .line 55
+    .line 56
+    return-void
+
+    .line 57
+    :cond_38
+    invoke-static {v3, v5}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {p1}, Landroid/view/Window;->getCallback()Landroid/view/Window$Callback;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v3
+
+    .line 64
+    new-instance v4, Lio/sentry/android/replay/gestures/a;
+
+    .line 65
+    .line 66
+    iget-object v6, p0, Lio/sentry/android/replay/gestures/b;->R:Lio/sentry/android/replay/ReplayIntegration;
+
+    .line 67
+    .line 68
+    invoke-direct {v4, v1, v6, v3}, Lio/sentry/android/replay/gestures/a;-><init>(Lio/sentry/android/core/SentryAndroidOptions;Lio/sentry/android/replay/ReplayIntegration;Landroid/view/Window$Callback;)V
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-virtual {p1, v4}, Landroid/view/Window;->setCallback(Landroid/view/Window$Callback;)V
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-virtual {v2}, Lio/sentry/util/a;->a()Lio/sentry/u;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object v1
+
+    .line 78
+    :try_start_4d
+    new-instance v2, Ljava/lang/ref/WeakReference;
+
+    .line 79
+    .line 80
+    invoke-direct {v2, v4}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    .line 81
+    .line 82
+    .line 83
+    invoke-virtual {v0, p1, v2}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_55
+    .catchall {:try_start_4d .. :try_end_55} :catchall_59
+
+    .line 84
+    .line 85
+    .line 86
+    invoke-static {v1, v5}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 87
+    .line 88
+    .line 89
+    return-void
+
+    .line 90
+    :catchall_59
+    move-exception p1
+
+    .line 91
+    :try_start_5a
+    throw p1
+    :try_end_5b
+    .catchall {:try_start_5a .. :try_end_5b} :catchall_5b
+
+    .line 92
+    :catchall_5b
+    move-exception v0
+
+    .line 93
+    invoke-static {v1, p1}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 94
+    .line 95
+    .line 96
+    throw v0
+
+    .line 97
+    :goto_60
+    :try_start_60
+    throw p1
+    :try_end_61
+    .catchall {:try_start_60 .. :try_end_61} :catchall_61
+
+    .line 98
+    :catchall_61
+    move-exception v0
+
+    .line 99
+    invoke-static {v3, p1}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 100
+    .line 101
+    .line 102
+    throw v0
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method
+
+.method public final b()V
+    .registers 5
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/android/replay/gestures/b;->S:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lio/sentry/android/replay/gestures/b;->T:Lio/sentry/util/a;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Lio/sentry/util/a;->a()Lio/sentry/u;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    :try_start_8
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v2
+
+    .line 13
+    :cond_c
+    :goto_c
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v3
+
+    .line 17
+    if-eqz v3, :cond_26
+
+    .line 18
+    .line 19
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v3
+
+    .line 23
+    check-cast v3, Ljava/lang/ref/WeakReference;
+
+    .line 24
+    .line 25
+    invoke-virtual {v3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v3
+
+    .line 29
+    check-cast v3, Landroid/view/View;
+
+    .line 30
+    .line 31
+    if-eqz v3, :cond_c
+
+    .line 32
+    .line 33
+    invoke-virtual {p0, v3}, Lio/sentry/android/replay/gestures/b;->c(Landroid/view/View;)V
+
+    .line 34
+    .line 35
+    .line 36
+    goto :goto_c
+
+    .line 37
+    :catchall_24
+    move-exception v0
+
+    .line 38
+    goto :goto_2e
+
+    .line 39
+    :cond_26
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+    :try_end_29
+    .catchall {:try_start_8 .. :try_end_29} :catchall_24
+
+    .line 40
+    .line 41
+    .line 42
+    const/4 v0, 0x0
+
+    .line 43
+    invoke-static {v1, v0}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 44
+    .line 45
+    .line 46
+    return-void
+
+    .line 47
+    :goto_2e
+    :try_start_2e
+    throw v0
+    :try_end_2f
+    .catchall {:try_start_2e .. :try_end_2f} :catchall_2f
+
+    .line 48
+    :catchall_2f
+    move-exception v2
+
+    .line 49
+    invoke-static {v1, v0}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 50
+    .line 51
+    .line 52
+    throw v2
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+.end method
+
+.method public final c(Landroid/view/View;)V
+    .registers 6
+
+    .line 1
+    invoke-static {p1}, Lio/sentry/config/a;->k(Landroid/view/View;)Landroid/view/Window;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    if-nez p1, :cond_17
+
+    .line 6
+    .line 7
+    iget-object p1, p0, Lio/sentry/android/replay/gestures/b;->Q:Lio/sentry/android/core/SentryAndroidOptions;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Lio/sentry/m6;->getLogger()Lio/sentry/ILogger;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    sget-object v0, Lio/sentry/m5;->DEBUG:Lio/sentry/m5;
+
+    .line 14
+    .line 15
+    const/4 v1, 0x0
+
+    .line 16
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    const-string v2, "Window was null in stopGestureTracking"
+
+    .line 19
+    .line 20
+    invoke-interface {p1, v0, v2, v1}, Lio/sentry/ILogger;->g(Lio/sentry/m5;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+
+    .line 24
+    :cond_17
+    invoke-virtual {p1}, Landroid/view/Window;->getCallback()Landroid/view/Window$Callback;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    instance-of v1, v0, Lio/sentry/android/replay/gestures/a;
+
+    .line 29
+    .line 30
+    const/4 v2, 0x0
+
+    .line 31
+    if-eqz v1, :cond_40
+
+    .line 32
+    .line 33
+    check-cast v0, Lio/sentry/android/replay/gestures/a;
+
+    .line 34
+    .line 35
+    iget-object v0, v0, Lio/sentry/android/replay/util/b;->Q:Landroid/view/Window$Callback;
+
+    .line 36
+    .line 37
+    invoke-virtual {p1, v0}, Landroid/view/Window;->setCallback(Landroid/view/Window$Callback;)V
+
+    .line 38
+    .line 39
+    .line 40
+    iget-object v0, p0, Lio/sentry/android/replay/gestures/b;->V:Lio/sentry/util/a;
+
+    .line 41
+    .line 42
+    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    :try_start_2d
+    iget-object v1, p0, Lio/sentry/android/replay/gestures/b;->U:Ljava/util/WeakHashMap;
+
+    .line 47
+    .line 48
+    invoke-virtual {v1, p1}, Ljava/util/WeakHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object p1
+
+    .line 52
+    check-cast p1, Ljava/lang/ref/WeakReference;
+    :try_end_35
+    .catchall {:try_start_2d .. :try_end_35} :catchall_39
+
+    .line 53
+    .line 54
+    invoke-static {v0, v2}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 55
+    .line 56
+    .line 57
+    return-void
+
+    .line 58
+    :catchall_39
+    move-exception p1
+
+    .line 59
+    :try_start_3a
+    throw p1
+    :try_end_3b
+    .catchall {:try_start_3a .. :try_end_3b} :catchall_3b
+
+    .line 60
+    :catchall_3b
+    move-exception v1
+
+    .line 61
+    invoke-static {v0, p1}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 62
+    .line 63
+    .line 64
+    throw v1
+
+    .line 65
+    :cond_40
+    iget-object v0, p0, Lio/sentry/android/replay/gestures/b;->V:Lio/sentry/util/a;
+
+    .line 66
+    .line 67
+    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v0
+
+    .line 71
+    :try_start_46
+    iget-object v1, p0, Lio/sentry/android/replay/gestures/b;->U:Ljava/util/WeakHashMap;
+
+    .line 72
+    .line 73
+    invoke-virtual {v1, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v1
+
+    .line 77
+    check-cast v1, Ljava/lang/ref/WeakReference;
+
+    .line 78
+    .line 79
+    if-eqz v1, :cond_59
+
+    .line 80
+    .line 81
+    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object v1
+
+    .line 85
+    check-cast v1, Lio/sentry/android/replay/gestures/a;
+
+    .line 86
+    .line 87
+    goto :goto_5a
+
+    .line 88
+    :catchall_57
+    move-exception p1
+
+    .line 89
+    goto :goto_6a
+
+    .line 90
+    :cond_59
+    move-object v1, v2
+
+    .line 91
+    :goto_5a
+    iget-object v3, p0, Lio/sentry/android/replay/gestures/b;->U:Ljava/util/WeakHashMap;
+
+    .line 92
+    .line 93
+    invoke-virtual {v3, p1}, Ljava/util/WeakHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object p1
+
+    .line 97
+    check-cast p1, Ljava/lang/ref/WeakReference;
+    :try_end_62
+    .catchall {:try_start_46 .. :try_end_62} :catchall_57
+
+    .line 98
+    .line 99
+    invoke-static {v0, v2}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 100
+    .line 101
+    .line 102
+    if-eqz v1, :cond_69
+
+    .line 103
+    .line 104
+    iput-object v2, v1, Lio/sentry/android/replay/gestures/a;->S:Lio/sentry/android/replay/ReplayIntegration;
+
+    .line 105
+    .line 106
+    :cond_69
+    return-void
+
+    .line 107
+    :goto_6a
+    :try_start_6a
+    throw p1
+    :try_end_6b
+    .catchall {:try_start_6a .. :try_end_6b} :catchall_6b
+
+    .line 108
+    :catchall_6b
+    move-exception v1
+
+    .line 109
+    invoke-static {v0, p1}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 110
+    .line 111
+    .line 112
+    throw v1
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+.end method
+
+.method public final f(Landroid/view/View;Z)V
+    .registers 6
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lio/sentry/android/replay/gestures/b;->T:Lio/sentry/util/a;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Lio/sentry/util/a;->a()Lio/sentry/u;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    iget-object v1, p0, Lio/sentry/android/replay/gestures/b;->S:Ljava/util/ArrayList;
+
+    .line 11
+    .line 12
+    if-eqz p2, :cond_1b
+
+    .line 13
+    .line 14
+    :try_start_d
+    new-instance p2, Ljava/lang/ref/WeakReference;
+
+    .line 15
+    .line 16
+    invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v1, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p0, p1}, Lio/sentry/android/replay/gestures/b;->a(Landroid/view/View;)V
+
+    .line 23
+    .line 24
+    .line 25
+    goto :goto_27
+
+    .line 26
+    :catchall_19
+    move-exception p1
+
+    .line 27
+    goto :goto_2c
+
+    .line 28
+    :cond_1b
+    invoke-virtual {p0, p1}, Lio/sentry/android/replay/gestures/b;->c(Landroid/view/View;)V
+
+    .line 29
+    .line 30
+    .line 31
+    new-instance p2, Lio/sentry/android/replay/b0;
+
+    .line 32
+    .line 33
+    const/4 v2, 0x1
+
+    .line 34
+    invoke-direct {p2, p1, v2}, Lio/sentry/android/replay/b0;-><init>(Landroid/view/View;I)V
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-static {v1, p2}, Lsm0;->m0(Ljava/util/List;Lj72;)V
+    :try_end_27
+    .catchall {:try_start_d .. :try_end_27} :catchall_19
+
+    .line 38
+    .line 39
+    .line 40
+    :goto_27
+    const/4 p1, 0x0
+
+    .line 41
+    invoke-static {v0, p1}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 42
+    .line 43
+    .line 44
+    return-void
+
+    .line 45
+    :goto_2c
+    :try_start_2c
+    throw p1
+    :try_end_2d
+    .catchall {:try_start_2c .. :try_end_2d} :catchall_2d
+
+    .line 46
+    :catchall_2d
+    move-exception p2
+
+    .line 47
+    invoke-static {v0, p1}, Luv3;->m(Ljava/lang/AutoCloseable;Ljava/lang/Throwable;)V
+
+    .line 48
+    .line 49
+    .line 50
+    throw p2
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
+    .line 120
+    .line 121
+    .line 122
+    .line 123
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+.end method

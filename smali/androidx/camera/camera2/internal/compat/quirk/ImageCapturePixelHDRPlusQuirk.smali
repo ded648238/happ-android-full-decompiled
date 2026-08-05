@@ -1,0 +1,56 @@
+.class public Landroidx/camera/camera2/internal/compat/quirk/ImageCapturePixelHDRPlusQuirk;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+# interfaces
+.implements Lh75;
+
+
+# static fields
+.field public static final a:Ljava/util/List;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 4
+
+    .line 1
+    const-string v0, "Pixel 3"
+
+    .line 2
+    .line 3
+    const-string v1, "Pixel 3 XL"
+
+    .line 4
+    .line 5
+    const-string v2, "Pixel 2"
+
+    .line 6
+    .line 7
+    const-string v3, "Pixel 2 XL"
+
+    .line 8
+    .line 9
+    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    sput-object v0, Landroidx/camera/camera2/internal/compat/quirk/ImageCapturePixelHDRPlusQuirk;->a:Ljava/util/List;
+
+    .line 18
+    .line 19
+    return-void
+    .line 20
+.end method
