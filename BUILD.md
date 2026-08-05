@@ -106,6 +106,38 @@ cd happ_build
 sed -i 's/android:foregroundServiceType="0x40000000"/android:foregroundServiceType="dataSync"/g' AndroidManifest.xml
 ```
 
+## Шаг 2.5. Отключение анти-репак защиты (обязательно)
+
+Happ имеет **анти-тампер проверку подписи** в `HappApplication.onCreate()`:
+
+1. `uk.i(this)` — берёт SHA-1 подпись установленного APK (Base64)
+2. Сравнивает с зашитым значением (расшифровывается через `no1.b()`)
+3. При несовпадении:
+   - `no1.g()` — **затирает крипто-ключи** (заменяет на random UUID)
+   - `sput-object null, HappApplication.x0` — **обнуляет pref_mode**
+
+Из-за этого пересобранный APK падает при старте:
+```
+NullPointerException: Attempt to invoke virtual method
+'java.lang.Class java.lang.Object.getClass()' on a null object reference
+  at MainActivity.onCreate(...:929)   // HappApplication.x0 == null
+```
+
+**Патч** (`smali/su/happ/proxyutility/HappApplication.smali`):
+
+```bash
+# 1) заменить вызов no1.g() на nop
+sed -i 's|invoke-static {}, Lno1;->g()V|# anti-tamper disabled\n    nop|' \
+  smali/su/happ/proxyutility/HappApplication.smali
+
+# 2) заменить обнуление x0 на nop
+sed -i 's|sput-object v3, Lsu/happ/proxyutility/HappApplication;->x0:Ljava/lang/String;|# x0 reset disabled\n    nop|' \
+  smali/su/happ/proxyutility/HappApplication.smali
+```
+
+После патча проверка подписи игнорируется, ключи не затираются,
+`pref_mode` не обнуляется — приложение работает с любой подписью.
+
 ## Шаг 3. Сборка
 
 ```bash
