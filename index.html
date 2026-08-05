@@ -44,9 +44,7 @@
             transition: .2s;
         }
         .badge:hover { background: rgba(255,255,255,.1); color: #fff; }
-        .badge .dot {
-            width: 8px; height: 8px; border-radius: 50%;
-        }
+        .badge .dot { width: 8px; height: 8px; border-radius: 50%; }
         .dot-green { background: #22c55e; }
         .dot-blue { background: #3b82f6; }
         .dot-purple { background: #a855f7; }
@@ -61,115 +59,12 @@
             text-align: center; font-size: 18px; color: #888;
             margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;
         }
-        .stats {
-            display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
-            margin-bottom: 48px;
-        }
-        .stat-card {
-            background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
-            border-radius: 12px; padding: 24px; text-align: center;
-            transition: .3s;
-        }
-        .stat-card:hover {
-            background: rgba(255,255,255,.07);
-            border-color: rgba(125,211,252,.3);
-            transform: translateY(-2px);
-        }
-        .stat-num {
-            font-size: 32px; font-weight: 800;
-            background: linear-gradient(135deg, #7dd3fc, #a78bfa);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        }
-        .stat-label { font-size: 13px; color: #666; margin-top: 4px; }
-        .section-title {
-            font-size: 22px; font-weight: 700; margin: 48px 0 20px;
-            color: #fff;
-        }
-        .features {
-            display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
-            margin-bottom: 48px;
-        }
-        .feature {
-            background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.06);
-            border-radius: 12px; padding: 20px; transition: .3s;
-        }
-        .feature:hover {
-            background: rgba(255,255,255,.06);
-            border-color: rgba(168,85,247,.3);
-        }
-        .feature-icon { font-size: 24px; margin-bottom: 8px; }
-        .feature-title { font-weight: 600; color: #fff; margin-bottom: 4px; }
-        .feature-desc { font-size: 13px; color: #888; line-height: 1.5; }
-        .code-block {
-            background: rgba(0,0,0,.5); border: 1px solid rgba(255,255,255,.08);
-            border-radius: 12px; padding: 20px; margin-bottom: 48px;
-            overflow-x: auto; font-family: 'SF Mono', 'Fira Code', monospace;
-            font-size: 13px; line-height: 1.8; color: #a5b4fc;
-        }
-        .code-block .comment { color: #555; }
-        .code-block .key { color: #7dd3fc; }
-        .code-block .val { color: #34d399; }
-        .code-block .path { color: #c084fc; }
-        .cta-row {
-            display: flex; gap: 16px; justify-content: center;
-            margin: 48px 0;
-        }
-        .btn {
-            display: inline-flex; align-items: center; gap: 8px;
-            padding: 14px 28px; border-radius: 12px; font-size: 15px;
-            font-weight: 600; text-decoration: none; transition: .3s;
-            cursor: pointer; border: none;
-        }
-        .btn-primary {
-            background: linear-gradient(135deg, #7c3aed, #3b82f6);
-            color: #fff;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(124,58,237,.4);
-        }
-        .btn-secondary {
-            background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15);
-            color: #fff;
-        }
-        .btn-secondary:hover {
-            background: rgba(255,255,255,.1);
-        }
-        .secrets {
-            background: rgba(245,158,11,.05); border: 1px solid rgba(245,158,11,.2);
-            border-radius: 12px; padding: 24px; margin-bottom: 48px;
-        }
-        .secrets-title {
-            font-size: 16px; font-weight: 700; color: #f59e0b;
-            margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
-        }
-        .secret-item {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.05);
-            font-size: 13px;
-        }
-        .secret-item:last-child { border: none; }
-        .secret-name { color: #c084fc; font-family: monospace; }
-        .secret-value { color: #34d399; font-family: monospace; }
-        .footer {
-            text-align: center; padding: 40px 0 20px;
-            font-size: 13px; color: #444; border-top: 1px solid rgba(255,255,255,.05);
-        }
-        .footer a { color: #7dd3fc; text-decoration: none; }
-        .footer a:hover { text-decoration: underline; }
-        @media (max-width: 640px) {
-            h1 { font-size: 28px; }
-            .stats { grid-template-columns: repeat(2, 1fr); }
-            .features { grid-template-columns: 1fr; }
-            .cta-row { flex-direction: column; }
-        }
     </style>
 </head>
 <body>
     <div class="bg-grid"></div>
     <div class="glow glow-1"></div>
     <div class="glow glow-2"></div>
-
     <div class="container">
         <!-- Badges -->
         <div class="badge-row">
