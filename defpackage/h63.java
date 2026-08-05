@@ -1,0 +1,20 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+public enum h63 implements xs2 {
+    NONE(0),
+    INTERNAL_TO_CLASS_ID(1),
+    DESC_TO_CLASS_ID(2);
+
+    public final int Q;
+
+    h63(int i) {
+        this.Q = i;
+    }
+
+    @Override // defpackage.xs2
+    public final int a() {
+        return this.Q;
+    }
+}

@@ -1,0 +1,16 @@
+package defpackage;
+
+import android.app.LocaleManager;
+import android.os.LocaleList;
+
+/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+public abstract class xm {
+    public static LocaleList a(Object obj) {
+        return ((LocaleManager) obj).getApplicationLocales();
+    }
+
+    public static void b(Object obj, LocaleList localeList) {
+        ((LocaleManager) obj).setApplicationLocales(localeList);
+    }
+}

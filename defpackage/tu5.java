@@ -1,0 +1,17 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+public final class tu5 extends zv5 {
+    public static final tu5 R = new tu5(-16777216);
+    public static final tu5 S = new tu5(0);
+    public final int Q;
+
+    public tu5(int i) {
+        this.Q = i;
+    }
+
+    public final String toString() {
+        return String.format("#%08x", Integer.valueOf(this.Q));
+    }
+}

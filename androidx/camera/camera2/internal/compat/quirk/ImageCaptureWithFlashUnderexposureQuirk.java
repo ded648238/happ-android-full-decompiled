@@ -1,0 +1,10 @@
+package androidx.camera.camera2.internal.compat.quirk;
+
+import java.util.Arrays;
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+public class ImageCaptureWithFlashUnderexposureQuirk implements UseTorchAsFlashQuirk {
+    public static final List a = Arrays.asList("sm-a260f", "sm-j530f", "sm-j600g", "sm-j701f", "sm-g610f", "sm-j710mn");
+}

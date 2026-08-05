@@ -1,0 +1,7 @@
+*.so
+*.dex
+*.apk
+*.dat
+*.profm
+*.prof
+dexopt/

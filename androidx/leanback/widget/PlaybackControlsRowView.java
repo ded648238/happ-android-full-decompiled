@@ -1,0 +1,35 @@
+package androidx.leanback.widget;
+
+import android.content.Context;
+import android.graphics.Rect;
+import android.util.AttributeSet;
+import android.view.KeyEvent;
+import android.view.View;
+import android.widget.LinearLayout;
+
+/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+class PlaybackControlsRowView extends LinearLayout {
+    public PlaybackControlsRowView(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+    }
+
+    @Override // android.view.ViewGroup, android.view.View
+    public final boolean dispatchKeyEvent(KeyEvent keyEvent) {
+        return super.dispatchKeyEvent(keyEvent);
+    }
+
+    @Override // android.view.View
+    public final boolean hasOverlappingRendering() {
+        return false;
+    }
+
+    @Override // android.view.ViewGroup
+    public final boolean onRequestFocusInDescendants(int i, Rect rect) {
+        View viewFindFocus = findFocus();
+        if (viewFindFocus == null || !viewFindFocus.requestFocus(i, rect)) {
+            return super.onRequestFocusInDescendants(i, rect);
+        }
+        return true;
+    }
+}

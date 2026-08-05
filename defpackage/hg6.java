@@ -1,0 +1,14 @@
+package defpackage;
+
+/* JADX INFO: compiled from: r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5 */
+/* JADX INFO: loaded from: /tmp/happ_dex/classes.dex */
+public final class hg6 extends rf4 {
+    public int U;
+    public int V;
+
+    public hg6(int i, int i2) {
+        super(i, 2);
+        this.U = i2;
+        this.V = 0;
+    }
+}
