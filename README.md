@@ -7,8 +7,8 @@
 
 | Каталог | Кол-во | Описание |
 |---|---|---|
-| `su/`, `defpackage/`, `libxray/`, ... | 9625 .java | jadx 1.5.6 (`--show-bad-code`) — Java-исходники всех 3 dex |
-| `smali/` | 11583 .smali | baksmali (apktool) — 100% классов, включая те, что jadx не смог |
+| `su/`, `defpackage/`, `libxray/`, ... | 9637 .java | jadx 1.5.6 — Java-исходники всех 3 dex |
+| `smali/` | 11583 .smali (0 пустых) | baksmali (apktool) — 100% классов, включая те, что jadx не смог |
 | `res/` | — | Все ресурсы: 986 строк, 80+ языков, цвета, стили, drawable |
 | `AndroidManifest.xml` | — | Полный манифест (40+ activity, сервисы, deep links) |
 | `xray_config.json` / `xray_config_with_tun.json` | — | Дефолтные Xray-конфиги |
@@ -20,6 +20,13 @@
   все протоколы (VMess/VLESS/SS/SOCKS/Trojan/WG/Hysteria2), все транспорты
   (WS, gRPC, KCP, QUIC, XHTTP, HTTPupgrade, TCP-masks), masquerade, observatory,
   burst observatory, fakedns, routing balancer, mux, sockopt
+- `su/happ/proxyutility/util/protection/EncryptedSubUrlHelper.java` — **167KB**, шифрование URL подписок
+- `su/happ/proxyutility/util/dnsttv/dto/RequestEnvelope.java` — DNSTT-протокол (v1, DeviceOS, Route)
+- `su/happ/proxyutility/feature/main/MainViewModel.java` — **61KB**, main VM
+- `su/happ/proxyutility/service/XRayProxyOnlyService.java` — proxy-режим
+- `su/happ/proxyutility/service/XRayAntiFilterService.java` — антифильтр
+- `su/happ/proxyutility/service/XRayTestService.java` — пинг/тесты
+- `libxray/*.java` — **полный JNI-интерфейс** к Go-ядру (Libxray, XRayPoint, ConsoleLogWriter)
 - `su/happ/proxyutility/service/XRayVpnService.java` — **1311 строк**, VPN-сервис:
   TUN (MTU 1500, 10.0.0.1/30), DNS, per-app (getConnectionOwnerUid), socks/http auth,
   proxy sharing, silent-режим
@@ -56,3 +63,11 @@
 - Проект закрытый, исходников авторы не публикуют — это reverse engineering.
 - Go-ядро (`libgojni.so`, 34MB) — бинарник, исходников нет (gomobile bind).
 - Декомпиляция: jadx 1.5.6 + apktool 2.7.0 (baksmali 3.x).
+
+## Go-ядро (libgojni.so, 35MB)
+
+- `go_funcs.txt` — **41,962 функции** (извлечено из .gopclntab через debug/gosym)
+- Это **стоковый xtls/xray-core** (github.com/xtls/xray-core) + gomobile bind обвязка
+- Модули: xray-core app/common/proxy, apernet/quic-go (Hysteria2), cloudflare/circl (ML-KEM), brotli, gvisor tun2socks
+- Никакого кастомного крипто/протоколов в Go-ядре — вся уникальная логика Happ на Java-стороне (DNSTT, подписки)
+- Анализ: `docs/go-core-re.md`
