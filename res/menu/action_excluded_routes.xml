@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/add_private" android:title="@string/excluded_routes_menu_add_private" />
+    <item android:id="@id/clear_all" android:title="@string/excluded_routes_menu_clear_all" />
+    <item android:id="@id/import_ip" android:title="@string/excluded_routes_menu_import" />
+    <item android:id="@id/export_ip" android:title="@string/excluded_routes_menu_export" />
+</menu>

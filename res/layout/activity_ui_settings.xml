@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?settingsBackground" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/title_ui_settings" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_ui_settings" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/title_ui_settings" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+            <su.happ.proxyutility.ui.foundation.component.HappToggleField android:id="@id/toggle_enable_speed" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/title_pref_speed_enabled">
+                <requestFocus />
+            </su.happ.proxyutility.ui.foundation.component.HappToggleField>
+        </LinearLayout>
+        <su.happ.proxyutility.ui.foundation.component.HappSettingsDescription android:id="@id/tv_enable_speed_description" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing" android:text="@string/summary_pref_speed_enabled" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+        <su.happ.proxyutility.ui.foundation.component.HappSpinnerField android:id="@id/spinner_font_size" android:background="@drawable/bg_text_on_main" android:layout_width="match_parent" android:layout_height="wrap_content" app:entries="@array/font_size_entries" app:title="@string/title_pref_font_size" />
+        <su.happ.proxyutility.ui.foundation.component.HappToggleField android:id="@id/toggle_live_updates" android:background="@drawable/bg_text_on_main" android:layout_width="match_parent" android:layout_height="match_parent" app:title="@string/title_pref_live_updates" />
+    </LinearLayout>
+</LinearLayout>

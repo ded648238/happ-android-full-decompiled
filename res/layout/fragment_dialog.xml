@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/dialog_margin" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cv_fragment_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/dialog_radius" app:cardElevation="@dimen/dialog_elevation" app:cardUseCompatPadding="true" app:theme="@style/Theme.MaterialComponents.DayNight.Bridge">
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/layout_margin_spacing_secondary" android:paddingBottom="@dimen/layout_margin_spacing_secondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/layout_margin_spacing_tertiary" android:paddingEnd="@dimen/layout_margin_spacing_tertiary">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/dialog_text_size_primary" android:textColor="?colorTextDialog" android:id="@id/dialog_title" android:paddingBottom="@dimen/dialog_margin_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <FrameLayout android:id="@id/dialog_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dialog_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

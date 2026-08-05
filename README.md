@@ -51,8 +51,45 @@
 - `docs/vpn-core.md` — Xray-ядро, JNI, TUN
 - `docs/dnstt-protocol.md` — DNS-туннель и серверная инфраструктура
 
+## Сборка APK
+
+Репозиторий готов к сборке через apktool 3.0.3. Все фиксы уже применены:
+- `res/values-v34/colors.xml` — приватные `@android:color/*` заменены на hex
+- `AndroidManifest.xml` — `foregroundServiceType` исправлен на `dataSync`
+- `smali/su/happ/proxyutility/HappApplication.smali` — anti-tamper патч (no1.g() и x0 reset → nop)
+
+### Быстрая сборка
+
+```bash
+./build.sh
+# Результат: /tmp/happ_mod_signed.apk
+```
+
+### Ручная сборка
+
+```bash
+# Установить зависимости
+apt install -y openjdk-17-jdk-headless apksigner
+
+# Скачать apktool 3.0.3
+curl -sL -o /tmp/apktool_3.0.3.jar https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar
+
+# Сборка
+JAVA_TOOL_OPTIONS="-Xmx512m" java -jar /tmp/apktool_3.0.3.jar b . -o /tmp/happ_rebuild.apk
+
+# Подпись
+keytool -genkey -v -keystore /tmp/happ.keystore -alias happ -keyalg RSA -keysize 2048 \
+  -validity 10000 -storepass happ123 -keypass happ123 -dname "CN=HappMod, O=HappMod, C=RU"
+apksigner sign --ks /tmp/happ.keystore --ks-pass pass:happ123 --key-pass pass:happ123 \
+  --out /tmp/happ_mod_signed.apk /tmp/happ_rebuild.apk
+```
+
+Подробности в [BUILD.md](BUILD.md).
+
 ## Заметки
 
 - Проект закрытый, исходников авторы не публикуют — это reverse engineering.
 - Go-ядро (`libgojni.so`, 34MB) — бинарник, исходников нет (gomobile bind).
-- Декомпиляция: jadx 1.5.6 + apktool 2.7.0 (baksmali 3.x).
+- Декомпиляция: jadx 1.5.6 + apktool 3.0.3 (baksmali).
+- Структура: `smali/` (classes.dex), `smali_classes2/` (classes2.dex), `smali_classes3/` (classes3.dex).
+- Java-исходники (jadx) в каталогах `su/`, `defpackage/`, `com/`, `androidx/` и др. — для чтения, не участвуют в сборке.

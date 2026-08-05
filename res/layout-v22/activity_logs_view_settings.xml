@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?settingsBackground" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/logs_view" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_logs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/dialog_margin_secondary" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="@string/title_logs" android:singleLine="true" android:layout_marginHorizontal="@dimen/activity_horizontal_margin" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_logs_core" android:background="?settingsBackgroundFragment" android:padding="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_logs_page" android:background="?settingsBackgroundFragment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="24.0dp">
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/log_arrow_left_end" android:background="@drawable/bg_text_on_main" android:paddingLeft="24.0dp" android:paddingTop="12.0dp" android:paddingRight="24.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_to_right_end_24dp" android:rotation="180.0" android:paddingHorizontal="24.0dp" android:paddingVertical="12.0dp" />
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/log_arrow_left" android:background="@drawable/bg_text_on_main" android:paddingLeft="24.0dp" android:paddingTop="12.0dp" android:paddingRight="24.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_forward_24dp" android:rotation="180.0" android:paddingHorizontal="24.0dp" android:paddingVertical="12.0dp" />
+                <su.happ.proxyutility.ui.foundation.component.HappTextView android:id="@id/tv_page_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/log_arrow_right" android:background="@drawable/bg_text_on_main" android:paddingLeft="24.0dp" android:paddingTop="12.0dp" android:paddingRight="24.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_forward_24dp" android:paddingHorizontal="24.0dp" android:paddingVertical="12.0dp" />
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/log_arrow_right_end" android:background="@drawable/bg_text_on_main" android:paddingLeft="24.0dp" android:paddingTop="12.0dp" android:paddingRight="24.0dp" android:paddingBottom="12.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_to_right_end_24dp" android:paddingHorizontal="24.0dp" android:paddingVertical="12.0dp" />
+            </LinearLayout>
+            <ScrollView android:id="@id/sv_logcat" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <su.happ.proxyutility.ui.foundation.component.HappTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="bottom" android:id="@id/tv_logcat" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="65536">
+                        <requestFocus />
+                    </su.happ.proxyutility.ui.foundation.component.HappTextView>
+                    <android.widget.Space android:layout_width="0.0dp" android:layout_height="32.0dp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/pb_waiting" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@android:style/Widget.DeviceDefault.ProgressBar" />
+    <su.happ.proxyutility.ui.foundation.component.HappSnackbarHost android:id="@id/snackbar_host_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+</RelativeLayout>

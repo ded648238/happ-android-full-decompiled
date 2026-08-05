@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/save_routing" android:title="@string/routing_settings_save" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_delete_24dp" android:id="@id/del_routing" android:title="@string/routing_settings_delete" app:showAsAction="never" />
+    <item android:id="@id/set_lan" android:title="@string/routing_settings_set_lan_addresses" app:showAsAction="never" />
+    <item android:id="@id/set_default" android:title="@string/routing_settings_set_default_rules" app:showAsAction="never" />
+</menu>

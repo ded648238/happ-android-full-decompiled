@@ -1,0 +1,1198 @@
+.class public final synthetic Lj$/util/stream/u6;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+# interfaces
+.implements Lj$/util/stream/Stream;
+
+
+# instance fields
+.field public final synthetic a:Ljava/util/stream/Stream;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/util/stream/Stream;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static synthetic g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    if-nez p0, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p0, 0x0
+
+    .line 4
+    return-object p0
+
+    .line 5
+    :cond_0
+    instance-of v0, p0, Lj$/util/stream/Stream$Wrapper;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_1
+
+    .line 8
+    .line 9
+    check-cast p0, Lj$/util/stream/Stream$Wrapper;
+
+    .line 10
+    .line 11
+    iget-object p0, p0, Lj$/util/stream/Stream$Wrapper;->a:Lj$/util/stream/Stream;
+
+    .line 12
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_1
+    new-instance v0, Lj$/util/stream/u6;
+
+    .line 15
+    .line 16
+    invoke-direct {v0, p0}, Lj$/util/stream/u6;-><init>(Ljava/util/stream/Stream;)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final synthetic allMatch(Ljava/util/function/Predicate;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->allMatch(Ljava/util/function/Predicate;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public final synthetic anyMatch(Ljava/util/function/Predicate;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->anyMatch(Ljava/util/function/Predicate;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public final synthetic b(Lj$/util/q;)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Lj$/util/stream/t3;->O(Ljava/util/function/Function;)Lj$/util/q;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->flatMap(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-static {p1}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method
+
+.method public final synthetic close()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/BaseStream;->close()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final synthetic collect(Lj$/util/stream/Collector;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    if-nez p1, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p1, 0x0
+
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    instance-of v1, p1, Lj$/util/stream/h;
+
+    .line 8
+    .line 9
+    if-eqz v1, :cond_1
+
+    .line 10
+    .line 11
+    check-cast p1, Lj$/util/stream/h;
+
+    .line 12
+    .line 13
+    iget-object p1, p1, Lj$/util/stream/h;->a:Ljava/util/stream/Collector;
+
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_1
+    new-instance v1, Lj$/util/stream/i;
+
+    .line 17
+    .line 18
+    invoke-direct {v1, p1}, Lj$/util/stream/i;-><init>(Lj$/util/stream/Collector;)V
+
+    .line 19
+    .line 20
+    .line 21
+    move-object p1, v1
+
+    .line 22
+    :goto_0
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->collect(Ljava/util/stream/Collector;)Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    return-object p1
+.end method
+
+.method public final synthetic collect(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;
+    .locals 1
+
+    .line 27
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    invoke-interface {v0, p1, p2, p3}, Ljava/util/stream/Stream;->collect(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic count()J
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/Stream;->count()J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide v0
+
+    .line 7
+    return-wide v0
+.end method
+
+.method public final synthetic distinct()Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/Stream;->distinct()Ljava/util/stream/Stream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
+.method public final synthetic dropWhile(Ljava/util/function/Predicate;)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->dropWhile(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    instance-of v1, p1, Lj$/util/stream/u6;
+
+    .line 4
+    .line 5
+    if-eqz v1, :cond_0
+
+    .line 6
+    .line 7
+    check-cast p1, Lj$/util/stream/u6;
+
+    .line 8
+    .line 9
+    iget-object p1, p1, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 10
+    .line 11
+    :cond_0
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
+
+    .line 15
+    return p1
+.end method
+
+.method public final synthetic filter(Ljava/util/function/Predicate;)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic findAny()Lj$/util/c0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/Stream;->findAny()Ljava/util/Optional;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lj$/util/c;->i(Ljava/util/Optional;)Lj$/util/c0;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
+.method public final synthetic findFirst()Lj$/util/c0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/Stream;->findFirst()Ljava/util/Optional;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lj$/util/c;->i(Ljava/util/Optional;)Lj$/util/c0;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
+.method public final synthetic forEach(Ljava/util/function/Consumer;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->forEach(Ljava/util/function/Consumer;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final synthetic forEachOrdered(Ljava/util/function/Consumer;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->forEachOrdered(Ljava/util/function/Consumer;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final synthetic hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final synthetic isParallel()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/BaseStream;->isParallel()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final synthetic iterator()Ljava/util/Iterator;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/BaseStream;->iterator()Ljava/util/Iterator;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final synthetic k(Lj$/util/q;)Lj$/util/stream/LongStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Lj$/util/stream/t3;->O(Ljava/util/function/Function;)Lj$/util/q;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->flatMapToLong(Ljava/util/function/Function;)Ljava/util/stream/LongStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-static {p1}, Lj$/util/stream/j1;->g(Ljava/util/stream/LongStream;)Lj$/util/stream/LongStream;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method
+
+.method public final synthetic limit(J)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1, p2}, Ljava/util/stream/Stream;->limit(J)Ljava/util/stream/Stream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic map(Ljava/util/function/Function;)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->map(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic mapToDouble(Ljava/util/function/ToDoubleFunction;)Lj$/util/stream/DoubleStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->mapToDouble(Ljava/util/function/ToDoubleFunction;)Ljava/util/stream/DoubleStream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/b0;->g(Ljava/util/stream/DoubleStream;)Lj$/util/stream/DoubleStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic mapToInt(Ljava/util/function/ToIntFunction;)Lj$/util/stream/IntStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->mapToInt(Ljava/util/function/ToIntFunction;)Ljava/util/stream/IntStream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/IntStream$VivifiedWrapper;->convert(Ljava/util/stream/IntStream;)Lj$/util/stream/IntStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic mapToLong(Ljava/util/function/ToLongFunction;)Lj$/util/stream/LongStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->mapToLong(Ljava/util/function/ToLongFunction;)Ljava/util/stream/LongStream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/j1;->g(Ljava/util/stream/LongStream;)Lj$/util/stream/LongStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic max(Ljava/util/Comparator;)Lj$/util/c0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->max(Ljava/util/Comparator;)Ljava/util/Optional;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/c;->i(Ljava/util/Optional;)Lj$/util/c0;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic min(Ljava/util/Comparator;)Lj$/util/c0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->min(Ljava/util/Comparator;)Ljava/util/Optional;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/c;->i(Ljava/util/Optional;)Lj$/util/c0;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic noneMatch(Ljava/util/function/Predicate;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->noneMatch(Ljava/util/function/Predicate;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public final synthetic o(Lj$/util/q;)Lj$/util/stream/DoubleStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Lj$/util/stream/t3;->O(Ljava/util/function/Function;)Lj$/util/q;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->flatMapToDouble(Ljava/util/function/Function;)Ljava/util/stream/DoubleStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-static {p1}, Lj$/util/stream/b0;->g(Ljava/util/stream/DoubleStream;)Lj$/util/stream/DoubleStream;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method
+
+.method public final synthetic onClose(Ljava/lang/Runnable;)Lj$/util/stream/BaseStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/BaseStream;->onClose(Ljava/lang/Runnable;)Ljava/util/stream/BaseStream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/e;->g(Ljava/util/stream/BaseStream;)Lj$/util/stream/BaseStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic parallel()Lj$/util/stream/BaseStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/BaseStream;->parallel()Ljava/util/stream/BaseStream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lj$/util/stream/e;->g(Ljava/util/stream/BaseStream;)Lj$/util/stream/BaseStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
+.method public final synthetic peek(Ljava/util/function/Consumer;)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->peek(Ljava/util/function/Consumer;)Ljava/util/stream/Stream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic q(Lj$/util/q;)Lj$/util/stream/IntStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Lj$/util/stream/t3;->O(Ljava/util/function/Function;)Lj$/util/q;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->flatMapToInt(Ljava/util/function/Function;)Ljava/util/stream/IntStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-static {p1}, Lj$/util/stream/IntStream$VivifiedWrapper;->convert(Ljava/util/stream/IntStream;)Lj$/util/stream/IntStream;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    return-object p1
+.end method
+
+.method public final synthetic reduce(Ljava/util/function/BinaryOperator;)Lj$/util/c0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->reduce(Ljava/util/function/BinaryOperator;)Ljava/util/Optional;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/c;->i(Ljava/util/Optional;)Lj$/util/c0;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic reduce(Ljava/lang/Object;Ljava/util/function/BiFunction;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;
+    .locals 1
+
+    .line 12
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    invoke-interface {v0, p1, p2, p3}, Ljava/util/stream/Stream;->reduce(Ljava/lang/Object;Ljava/util/function/BiFunction;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic reduce(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;
+    .locals 1
+
+    .line 13
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    invoke-interface {v0, p1, p2}, Ljava/util/stream/Stream;->reduce(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic sequential()Lj$/util/stream/BaseStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/BaseStream;->sequential()Ljava/util/stream/BaseStream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lj$/util/stream/e;->g(Ljava/util/stream/BaseStream;)Lj$/util/stream/BaseStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
+.method public final synthetic skip(J)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1, p2}, Ljava/util/stream/Stream;->skip(J)Ljava/util/stream/Stream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic sorted()Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/Stream;->sorted()Ljava/util/stream/Stream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
+.method public final synthetic sorted(Ljava/util/Comparator;)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 12
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->sorted(Ljava/util/Comparator;)Ljava/util/stream/Stream;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic spliterator()Lj$/util/Spliterator;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/BaseStream;->spliterator()Ljava/util/Spliterator;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lj$/util/g1;->a(Ljava/util/Spliterator;)Lj$/util/Spliterator;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method
+
+.method public final synthetic takeWhile(Ljava/util/function/Predicate;)Lj$/util/stream/Stream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->takeWhile(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-static {p1}, Lj$/util/stream/u6;->g(Ljava/util/stream/Stream;)Lj$/util/stream/Stream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
+.end method
+
+.method public final synthetic toArray()[Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/Stream;->toArray()[Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final synthetic toArray(Ljava/util/function/IntFunction;)[Ljava/lang/Object;
+    .locals 1
+
+    .line 8
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    invoke-interface {v0, p1}, Ljava/util/stream/Stream;->toArray(Ljava/util/function/IntFunction;)[Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic toList()Ljava/util/List;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/Stream;->toList()Ljava/util/List;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final synthetic unordered()Lj$/util/stream/BaseStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lj$/util/stream/u6;->a:Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/stream/BaseStream;->unordered()Ljava/util/stream/BaseStream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lj$/util/stream/e;->g(Ljava/util/stream/BaseStream;)Lj$/util/stream/BaseStream;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+.end method

@@ -1431,13 +1431,13 @@
 
     .line 92
     .line 93
-    # patch: anti-tamper no1.g() disabled
+    # anti-tamper disabled
     nop
 
     .line 94
     .line 95
     .line 96
-    # patch: anti-tamper x0 reset disabled
+    # x0 reset disabled
     nop
 
     .line 97

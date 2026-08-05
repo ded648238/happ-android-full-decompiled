@@ -1,0 +1,31 @@
+.class public final Lz94;
+.super Ljava/lang/Object;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# instance fields
+.field public final a:Lx94;
+
+.field public final b:Lfy2;
+
+
+# direct methods
+.method public constructor <init>(Lx94;Lfy2;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lz94;->a:Lx94;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lz94;->b:Lfy2;
+
+    .line 7
+    .line 8
+    return-void
+.end method

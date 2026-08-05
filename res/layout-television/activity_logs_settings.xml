@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?settingsBackground" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/title_logs" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/cl_logs_settings" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_logs_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/logs_settings" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+            <su.happ.proxyutility.ui.foundation.component.HappSpinnerField android:id="@id/spinner_logs_core" android:background="@drawable/bg_text_on_main" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/logs_core">
+                <requestFocus />
+            </su.happ.proxyutility.ui.foundation.component.HappSpinnerField>
+            <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_logs_core" android:background="?settingsBorder" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+            <su.happ.proxyutility.ui.foundation.component.HappSpinnerField android:id="@id/spinner_logs_output" android:background="@drawable/bg_text_on_main" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/logs_output" />
+            <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_logs_output" android:background="?settingsBorder" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+            <su.happ.proxyutility.ui.foundation.component.HappForwardField android:id="@id/ff_view_logs" android:background="@drawable/bg_text_on_main" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/logs_view" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_view_log_files" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="24.0dp" android:layout_weight="1.0">
+            <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_view_log_files" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/title_log_files" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+            <include android:id="@id/access_file" android:visibility="gone" layout="@layout/item_recycler_log_file" />
+            <include android:id="@id/subscription_file" android:visibility="gone" layout="@layout/item_recycler_log_file" />
+            <include android:id="@id/push_file" android:visibility="gone" layout="@layout/item_recycler_log_file" />
+            <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_xray_log_files" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/title_xray_log_files" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+            <androidx.leanback.widget.VerticalGridView android:id="@id/rv_log_files" android:background="?settingsBackgroundFragment" android:paddingBottom="@dimen/layout_screen_bottom_margin" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

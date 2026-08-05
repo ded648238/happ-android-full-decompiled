@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?settingsBackground" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/title_about" />
+    <ScrollView android:id="@id/scroll_view" android:paddingBottom="100.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:isScrollContainer="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_about_block_1" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_server" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/about_info" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+                <su.happ.proxyutility.ui.foundation.component.HappInfoField android:id="@id/if_xray_version" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/about_xray_version">
+                    <requestFocus />
+                </su.happ.proxyutility.ui.foundation.component.HappInfoField>
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_xray_version" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+                <su.happ.proxyutility.ui.foundation.component.HappInfoField android:id="@id/if_app_version" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/about_app_version" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_about_block_2" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_links" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/about_links" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+                <su.happ.proxyutility.ui.foundation.component.HappForwardField android:id="@id/ff_terms" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/about_terms_of_services" />
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_terms" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+                <su.happ.proxyutility.ui.foundation.component.HappForwardField android:id="@id/ff_policy" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/about_privacy_policy" />
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_policy" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+                <su.happ.proxyutility.ui.foundation.component.HappForwardField android:id="@id/ff_libraries" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/about_third_party_libraries" />
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_licenses" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+                <su.happ.proxyutility.ui.foundation.component.HappInfoField android:id="@id/if_email" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/about_email" />
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_email" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+                <su.happ.proxyutility.ui.foundation.component.HappInfoField android:id="@id/if_telegram" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/about_telegram" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/cl_about_block_3" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/about_device" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+                <su.happ.proxyutility.ui.foundation.component.HappInfoField android:id="@id/if_android_version" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/about_android_version" />
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_android_version" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+                <su.happ.proxyutility.ui.foundation.component.HappInfoField android:id="@id/if_model_name" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/about_model_name" />
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_model_name" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+                <su.happ.proxyutility.ui.foundation.component.HappInfoField android:id="@id/if_hwid" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:copyOnShortClick="true" app:title="@string/about_hwid" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

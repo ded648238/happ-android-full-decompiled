@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/title_about" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+    <su.happ.proxyutility.ui.foundation.component.HappForwardField android:id="@id/forward_faq" android:background="@drawable/bg_text_on_main" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/title_faq" />
+    <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_faq" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+    <su.happ.proxyutility.ui.foundation.component.HappForwardField android:id="@id/forward_url_schemes" android:background="@drawable/bg_text_on_main" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/title_url_schemes" />
+    <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_url_schemes" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+    <su.happ.proxyutility.ui.foundation.component.HappForwardField android:id="@id/forward_about" android:background="@drawable/bg_text_on_main" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/title_about" />
+</LinearLayout>

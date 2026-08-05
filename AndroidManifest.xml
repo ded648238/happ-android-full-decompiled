@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="37" android:compileSdkVersionCodename="17" android:installLocation="internalOnly" package="su.happ.proxyutility" platformBuildVersionCode="37" platformBuildVersionName="17">
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.POST_PROMOTED_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.QUICKBOOT_POWERON"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="su.happ.proxyutility.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="su.happ.proxyutility.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <queries>
+        <package android:name="com.miui.securitycenter"/>
+        <package android:name="com.miui.permcenter"/>
+        <package android:name="com.letv.android.letvsafe"/>
+        <package android:name="com.asus.mobilemanager"/>
+        <package android:name="com.huawei.systemmanager"/>
+        <package android:name="com.coloros.safecenter"/>
+        <package android:name="com.oppo.safe"/>
+        <package android:name="com.iqoo.secure"/>
+        <package android:name="com.vivo.permissionmanager"/>
+        <package android:name="com.evenwell.powersaving"/>
+        <package android:name="com.samsung.android"/>
+        <package android:name="com.oneplus"/>
+        <package android:name="com.android.settings"/>
+    </queries>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/app_banner" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="su.happ.proxyutility.HappApplication" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="true" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.main.MainActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:host="add" android:scheme="happ"/>
+                <data android:host="routing" android:scheme="happ"/>
+                <data android:host="send_to_device" android:scheme="happ"/>
+                <data android:host="crypt" android:scheme="happ"/>
+                <data android:host="crypt2" android:scheme="happ"/>
+                <data android:host="crypt3" android:scheme="happ"/>
+                <data android:host="crypt4" android:scheme="happ"/>
+                <data android:host="crypt5" android:scheme="happ"/>
+                <data android:host="toggle" android:scheme="happ"/>
+                <data android:host="connect" android:scheme="happ"/>
+                <data android:host="disconnect" android:scheme="happ"/>
+                <data android:host="open" android:scheme="happ"/>
+                <data android:host="close" android:scheme="happ"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.json" android:scheme="content"/>
+                <data android:host="*" android:mimeType="application/json" android:pathPattern=".*json" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*happ" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.happ" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:exported="true" android:name="su.happ.proxyutility.feature.deeplink.DeeplinkInterceptorActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:host="connect_without_ui" android:scheme="happ"/>
+                <data android:host="open_without_ui" android:scheme="happ"/>
+                <data android:host="disconnect_without_ui" android:scheme="happ"/>
+                <data android:host="close_without_ui" android:scheme="happ"/>
+                <data android:host="toggle_without_ui" android:scheme="happ"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.ui.ServerActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.custom_config.ServerCustomConfigActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.settings.SettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.language.LanguageActivitySettings" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.ui_settings.UISettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.vpn_settings.VpnSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.excluded_routes.ExcludedRoutesActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.inbound_auth.InboundAuthActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.subscription_settings.SubscriptionSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.ping.PingSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.statistics.StatisticsSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.logs.LogsSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.reset_settings.ResetSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.ui.FaqSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.ui.WebViewActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.ui.UrlSchemesSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.report.ReportActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.proxy.PerAppProxyActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.ui.ScannerActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.logs.LogsViewSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.routing.settings.RoutingSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.routing.settings.RoutingSettingsEditActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.routing.settings.RoutingSettingsEditSearchActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.ui.ScScannerActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.BarNavigationTransparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.routing.rules.RoutingRulesActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.routing.profile.RoutingProfileActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.about_settings.AboutSettingsActivity" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.feature.routing.sub.SubRoutingActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="su.happ.proxyutility.ui.ScSwitchActivity" android:process=":XRayDaemon" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar.Translucent" android:windowSoftInputMode="adjustPan"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:label="@string/app_name" android:name="su.happ.proxyutility.service.XRayVpnService" android:permission="android.permission.BIND_VPN_SERVICE" android:process=":XRayDaemon" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+            <meta-data android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON" android:value="true"/>
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="vpn"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:label="@string/app_name" android:name="su.happ.proxyutility.service.XRayProxyOnlyService" android:process=":XRayDaemon" android:stopWithTask="false">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="proxy"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:label="@string/app_name" android:name="su.happ.proxyutility.service.XRayAntiFilterService" android:process=":XRayDaemon" android:stopWithTask="false">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="proxy"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:label="@string/app_name" android:name="su.happ.proxyutility.service.DownloadFilesService" android:process=":DownloadBackgroundDaemon" android:stopWithTask="false">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="proxy"/>
+        </service>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="dataSync" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <service android:exported="false" android:name="su.happ.proxyutility.service.XRayTestService" android:process=":XRayDaemon"/>
+        <service android:exported="false" android:name="androidx.work.multiprocess.RemoteWorkManagerService" android:process=":bg_process"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":bg_process"/>
+        <receiver android:exported="true" android:name="su.happ.proxyutility.receiver.WidgetProvider" android:process=":XRayDaemon">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_provider"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="su.happ.proxyutility.action.widget.click"/>
+                <action android:name="su.happ.proxyutility.action.activity"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="su.happ.proxyutility.receiver.BootUpReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="su.happ.proxyutility.receiver.SubscriptionUpdaterReceiver">
+            <intent-filter>
+                <action android:name="su.happ.proxyutility.receiver.SubscriptionUpdater.CANCEL_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:foregroundServiceType="dataSync" android:icon="@drawable/ic_stat_name" android:label="@string/app_tile_name" android:name="su.happ.proxyutility.service.QSTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:process=":XRayDaemon">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="tile"/>
+        </service>
+        <service android:exported="false" android:name="su.happ.proxyutility.firebase.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="su.happ.proxyutility.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="su.happ.proxyutility.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/paths"/>
+        </provider>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_stat_name"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="su.happ.proxyutility.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="su.happ.proxyutility.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="su.happ.proxyutility.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <provider android:authorities="su.happ.proxyutility.SentryNdkPreloadProvider" android:exported="false" android:initOrder="2000000000" android:name="io.sentry.ndk.SentryNdkPreloadProvider"/>
+    </application>
+</manifest>

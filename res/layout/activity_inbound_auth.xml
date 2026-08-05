@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/activity_inbound_auth_0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="?settingsBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/inbound_authorization_title" />
+        <ScrollView android:id="@id/scroll_view" android:paddingBottom="100.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:isScrollContainer="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_socks" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_socks" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/inbound_authorization_socks_title" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+                    <su.happ.proxyutility.ui.foundation.component.HappInputField android:id="@id/if_socks_port" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:hint="@string/port_socks_default" app:title="@string/title_pref_socks_port" />
+                    <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <su.happ.proxyutility.ui.foundation.component.HappSpinnerField android:id="@id/spinner_socks_mode" android:layout_width="match_parent" android:layout_height="wrap_content" app:entries="@array/inbound_authorization_modes" app:title="@string/inbound_authorization_mode">
+                        <requestFocus />
+                    </su.happ.proxyutility.ui.foundation.component.HappSpinnerField>
+                    <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <su.happ.proxyutility.ui.foundation.component.HappInputField android:id="@id/if_socks_user" android:layout_width="match_parent" android:layout_height="wrap_content" app:copyOnShortClick="true" app:title="@string/inbound_authorization_user" />
+                    <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <su.happ.proxyutility.ui.foundation.component.HappInputField android:id="@id/if_socks_password" android:layout_width="match_parent" android:layout_height="wrap_content" app:copyOnShortClick="true" app:title="@string/inbound_authorization_password" />
+                </LinearLayout>
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDescription android:id="@id/socks_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/activity_horizontal_margin" />
+                <Space android:layout_width="0.0dp" android:layout_height="24.0dp" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_http" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_http" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/inbound_authorization_http_title" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+                    <su.happ.proxyutility.ui.foundation.component.HappToggleField android:id="@id/toggle_http_enabled" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/inbound_authorization_http_enable" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_http_params" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:layout_width="match_parent" android:layout_height="1.0dp" />
+                        <su.happ.proxyutility.ui.foundation.component.HappInputField android:id="@id/if_http_port" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:hint="@string/port_http_default" app:title="@string/title_pref_http_port" />
+                        <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:layout_width="match_parent" android:layout_height="1.0dp" />
+                        <su.happ.proxyutility.ui.foundation.component.HappSpinnerField android:id="@id/spinner_http_mode" android:layout_width="match_parent" android:layout_height="wrap_content" app:entries="@array/inbound_authorization_modes" app:title="@string/inbound_authorization_mode" />
+                        <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:layout_width="match_parent" android:layout_height="1.0dp" />
+                        <su.happ.proxyutility.ui.foundation.component.HappInputField android:id="@id/if_http_user" android:layout_width="match_parent" android:layout_height="wrap_content" app:copyOnShortClick="true" app:title="@string/inbound_authorization_user" />
+                        <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:layout_width="match_parent" android:layout_height="1.0dp" />
+                        <su.happ.proxyutility.ui.foundation.component.HappInputField android:id="@id/if_http_password" android:layout_width="match_parent" android:layout_height="wrap_content" app:copyOnShortClick="true" app:title="@string/inbound_authorization_password" />
+                    </LinearLayout>
+                </LinearLayout>
+                <su.happ.proxyutility.ui.foundation.component.HappSettingsDescription android:id="@id/http_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="10.0dp" android:layout_marginRight="@dimen/activity_horizontal_margin" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <su.happ.proxyutility.ui.foundation.component.HappSnackbarHost android:id="@id/snackbar_host_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+</RelativeLayout>

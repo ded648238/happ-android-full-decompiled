@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="connect_to">
+        <item>Последний использованный</item>
+        <item>С наименьшей задержкой</item>
+        <item>Случайный</item>
+    </string-array>
+    <string-array name="font_size_entries">
+        <item>Маленький</item>
+        <item>Нормальный</item>
+        <item>Большой</item>
+    </string-array>
+    <string-array name="header_type_kcp_and_quic">
+        <item>Не выбрано</item>
+        <item>srtp</item>
+        <item>utp</item>
+        <item>wechat-video</item>
+        <item>dtls</item>
+        <item>wireguard</item>
+        <item>dns</item>
+    </string-array>
+    <string-array name="header_type_tcp">
+        <item>Не выбрано</item>
+        <item>http</item>
+    </string-array>
+    <string-array name="inbound_authorization_modes">
+        <item>Авто</item>
+        <item>Вручную</item>
+        <item>Из-JSON</item>
+        <item>Отключить</item>
+    </string-array>
+    <string-array name="mode_entries">
+        <item>VPN</item>
+        <item>Только прокси</item>
+    </string-array>
+    <string-array name="ping_result">
+        <item>Время</item>
+        <item>Значок</item>
+    </string-array>
+    <string-array name="routing_tag">
+        <item>Проксируемые</item>
+        <item>Прямые</item>
+        <item>Блокируемые</item>
+    </string-array>
+    <string-array name="subscription_config_sort_type">
+        <item>Без сортировки</item>
+        <item>Сортировать по пингу</item>
+        <item>Сортировать по алфавиту</item>
+    </string-array>
+    <string-array name="ui_mode_night">
+        <item>Как в системе</item>
+        <item>Светлая</item>
+        <item>Тёмная</item>
+    </string-array>
+</resources>

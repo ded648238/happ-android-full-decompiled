@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_done" android:id="@id/save_config" android:title="@string/menu_item_save_config" app:actionLayout="@layout/menu_item_save" app:showAsAction="ifRoom" />
+    <item android:id="@id/import_config_custom_local" android:title="@string/menu_item_import_config_custom_local" app:showAsAction="never" />
+</menu>

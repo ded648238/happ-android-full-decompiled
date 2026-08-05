@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="connect_to">
+        <item>آخرین استفاده‌شده</item>
+        <item>کمترین تأخیر</item>
+        <item>تصادفی</item>
+    </string-array>
+    <string-array name="font_size_entries">
+        <item>کوچک</item>
+        <item>عادی</item>
+        <item>بزرگ</item>
+    </string-array>
+    <string-array name="header_type_kcp_and_quic">
+        <item>هیچکدام</item>
+        <item>srtp</item>
+        <item>utp</item>
+        <item>wechat-video</item>
+        <item>dtls</item>
+        <item>wireguard</item>
+        <item>dns</item>
+    </string-array>
+    <string-array name="header_type_tcp">
+        <item>هیچکدام</item>
+        <item>http</item>
+    </string-array>
+    <string-array name="inbound_authorization_modes">
+        <item>خودکار</item>
+        <item>دستی</item>
+        <item>از-JSON</item>
+        <item>غیرفعال</item>
+    </string-array>
+    <string-array name="mode_entries">
+        <item>VPN</item>
+        <item>فقط پروکسی</item>
+    </string-array>
+    <string-array name="ping_result">
+        <item>زمان</item>
+        <item>آیکون</item>
+    </string-array>
+    <string-array name="routing_tag">
+        <item>URL یا IP پروکسی</item>
+        <item>URL یا IP مستقیم</item>
+        <item>URL یا IP مسدود شده</item>
+    </string-array>
+    <string-array name="subscription_config_sort_type">
+        <item>مرتب‌نشده</item>
+        <item>مرتب‌سازی بر اساس پینگ</item>
+        <item>مرتب‌سازی بر اساس الفبا</item>
+    </string-array>
+    <string-array name="ui_mode_night">
+        <item>خودکار</item>
+        <item>روشن</item>
+        <item>تیره</item>
+    </string-array>
+</resources>

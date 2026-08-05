@@ -5,3 +5,5 @@
 *.profm
 *.prof
 dexopt/
+*.keystore
+*.jks

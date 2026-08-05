@@ -1,0 +1,49 @@
+.class public final Lu82;
+.super Lv82;
+.source "r8-map-id-bab227d27872676e62ff2ffe2fded003c9d885b8c3013765058fc121ecc85da5"
+
+
+# static fields
+.field public static final d:Lu82;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    .line 1
+    new-instance v0, Lu82;
+
+    .line 2
+    .line 3
+    sget-object v1, Lsg6;->f:Lr42;
+
+    .line 4
+    .line 5
+    sget-object v2, Lr82;->d:Lr82;
+
+    .line 6
+    .line 7
+    iget v2, v2, Lv82;->c:I
+
+    .line 8
+    .line 9
+    add-int/lit8 v2, v2, -0x1
+
+    .line 10
+    .line 11
+    const-string v3, "SuspendFunction"
+
+    .line 12
+    .line 13
+    invoke-direct {v0, v1, v3, v2}, Lv82;-><init>(Lr42;Ljava/lang/String;I)V
+
+    .line 14
+    .line 15
+    .line 16
+    sput-object v0, Lu82;->d:Lu82;
+
+    .line 17
+    .line 18
+    return-void
+.end method

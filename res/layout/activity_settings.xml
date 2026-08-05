@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="?settingsBackground" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/ic_arrow_back" app:title="@string/title_settings" />
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_settings" android:paddingBottom="100.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" android:fillViewport="true" android:layout_weight="1.0" android:isScrollContainer="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.fragment.app.FragmentContainerView android:name="su.happ.proxyutility.feature.settings.UISettingsFragment" android:id="@id/fragment_ui_settings" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <androidx.fragment.app.FragmentContainerView android:name="su.happ.proxyutility.feature.settings.TunnelSettingsFragment" android:id="@id/fragment_tunnel_settings" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" />
+                <androidx.fragment.app.FragmentContainerView android:name="su.happ.proxyutility.feature.settings.AdvancedSettingsFragment" android:id="@id/fragment_advanced_settings" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" />
+                <androidx.fragment.app.FragmentContainerView android:name="su.happ.proxyutility.feature.settings.OtherSettingsFragment" android:id="@id/fragment_other_settings" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" />
+                <androidx.fragment.app.FragmentContainerView android:name="su.happ.proxyutility.feature.settings.AboutSettingsFragment" android:id="@id/fragment_about_settings" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <su.happ.proxyutility.ui.foundation.component.HappSnackbarHost android:id="@id/snackbar_host_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+</RelativeLayout>

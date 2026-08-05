@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_description_24dp" android:id="@id/search_view" android:title="@string/menu_item_search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_select_all_24dp" android:id="@id/select_all" android:title="@string/menu_item_select_all" app:showAsAction="withText" />
+    <item android:icon="@drawable/ic_description_24dp" android:id="@id/import_proxy_app" android:title="@string/menu_item_import_proxy_app" app:showAsAction="withText" />
+    <item android:icon="@drawable/ic_description_24dp" android:id="@id/export_proxy_app" android:title="@string/menu_item_export_proxy_app" app:showAsAction="withText" />
+    <item android:icon="@drawable/ic_description_24dp" android:id="@id/invert" android:title="@string/menu_item_invert" app:showAsAction="withText" />
+    <item android:icon="@drawable/ic_description_24dp" android:id="@id/system_apps" android:title="@string/menu_item_show_system_apps" app:showAsAction="withText" />
+    <item android:icon="@drawable/ic_description_24dp" android:id="@id/spy_apps" android:title="@string/menu_item_select_spy_apps" app:showAsAction="withText" />
+    <item android:icon="@drawable/ic_description_24dp" android:id="@id/google_apps" android:title="@string/menu_item_select_google_apps" app:showAsAction="withText" />
+    <item android:icon="@drawable/ic_description_24dp" android:id="@id/clear" android:title="@string/menu_item_clear" app:showAsAction="withText" />
+    <item android:icon="@drawable/ic_description_24dp" android:id="@id/import_from_file" android:title="@string/menu_item_import_from_file" app:showAsAction="withText" />
+</menu>

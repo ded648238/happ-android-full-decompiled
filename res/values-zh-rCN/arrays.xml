@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="connect_to">
+        <item>最后使用</item>
+        <item>最低延迟</item>
+        <item>随机</item>
+    </string-array>
+    <string-array name="font_size_entries">
+        <item>小号</item>
+        <item>正常</item>
+        <item>大号</item>
+    </string-array>
+    <string-array name="header_type_kcp_and_quic">
+        <item>无</item>
+        <item>srtp</item>
+        <item>ytp</item>
+        <item>wechat-video</item>
+        <item>dtls</item>
+        <item>wireguard</item>
+        <item>dns</item>
+    </string-array>
+    <string-array name="header_type_tcp">
+        <item>无</item>
+        <item>http</item>
+    </string-array>
+    <string-array name="inbound_authorization_modes">
+        <item>自动</item>
+        <item>手动</item>
+        <item>来自-JSON</item>
+        <item>禁用</item>
+    </string-array>
+    <string-array name="mode_entries">
+        <item>VPN</item>
+        <item>仅代理</item>
+    </string-array>
+    <string-array name="ping_result">
+        <item>时间</item>
+        <item>图标</item>
+    </string-array>
+    <string-array name="routing_tag">
+        <item>代理URL或IP</item>
+        <item>直接URL或IP</item>
+        <item>阻止URL或IP</item>
+    </string-array>
+    <string-array name="subscription_config_sort_type">
+        <item>未排序</item>
+        <item>按Ping排序</item>
+        <item>按字母排序</item>
+    </string-array>
+    <string-array name="ui_mode_night">
+        <item>自动</item>
+        <item>浅色</item>
+        <item>深色</item>
+    </string-array>
+</resources>

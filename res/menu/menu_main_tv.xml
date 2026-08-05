@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/import_sub" android:title="@string/menu_item_import_sub" app:showAsAction="never" />
+    <item android:id="@id/import_clipboard" android:title="@string/menu_item_import_config_clipboard" app:showAsAction="never" />
+    <item android:id="@id/import_qrcode" android:title="@string/menu_item_import_config_qrcode" app:showAsAction="never" />
+    <item android:id="@id/import_manually" android:title="@string/menu_item_import_config_manually" app:showAsAction="never" />
+    <item android:id="@id/import_json_clipboard" android:title="@string/menu_item_import_json_clipboard" app:showAsAction="never" />
+    <item android:id="@id/export_json_clipboard" android:visible="true" android:title="@string/menu_item_export_json_clipboard" app:showAsAction="never" />
+    <item android:id="@id/share_tv" android:visible="true" android:title="@string/share_tv" app:showAsAction="never" />
+    <item android:id="@id/config_group" android:visible="false" android:title="@string/config_group" app:showAsAction="never" />
+    <item android:id="@id/dialog_test" android:visible="false" android:title="@string/test_dialog" app:showAsAction="never" />
+</menu>

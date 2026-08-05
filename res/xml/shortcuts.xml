@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_qu_switch_24dp" android:enabled="true">
+        <intent android:targetPackage="su.happ.proxyutility" android:action="android.intent.action.VIEW" android:targetClass="su.happ.proxyutility.ui.ScSwitchActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_qu_scan_24dp" android:enabled="true">
+        <intent android:targetPackage="su.happ.proxyutility" android:action="android.intent.action.VIEW" android:targetClass="su.happ.proxyutility.ui.ScScannerActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_qu_settings_24dp" android:enabled="true">
+        <intent android:targetPackage="su.happ.proxyutility" android:action="android.intent.action.VIEW" android:targetClass="su.happ.proxyutility.feature.settings.SettingsActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

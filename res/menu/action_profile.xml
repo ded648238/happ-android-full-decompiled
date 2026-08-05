@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/create_profile" android:title="@string/menu_item_create_profile" />
+    <item android:id="@id/import_profile" android:title="@string/menu_item_import_profile" />
+    <item android:id="@id/import_qr_profile" android:title="@string/menu_item_import_qr_profile" />
+    <item android:id="@id/export_profile" android:title="@string/menu_item_export_profile" />
+</menu>

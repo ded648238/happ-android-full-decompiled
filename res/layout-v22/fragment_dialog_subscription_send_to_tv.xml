@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorBlackDialogFragment" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="?colorBgSecondary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0.0dp" android:layout_height="20.0dp" />
+        <su.happ.proxyutility.ui.foundation.component.HappTextView android:textSize="20.0sp" android:textColor="?colorTextSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dp" android:layout_marginRight="25.0dp" android:text="@string/send_to_tv_text" android:textAlignment="center" android:layout_marginHorizontal="25.0dp" />
+        <View android:layout_width="0.0dp" android:layout_height="15.0dp" />
+        <su.happ.proxyutility.ui.foundation.component.button.HappTextButton android:textSize="18.0sp" android:textColor="?colorTextDialog" android:id="@id/btn_cancel" android:background="@drawable/bg_button_transparent_borders_rounded_8" android:padding="@dimen/layout_margin_spacing_quaternary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp" android:text="@string/send_to_tv_cancel" android:textAllCaps="false" android:layout_marginHorizontal="32.0dp" />
+        <View android:layout_width="0.0dp" android:layout_height="15.0dp" />
+        <su.happ.proxyutility.ui.foundation.component.button.HappTextButton android:enabled="false" android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/btn_send" android:background="@drawable/bg_button_primary" android:padding="@dimen/layout_margin_spacing_quaternary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginRight="32.0dp" android:layout_marginBottom="30.0dp" android:text="@string/send_to_tv_confirm" android:textAllCaps="false" android:layout_marginHorizontal="32.0dp" />
+    </LinearLayout>
+    <View android:layout_width="0.0dp" android:layout_height="16.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_config_groups" android:paddingBottom="50.0dp" android:clipToPadding="false" android:layoutAnimation="@anim/layout_animation" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="16.0dp" android:layout_marginEnd="16.0dp" />
+</LinearLayout>

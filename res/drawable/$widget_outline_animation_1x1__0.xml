@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="128.0dp" android:width="128.0dp" android:viewportWidth="128.0" android:viewportHeight="128.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="rotation_group" android:pivotX="64.0" android:pivotY="64.0">
+        <path android:fillColor="#00000000" android:pathData="M64,64m-63.5,0a63.5,63.5 0,1 1,127 0a63.5,63.5 0,1 1,-127 0" android:strokeColor="@drawable/$widget_outline_animation_1x1__1" android:strokeWidth="1.5" />
+    </group>
+</vector>

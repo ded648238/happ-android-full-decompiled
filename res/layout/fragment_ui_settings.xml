@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?settingsBackgroundFragment" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <su.happ.proxyutility.ui.foundation.component.HappSettingsTitle android:id="@id/title_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_spacing_secondary" android:text="@string/title_ui_settings" android:layout_marginStart="@dimen/activity_horizontal_margin" />
+    <su.happ.proxyutility.ui.foundation.component.HappForwardField android:id="@id/forward_language" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/title_language">
+        <requestFocus />
+    </su.happ.proxyutility.ui.foundation.component.HappForwardField>
+    <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_language" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+    <su.happ.proxyutility.ui.foundation.component.HappSpinnerField android:id="@id/spinner_ui_mode_night" android:background="@drawable/bg_text_on_main" android:layout_width="match_parent" android:layout_height="wrap_content" app:entries="@array/ui_mode_night" app:title="@string/title_pref_ui_mode_night" />
+    <su.happ.proxyutility.ui.foundation.component.HappSettingsDivider android:id="@id/divider_app_appearance" android:layout_width="wrap_content" android:layout_height="1.0dp" />
+    <su.happ.proxyutility.ui.foundation.component.HappForwardField android:id="@id/forward_ui_settings" android:background="@drawable/bg_text_on_main" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/title_ui_settings" />
+</LinearLayout>
