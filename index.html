@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happ Android 4.0.1 — Full Decompiled Source</title>
+    <meta name="description" content="Complete decompiled source of Happ Android proxy client. 2,252 Java + 11,583 Smali files. 100% complete.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .bg-grid {
+            position: fixed; inset: 0; z-index: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .glow {
+            position: fixed; width: 600px; height: 600px; border-radius: 50%;
+            filter: blur(150px); opacity: .15; z-index: 0;
+            pointer-events: none;
+        }
+        .glow-1 { top: -200px; left: -100px; background: #00d4ff; }
+        .glow-2 { bottom: -200px; right: -100px; background: #7c3aed; }
+        .container {
+            position: relative; z-index: 1;
+            max-width: 900px; margin: 0 auto; padding: 60px 24px;
+        }
+        .badge-row {
+            display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+            margin-bottom: 32px;
+        }
+        .badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 4px 12px; border-radius: 20px;
+            background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+            font-size: 12px; color: #888; text-decoration: none;
+            transition: .2s;
+        }
+        .badge:hover { background: rgba(255,255,255,.1); color: #fff; }
+        .badge .dot {
+            width: 8px; height: 8px; border-radius: 50%;
+        }
+        .dot-green { background: #22c55e; }
+        .dot-blue { background: #3b82f6; }
+        .dot-purple { background: #a855f7; }
+        .dot-orange { background: #f59e0b; }
+        h1 {
+            font-size: 42px; font-weight: 800; text-align: center;
+            line-height: 1.2; margin-bottom: 12px;
+            background: linear-gradient(135deg, #fff 0%, #7dd3fc 50%, #a78bfa 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            text-align: center; font-size: 18px; color: #888;
+            margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;
+        }
+        .stats {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+            margin-bottom: 48px;
+        }
+        .stat-card {
+            background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+            border-radius: 12px; padding: 24px; text-align: center;
+            transition: .3s;
+        }
+        .stat-card:hover {
+            background: rgba(255,255,255,.07);
+            border-color: rgba(125,211,252,.3);
+            transform: translateY(-2px);
+        }
+        .stat-num {
+            font-size: 32px; font-weight: 800;
+            background: linear-gradient(135deg, #7dd3fc, #a78bfa);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .stat-label { font-size: 13px; color: #666; margin-top: 4px; }
+        .section-title {
+            font-size: 22px; font-weight: 700; margin: 48px 0 20px;
+            color: #fff;
+        }
+        .features {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+            margin-bottom: 48px;
+        }
+        .feature {
+            background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.06);
+            border-radius: 12px; padding: 20px; transition: .3s;
+        }
+        .feature:hover {
+            background: rgba(255,255,255,.06);
+            border-color: rgba(168,85,247,.3);
+        }
+        .feature-icon { font-size: 24px; margin-bottom: 8px; }
+        .feature-title { font-weight: 600; color: #fff; margin-bottom: 4px; }
+        .feature-desc { font-size: 13px; color: #888; line-height: 1.5; }
+        .code-block {
+            background: rgba(0,0,0,.5); border: 1px solid rgba(255,255,255,.08);
+            border-radius: 12px; padding: 20px; margin-bottom: 48px;
+            overflow-x: auto; font-family: 'SF Mono', 'Fira Code', monospace;
+            font-size: 13px; line-height: 1.8; color: #a5b4fc;
+        }
+        .code-block .comment { color: #555; }
+        .code-block .key { color: #7dd3fc; }
+        .code-block .val { color: #34d399; }
+        .code-block .path { color: #c084fc; }
+        .cta-row {
+            display: flex; gap: 16px; justify-content: center;
+            margin: 48px 0;
+        }
+        .btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 14px 28px; border-radius: 12px; font-size: 15px;
+            font-weight: 600; text-decoration: none; transition: .3s;
+            cursor: pointer; border: none;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #7c3aed, #3b82f6);
+            color: #fff;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(124,58,237,.4);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15);
+            color: #fff;
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,.1);
+        }
+        .secrets {
+            background: rgba(245,158,11,.05); border: 1px solid rgba(245,158,11,.2);
+            border-radius: 12px; padding: 24px; margin-bottom: 48px;
+        }
+        .secrets-title {
+            font-size: 16px; font-weight: 700; color: #f59e0b;
+            margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
+        }
+        .secret-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.05);
+            font-size: 13px;
+        }
+        .secret-item:last-child { border: none; }
+        .secret-name { color: #c084fc; font-family: monospace; }
+        .secret-value { color: #34d399; font-family: monospace; }
+        .footer {
+            text-align: center; padding: 40px 0 20px;
+            font-size: 13px; color: #444; border-top: 1px solid rgba(255,255,255,.05);
+        }
+        .footer a { color: #7dd3fc; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+        @media (max-width: 640px) {
+            h1 { font-size: 28px; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .features { grid-template-columns: 1fr; }
+            .cta-row { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <div class="container">
+        <!-- Badges -->
+        <div class="badge-row">
+            <a class="badge" href="https://github.com/ded648238/happ-android-full-decompiled">
+                <span class="dot dot-green"></span> 100% Complete
+            </a>
+            <a class="badge" href="#">
+                <span class="dot dot-blue"></span> 2,252 Java
+            </a>
+            <a class="badge" href="#">
+                <span class="dot dot-purple"></span> 11,583 Smali
+            </a>
+            <a class="badge" href="#">
+                <span class="dot dot-orange"></span> MIT License
+            </a>
+        </div>
+
+        <!-- Hero -->
+        <h1>Happ Android 4.0.1<br>Full Decompiled Source</h1>
+        <p class="subtitle">
+            Complete reverse-engineered source code. All Java, Smali, and Go JNI interfaces.
+            For educational and security research purposes.
+        </p>
+
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-num">2,252</div>
+                <div class="stat-label">Java Files</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">11,583</div>
+                <div class="stat-label">Smali Files</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">41,962</div>
+                <div class="stat-label">Go Symbols</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">0</div>
+                <div class="stat-label">Empty Files</div>
+            </div>
+        </div>
+
+        <!-- Repository Structure -->
+        <div class="section-title">📂 Repository Structure</div>
+        <div class="code-block">
+<span class="comment"># 13,835 total files · 222 MB</span>
+happ-android-full-decompiled/
+├── <span class="key">smali/</span>               <span class="comment"># 11,583 .smali (100% complete)</span>
+│   ├── <span class="path">su/happ/proxyutility/</span>  <span class="comment"># All services & features</span>
+│   ├── <span class="path">pk7.smali</span>            <span class="comment"># HWID · hashedDomain (9,003 lines)</span>
+│   └── <span class="path">wj0.smali</span>            <span class="comment"># DNSTT dispatcher (30,427 lines)</span>
+├── <span class="key">su/</span>                  <span class="comment"># 2,252 .java (100% complete)</span>
+│   └── <span class="path">happ/proxyutility/</span>   <span class="comment"># Full decompiled Java</span>
+├── <span class="key">libxray/</span>             <span class="comment"># JNI bridge (Libxray, XRayPoint)</span>
+├── <span class="key">go/</span>                  <span class="comment"># Go JNI bridge (Seq, Universe)</span>
+├── <span class="key">res/</span>                 <span class="comment"># Android resources (80+ langs)</span>
+├── <span class="key">AndroidManifest.xml</span>  <span class="comment"># 40+ activities, services</span>
+└── <span class="key">go_funcs.txt</span>         <span class="comment"># 41,962 Go function symbols</span>
+        </div>
+
+        <!-- Key Discoveries -->
+        <div class="section-title">🔑 Key Classes</div>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📦</div>
+                <div class="feature-title">XRayConfig.java</div>
+                <div class="feature-desc">4,544 lines. Every Xray protocol and transport — VMess, VLESS, SS, Trojan, WireGuard, Hysteria2, WebSocket, gRPC, KCP, QUIC</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔐</div>
+                <div class="feature-title">EncryptedSubUrlHelper.java</div>
+                <div class="feature-desc">167KB. Full subscription URL encryption and decryption logic</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌐</div>
+                <div class="feature-title">RequestEnvelope.java</div>
+                <div class="feature-desc">DNSTT protocol v1. DeviceOS enum (iOS/tvOS/macOS/Android/Windows/Linux), Route enum, full packet structure</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-title">XRayVpnService.java</div>
+                <div class="feature-desc">1,311 lines. TUN setup, DNS routing, per-app proxy, SOCKS/HTTP auth, proxy sharing</div>
+            </div>
+        </div>
+
+        <!-- Secrets -->
+        <div class="secrets">
+            <div class="secrets-title">🔍 Secrets Discovered</div>
+            <div class="secret-item">
+                <span class="secret-name">HWID</span>
+                <span class="secret-value">Settings.Secure.ANDROID_ID</span>
+            </div>
+            <div class="secret-item">
+                <span class="secret-name">hashedDomain</span>
+                <span class="secret-value">SHA-256(host) → hex</span>
+            </div>
+            <div class="secret-item">
+                <span class="secret-name">DNSTT Servers</span>
+                <span class="secret-value">t.polend.org, t.pullse.org, t.itine.org</span>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-row">
+            <a class="btn btn-primary" href="https://github.com/ded648238/happ-android-full-decompiled">
+                ⭐ Star on GitHub
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/ded648238/happ-android-full-decompiled/archive/refs/heads/main.zip">
+                📥 Download ZIP
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>For educational and research purposes only. MIT License.</p>
+            <p style="margin-top: 8px;">Made with jadx, baksmali & ❤️ · <a href="https://github.com/ded648238">ded648238</a></p>
+        </div>
+    </div>
+</body>
+</html>
